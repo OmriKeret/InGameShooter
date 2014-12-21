@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\shootingManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="40" Column="37" />
+      <File FileName="Assets\Scripts\shootingManager.cs" Line="95" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="60" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
