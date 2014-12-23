@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+
 	
 	public enum Direction  {
 		up = 1,

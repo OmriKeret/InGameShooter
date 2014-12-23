@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+	public int playerNumber;
 	// DASH parameters
 	public float tapDelayBoost = 0.25f;
 	public float boostForce = 800;
@@ -15,7 +16,7 @@ public class PlayerController : MonoBehaviour {
 	//normal walking machanisem
 	public float maxSpeed = 10f;
 	private bool grounded = false;
-	bool faceRight = true;
+	public bool faceRight = true;
 
 	//jumping
 	private bool doubleJumpeAvilable = false;
@@ -52,24 +53,24 @@ public class PlayerController : MonoBehaviour {
 	{
 
 
-		if (grounded && Input.GetButtonDown ("Jump") && !isBoosting )
+		if (grounded && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting )
 		{
 			anim.SetBool("Ground", false);
     			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 				doubleJumpeAvilable = true;
 			//animation.SetBool("DoubleJump", false);
-		} else if (!grounded && doubleJumpeAvilable && Input.GetButtonDown ("Jump") && !isBoosting) {
+		} else if (!grounded && doubleJumpeAvilable && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting) {
 			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
  			rigidbody2D.AddForce(new Vector2(0, doubleJumpForce));
 			doubleJumpeAvilable = false;
 			//animation.SetBool("DoubleJump", true);
 		}
 
-		if(MultiClickInput.HasDoubleClickedKey("left", tapDelayBoost) )
+		if(MultiClickInput.HasDoubleClickedKey("left" + playerNumber, tapDelayBoost) )
 		{
 			Dash();
 		}
-		if(MultiClickInput.HasDoubleClickedKey("right", tapDelayBoost)  )
+		if(MultiClickInput.HasDoubleClickedKey("right" + playerNumber, tapDelayBoost)  )
 		{
 			Dash();
 		}
@@ -114,7 +115,7 @@ public class PlayerController : MonoBehaviour {
 	
 
 	private void moveHorizontal() {
-		float move = Input.GetAxis ("Horizontal");
+		float move = Input.GetAxis ("Horizontal" + playerNumber);
 		anim.SetFloat ("Speed", Mathf.Abs (move));
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 		if (move > 0 && !faceRight)

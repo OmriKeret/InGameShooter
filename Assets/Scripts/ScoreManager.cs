@@ -28,15 +28,15 @@ public class ScoreManager : MonoBehaviour {
 	void Update () {
 		showScoresForPlayers (numberOfPlayers);
 
-		if(Input.GetButtonDown("AddScoreToPlayer1"))
+	/*	if(Input.GetButtonDown("AddScoreToPlayer1"))
 		{
 			addScoreToPlayer(1,Status.FirstKill);
-		}
+		}*/
 
-		if(Input.GetButtonDown("AddScoreToPlayer2"))
+	/*	if(Input.GetButtonDown("AddScoreToPlayer2"))
 		{
 			addScoreToPlayer(2,Status.PentaKill);
-		}
+		}*/
 	}
 
 	public void addScoreToPlayer(int playerNum, Status playerStats)
