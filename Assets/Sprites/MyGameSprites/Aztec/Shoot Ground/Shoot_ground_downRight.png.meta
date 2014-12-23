@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 9a753cf6429aa58489d4f13a01bb6623
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shoot_ground_downRight_0
+    21300002: Shoot_ground_downRight_1
+    21300004: Shoot_ground_downRight_2
+    21300006: Shoot_ground_downRight_3
+    21300008: Shoot_ground_downRight_4
+    21300010: Shoot_ground_downRight_5
+    21300012: Shoot_ground_downRight_6
+    21300014: Shoot_ground_downRight_7
+    21300016: Shoot_ground_downRight_8
+    21300018: Shoot_ground_downRight_9
+    21300020: Shoot_ground_downRight_10
+    21300022: Shoot_ground_downRight_11
+    21300024: Shoot_ground_downRight_12
+    21300026: Shoot_ground_downRight_13
+    21300028: Shoot_ground_downRight_14
+    21300030: Shoot_ground_downRight_15
+    21300032: Shoot_ground_downRight_16
+    21300034: Shoot_ground_downRight_17
+    21300036: Shoot_ground_downRight_18
+    21300038: Shoot_ground_downRight_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shoot_ground_downRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 212
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1230
+        width: 208
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1230
+        width: 205
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_3
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1221
+        width: 199
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_4
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1209
+        width: 190
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_5
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1196
+        width: 176
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_6
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1183
+        width: 177
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_7
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1189
+        width: 165
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_8
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1196
+        width: 158
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_9
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1203
+        width: 160
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 963
+        width: 161
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 983
+        width: 161
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_12
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 989
+        width: 179
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_13
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 988
+        width: 127
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 987
+        width: 118
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_15
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 986
+        width: 111
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_16
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 980
+        width: 104
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_17
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 985
+        width: 124
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_18
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 984
+        width: 178
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_downRight_19
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 983
+        width: 213
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: a0ec225aeb6c5354186ed1194f7e0915
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shoot_jump_upRight_0
+    21300002: Shoot_jump_upRight_1
+    21300004: Shoot_jump_upRight_2
+    21300006: Shoot_jump_upRight_3
+    21300008: Shoot_jump_upRight_4
+    21300010: Shoot_jump_upRight_5
+    21300012: Shoot_jump_upRight_6
+    21300014: Shoot_jump_upRight_7
+    21300016: Shoot_jump_upRight_8
+    21300018: Shoot_jump_upRight_9
+    21300020: Shoot_jump_upRight_10
+    21300022: Shoot_jump_upRight_11
+    21300024: Shoot_jump_upRight_12
+    21300026: Shoot_jump_upRight_13
+    21300028: Shoot_jump_upRight_14
+    21300030: Shoot_jump_upRight_15
+    21300032: Shoot_jump_upRight_16
+    21300034: Shoot_jump_upRight_17
+    21300036: Shoot_jump_upRight_18
+    21300038: Shoot_jump_upRight_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shoot_jump_upRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1226
+        width: 212
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1225
+        width: 212
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_2
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1226
+        width: 212
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_3
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1226
+        width: 207
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_4
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 1212
+        width: 195
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_5
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1192
+        width: 188
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_6
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1174
+        width: 192
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_7
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1169
+        width: 169
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_8
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1166
+        width: 155
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_9
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 1166
+        width: 155
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 901
+        width: 157
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 902
+        width: 158
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_12
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 903
+        width: 170
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_13
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 977
+        width: 129
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 975
+        width: 118
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_15
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 972
+        width: 105
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_16
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 963
+        width: 99
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_17
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 967
+        width: 122
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_18
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 965
+        width: 178
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_upRight_19
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 962
+        width: 214
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

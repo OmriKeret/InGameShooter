@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 09244d07dc65fd845b4d915603ed1643
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shoot_jump_down_0
+    21300002: Shoot_jump_down_1
+    21300004: Shoot_jump_down_2
+    21300006: Shoot_jump_down_3
+    21300008: Shoot_jump_down_4
+    21300010: Shoot_jump_down_5
+    21300012: Shoot_jump_down_6
+    21300014: Shoot_jump_down_7
+    21300016: Shoot_jump_down_8
+    21300018: Shoot_jump_down_9
+    21300020: Shoot_jump_down_10
+    21300022: Shoot_jump_down_11
+    21300024: Shoot_jump_down_12
+    21300026: Shoot_jump_down_13
+    21300028: Shoot_jump_down_14
+    21300030: Shoot_jump_down_15
+    21300032: Shoot_jump_down_16
+    21300034: Shoot_jump_down_17
+    21300036: Shoot_jump_down_18
+    21300038: Shoot_jump_down_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shoot_jump_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1226
+        width: 212
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1224
+        width: 208
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1211
+        width: 192
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_3
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1191
+        width: 172
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_4
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1163
+        width: 142
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_5
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1141
+        width: 125
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_6
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1123
+        width: 102
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_7
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1142
+        width: 101
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_8
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1163
+        width: 99
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_9
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1184
+        width: 98
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_10
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 1204
+        width: 103
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_11
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1212
+        width: 112
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_12
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 1197
+        width: 121
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_13
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 1238
+        width: 131
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 929
+        width: 117
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_15
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 926
+        width: 105
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_16
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 917
+        width: 99
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_17
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 922
+        width: 124
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_18
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 921
+        width: 178
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_jump_down_19
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 920
+        width: 214
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

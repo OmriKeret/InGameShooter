@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: a76628198ef97c3469c2407441aa4837
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SHOOT_0
+    21300002: SHOOT_1
+    21300004: SHOOT_2
+    21300006: SHOOT_3
+    21300008: SHOOT_4
+    21300010: SHOOT_5
+    21300012: SHOOT_6
+    21300014: SHOOT_7
+    21300016: SHOOT_8
+    21300018: SHOOT_9
+    21300020: SHOOT_10
+    21300022: SHOOT_11
+    21300024: SHOOT_12
+    21300026: SHOOT_13
+    21300028: SHOOT_14
+    21300030: SHOOT_15
+    21300032: SHOOT_16
+    21300034: SHOOT_17
+    21300036: SHOOT_18
+    21300038: SHOOT_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SHOOT_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1851
+        width: 211
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1852
+        width: 212
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1853
+        width: 213
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_3
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1854
+        width: 214
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_4
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1855
+        width: 210
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_5
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1855
+        width: 209
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_6
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 1856
+        width: 204
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_7
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1857
+        width: 206
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_8
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1856
+        width: 207
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1655
+        width: 210
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_10
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1656
+        width: 210
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1656
+        width: 211
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1656
+        width: 212
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_13
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1656
+        width: 118
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_14
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1654
+        width: 113
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_15
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1654
+        width: 106
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_16
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1648
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_17
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1651
+        width: 119
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_18
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1651
+        width: 178
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SHOOT_19
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1649
+        width: 213
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

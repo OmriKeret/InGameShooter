@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: eabab77210caaff4bb8b356db947e312
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shoot Jump_0
+    21300002: Shoot Jump_1
+    21300004: Shoot Jump_2
+    21300006: Shoot Jump_3
+    21300008: Shoot Jump_4
+    21300010: Shoot Jump_5
+    21300012: Shoot Jump_6
+    21300014: Shoot Jump_7
+    21300016: Shoot Jump_8
+    21300018: Shoot Jump_9
+    21300020: Shoot Jump_10
+    21300022: Shoot Jump_11
+    21300024: Shoot Jump_12
+    21300026: Shoot Jump_13
+    21300028: Shoot Jump_14
+    21300030: Shoot Jump_15
+    21300032: Shoot Jump_16
+    21300034: Shoot Jump_17
+    21300036: Shoot Jump_18
+    21300038: Shoot Jump_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shoot Jump_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1226
+        width: 211
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_1
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1225
+        width: 212
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_2
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1225
+        width: 213
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_3
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1225
+        width: 214
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_4
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1224
+        width: 210
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_5
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1222
+        width: 209
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_6
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1222
+        width: 204
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_7
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 1223
+        width: 206
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_8
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 1226
+        width: 207
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1019
+        width: 210
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_10
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1021
+        width: 210
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1024
+        width: 211
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_12
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1027
+        width: 212
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_13
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1030
+        width: 122
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_14
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1028
+        width: 112
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_15
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1027
+        width: 99
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_16
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1018
+        width: 95
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_17
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1022
+        width: 119
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_18
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1021
+        width: 178
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot Jump_19
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1019
+        width: 213
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

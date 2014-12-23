@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 60eea17f5430f094f868fad09016a062
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shoot_ground_up_0
+    21300002: Shoot_ground_up_1
+    21300004: Shoot_ground_up_2
+    21300006: Shoot_ground_up_3
+    21300008: Shoot_ground_up_4
+    21300010: Shoot_ground_up_5
+    21300012: Shoot_ground_up_6
+    21300014: Shoot_ground_up_7
+    21300016: Shoot_ground_up_8
+    21300018: Shoot_ground_up_9
+    21300020: Shoot_ground_up_10
+    21300022: Shoot_ground_up_11
+    21300024: Shoot_ground_up_12
+    21300026: Shoot_ground_up_13
+    21300028: Shoot_ground_up_14
+    21300030: Shoot_ground_up_15
+    21300032: Shoot_ground_up_16
+    21300034: Shoot_ground_up_17
+    21300036: Shoot_ground_up_18
+    21300038: Shoot_ground_up_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shoot_ground_up_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 211
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1231
+        width: 214
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1232
+        width: 206
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_3
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1210
+        width: 184
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1186
+        width: 166
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_5
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 1168
+        width: 156
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_6
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1160
+        width: 144
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_7
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1153
+        width: 125
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_8
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1147
+        width: 107
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_9
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1139
+        width: 94
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_10
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1133
+        width: 99
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_11
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1125
+        width: 109
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_12
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 1118
+        width: 118
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 125
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 925
+        width: 119
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_15
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 924
+        width: 112
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_16
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 917
+        width: 105
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_17
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 920
+        width: 122
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 918
+        width: 178
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shoot_ground_up_19
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 916
+        width: 214
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
