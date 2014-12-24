@@ -20,6 +20,17 @@ public class shootingManager : MonoBehaviour {
 	public int bulletSpeed = 1000;
 	public static int ShotType = 1;
 
+
+	public int up_projectile_angles = 90;
+	public int up_right_projectile_angles = 30;
+	public int right_projectile_angles = 0;
+	public int right_down_projectile_angles = 310;  
+	public int down_projectile_angles = 270;
+	public int down_left_projectile_angles = 310;
+	public int left_projectile_angles = 0;
+	public int left_up_projectile_angles = 30;
+
+
 	public Collider2D playerCollider;
 	public Collider2D bulletCollider;
 	private float bulletWidth;
@@ -29,12 +40,12 @@ public class shootingManager : MonoBehaviour {
 	private float nextFire;
 
 	private PlayerController playerControls;
-	//geting input
+	//geting input - omri's addition
 	public bool up;
 	public bool down;
 	public bool left;
 	public bool right;
-	//animation - omri's addition
+	//animation 
 	Animator anim;
 	bool shooting;
 	Direction whichDirectionToAnimate;
@@ -43,14 +54,18 @@ public class shootingManager : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		playerControls = GetComponent<PlayerController> ();
-		ReloadTime = Time.time;
-	
+		ReloadTime = Time.time;	
 		PlayerWidth = playerCollider.bounds.size.x;
 		PlayerHeight = playerCollider.bounds.size.y;
 		bulletWidth = bulletCollider.bounds.size.x;
 		bulletHeight = bulletCollider.bounds.size.y;
 
 	}
+	private void setShoot() 
+	{
+		shooting = true;
+	}
+
 	void FixedUpdate() {
 
 		if(Time.time - ReloadTime >= PauseTillReload)
@@ -63,22 +78,13 @@ public class shootingManager : MonoBehaviour {
 		}
 		if (Input.GetButtonDown("fire" + playerNumber))//NEED THE SCRIPT NAME
 		{
-
-			positionProjectileShootingPoint(whichDirectionToShoot);
 			if (bullets > 0 && nextFire <= 0)//If there are bullets
 			{
 				nextFire = 1;
 				bullets -= 1;
-				Rigidbody2D BulletInstance;
-				BulletInstance = Instantiate(Bullet, ProjectileShootingPoint.position, Quaternion.identity)  as Rigidbody2D;
-				if(! playerControls.faceRight) 
-				{
-					Flip (BulletInstance);
-				}
-				fireByDirection (whichDirectionToShoot ,BulletInstance);
-				
-				//BulletInstance.AddForce (BallSprite.right * 500);
-				//GameObject.Destroy (BulletInstance, 4f); // TODO: Destroy on hit.
+
+				whichDirectionToShoot = whichDirToShoot();
+				StartCoroutine(fireByDirection (whichDirectionToShoot));
 			}
 			else //Out of Ammo
 			{
@@ -93,50 +99,71 @@ public class shootingManager : MonoBehaviour {
 		}
 
 	}
-	// Update is called once per frame
-	//If given than a bool "shot fired" is given, then create the projectile.
+
 	void Update () {
-		whichDirectionToShoot = whichDirToShoot();
-		up = Input.GetButton("up" + playerNumber);
-		down = Input.GetButton ("down1");
-		left = Input.GetButton("left" + playerNumber);
-		right = Input.GetButton ("right" + playerNumber);	
+
 	}
 
 
-	void fireByDirection (Direction x, Rigidbody2D BulletInstance) {
-		//For each x, there will be a direction, for each y, there will
-		// be a "type" of projectile.
-		// For now, y always equals 1
-
+	IEnumerator fireByDirection (Direction x) {
 		var dirName =  getDirName(whichDirToAnimate(x));
 		anim.SetTrigger("Shoot_" + dirName);
+
+		while (!shooting) {
+			yield return null;
+		}
+		Rigidbody2D BulletInstance;
+		BulletInstance = Instantiate(Bullet, ProjectileShootingPoint.position, Quaternion.identity)  as Rigidbody2D;
+		Physics2D.IgnoreCollision (BulletInstance.collider2D, transform.collider2D);
+		if(! playerControls.faceRight) 
+		{
+			Flip (BulletInstance);
+		}
+		shooting = false;
+		var angles = 0;
 		switch (x)
 		{
+
 			case Direction.up://Top
+				angles = playerControls.faceRight ? up_projectile_angles : -1 * up_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (0,1) * bulletSpeed);
 				break;
 			case Direction.down://Downs
+				angles = playerControls.faceRight ? down_projectile_angles : -1 * down_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (0,-1) * bulletSpeed);
 				break;
 			case Direction.right://Right
 				Debug.Log ("shoot right");
+				angles = playerControls.faceRight ? right_projectile_angles : -1 * right_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (1,0) * bulletSpeed );
 				break;
 			case Direction.left: //Left
+				angles = playerControls.faceRight ? left_projectile_angles : -1 * left_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (-1,0) * bulletSpeed);
 				break;
 			case Direction.up_right://Top-Right
-	            BulletInstance.AddForce (new Vector2 (1,1) * bulletSpeed);
+				angles = playerControls.faceRight ? up_right_projectile_angles : -1 * up_right_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
+	            BulletInstance.AddForce (new Vector2 (1,(float)0.5) * bulletSpeed);
 				Debug.Log ("shoot up-righ");
 				break;
 			case Direction.up_left://Top-Left
-				BulletInstance.AddForce (new Vector2 (-1,1) * bulletSpeed);
+				angles = playerControls.faceRight ? left_up_projectile_angles : -1 * left_up_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
+				BulletInstance.AddForce (new Vector2 (-1,(float)0.5) * bulletSpeed);
 				break;
 			case Direction.down_right://Down-Right
+				angles = playerControls.faceRight ? right_down_projectile_angles : -1 * right_down_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (1,-1) * bulletSpeed);
 				break;
 			case Direction.down_left://Down-Left
+				angles = playerControls.faceRight ? down_left_projectile_angles : -1 * down_left_projectile_angles;
+				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (-1,-1) * bulletSpeed);
 				break;
 
@@ -146,14 +173,74 @@ public class shootingManager : MonoBehaviour {
 	}
 
 
+
+	private string getDirName(Direction x) {
+		if( (int)x != 4 && (int)x != 8 )
+			return  Enum.GetName(typeof(Direction), x);
+		if( (int)x ==4 )
+			return "right";
+		if ((int)x == 8)
+			return "down_right";
+		return null;
+	}
+	
+	void Flip(Rigidbody2D bullet)
+	{
+		Vector3 theScale = bullet.transform.localScale;
+		theScale.x *= -1;
+		bullet.transform.localScale = theScale;
+	}
+
+	private Direction whichDirToAnimate(Direction dir)
+		{
+		if (dir == Direction.left)
+						return Direction.right;
+		if (dir == Direction.up_left)
+						return Direction.up_right;
+		if (dir == Direction.down_left)
+						return Direction.down_right;
+		return dir;
+		}
+
+	private Direction whichDirToShoot(){
+		right = Input.GetButton ("right" + playerNumber);
+		left = Input.GetButton ("left" + playerNumber);
+		up = Input.GetButton ("up" + playerNumber);
+		down = Input.GetButton ("down" + playerNumber);
+
+		if(right){
+			return up ? Direction.up_right : down ? Direction.down_right : Direction.right;
+		}
+		if(left) {
+			return up ? Direction.up_left : down ? Direction.down_left : Direction.left;
+		}
+		if(up){
+			return Direction.up;
+		}
+		if(down){
+			return Direction.down;
+		}
+		//if idle
+		return playerControls.faceRight ? Direction.right : Direction.left;
+
+
+	}
+		
+
+}
+
+
+
+/*
 	void positionProjectileShootingPoint(Direction direction)
 	{
 		var playerCenter = transform.collider2D.bounds.center;
 
 		switch (direction)
 		{
-		case Direction.up://Top
-			ProjectileShootingPoint.position = new Vector2 ( playerCenter.x , (float)( PlayerHeight + bulletHeight + playerCenter.y) );
+			//PlayerHeight  + playerCenter.y
+		case Direction.right://Top
+			ProjectileShootingPoint.position = new Vector2 ( playerCenter.x , bulletHeight );
 			break;
 		/*case Direction.down://Down
 			BulletInstance.AddForce (new Vector2 (0,-1) * bulletSpeed);
@@ -178,89 +265,9 @@ public class shootingManager : MonoBehaviour {
 		case Direction.down_left://Down-Left
 			BulletInstance.AddForce (new Vector2 (-1,-1) * bulletSpeed);
 			break;
-	*/
+
 		default:
 			break;
 		}
 	}
-
-
-	private string getDirName(Direction x) {
-		if( (int)x != 4 && (int)x != 8 )
-			return  Enum.GetName(typeof(Direction), x);
-		if( (int)x ==4 )
-			return "right";
-		if ((int)x == 8)
-			return "down_right";
-		return null;
-	}
-
-/*	private void moveHorizontal(Rigidbody2D bullet) {
-		float move = Input.GetAxis ("Horizontal" + playerNumber);
-		if (move > 0 && !faceRight)
-			Flip (bullet);
-		else if (move < 0 && faceRight)
-			Flip (bullet);
-	}*/
-	void Flip(Rigidbody2D bullet)
-	{
-		Vector3 theScale = bullet.transform.localScale;
-		theScale.x *= -1;
-		bullet.transform.localScale = theScale;
-	}
-
-	private Direction whichDirToAnimate(Direction dir)
-		{
-		if (dir == Direction.left)
-						return Direction.right;
-		if (dir == Direction.up_left)
-						return Direction.up_right;
-		if (dir == Direction.down_left)
-						return Direction.down_right;
-		return dir;
-		}
-
-	private Direction whichDirToShoot(){
-		if(Input.GetButton("right" + playerNumber) && Input.GetButtonDown("down" + playerNumber) )
-		{
-			Debug.Log ("push down_right");
-			if(Input.GetButton("down" + playerNumber)) 
-			{
-				Debug.Log ("push down_right");
-				return Direction.down_right;
-			}
-			if(Input.GetButton("up" + playerNumber))
-			{
-				Debug.Log ("push right_up");
-				return Direction.up_right;
-			}
-			return Direction.right;
-		}
-		if(Input.GetButton("left" + playerNumber))
-		{
-			if(Input.GetButton("down" + playerNumber)) 
-			{
-				Debug.Log ("push left_down");
-				return Direction.down_left;
-			}
-			if(Input.GetButton("up" + playerNumber))
-			{
-				return Direction.up_left;
-			}
-			return Direction.left;
-		}
-		if(Input.GetButton("up" + playerNumber))
-		{
-			return Direction.up;
-		}
-		if(Input.GetButton("down" + playerNumber))
-		{
-			return Direction.down;
-		}
-		return playerControls.faceRight ? Direction.right : Direction.left;
-	}
-		
-		
-		
-
-}
+*/

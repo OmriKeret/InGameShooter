@@ -832,6 +832,14 @@ MonoBehaviour:
   PauseTillReload: 1.79999995
   direction: 3
   bulletSpeed: 1000
+  up_projectile_angles: 90
+  up_right_projectile_angles: 30
+  right_projectile_angles: 0
+  right_down_projectile_angles: 310
+  down_projectile_angles: 270
+  down_left_projectile_angles: 310
+  left_projectile_angles: 0
+  left_up_projectile_angles: 30
   playerCollider: {fileID: 1607484290}
   bulletCollider: {fileID: 5800000, guid: 497f641c5670cd041b69d4bb8b91f7c2, type: 2}
   up: 0
@@ -875,7 +883,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1746818392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0900000036, y: 2.98000002, z: 1.13999999}
+  m_LocalPosition: {x: .119999997, y: .819999993, z: 1.13999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1607484293}
