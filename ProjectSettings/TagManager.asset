@@ -20,16 +20,16 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: Player
+  User Layer 8: Player1
   User Layer 9: Enemy
   User Layer 10: Bullet (Player)
   User Layer 11: Bullet (Enemy)
   User Layer 12: DestoyArea
   User Layer 13: Scenery
   User Layer 14: Columns
-  User Layer 15: 
-  User Layer 16: 
-  User Layer 17: 
+  User Layer 15: Player2
+  User Layer 16: Player3
+  User Layer 17: Player4
   User Layer 18: 
   User Layer 19: 
   User Layer 20: 

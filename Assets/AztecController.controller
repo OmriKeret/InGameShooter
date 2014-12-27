@@ -1003,6 +1003,36 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110207906
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump11_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 15a3d571ebb096a4eb4ba35fd23a65e5, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1354, y: 622, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110208932
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump9_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: ede8cb084c53aa94b9e33e8c44ce9ba6, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1284, y: 492, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110212472
 State:
   m_ObjectHideFlags: 3
@@ -1063,6 +1093,36 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110226776
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: archer_jumpShoot_right
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: dade368fc886c914f9cde0618c0c385d, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1389, y: 687, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110231936
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump10_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 620ddc93f7ad7e04da03ef26f35f6750, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1319, y: 557, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110232210
 State:
   m_ObjectHideFlags: 3
@@ -1078,6 +1138,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110233790
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Idle_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 2cd5a853c5a4fc146b56097b8792d38a, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 899, y: -223, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110236466
 State:
   m_ObjectHideFlags: 3
@@ -1090,6 +1165,66 @@ State:
   - {fileID: 7400000, guid: 189e2f5521feb384babcaf5367eb7c26, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: 240, y: -36, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110248556
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump6_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 7c16444c46682c7489a7d1b7db42d5a0, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1179, y: 297, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110253924
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump1_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 7edba4c91337ea64c9668aa8958a3de1, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1004, y: -28, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110254788
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump5_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 1a0289998c2f4cb4a8713ce2f5575145, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1144, y: 232, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110256450
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump8_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 7d0e4cc22bcd7ca46871564191d623e5, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1249, y: 427, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1123,6 +1258,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110270236
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump3_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: c3306716a6e43df49a78627638b74aef, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1074, y: 102, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1102 &110273410
 State:
   m_ObjectHideFlags: 3
@@ -1150,6 +1300,51 @@ State:
   - {fileID: 7400000, guid: 9821b9d9ff4ae4649b6f91ea98548cdd, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: 408, y: -288, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110279376
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump4_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 15f8523bcdf1e93489286371a577d19d, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1109, y: 167, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110279580
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump7_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 3db2fe58bb2af2d4cb2079d73c016983, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1214, y: 362, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110279878
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: jump2_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: a399cf299b0c3a947987a775d3dab1c0, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 1039, y: 37, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1183,6 +1378,36 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110293530
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: archer_shoot_Right
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: f0ecb4ba6940e8b4891414bc798ec6ef, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 969, y: -93, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110293820
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: run_archer
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: bd06660a4e97351428f5c09c14c410c9, type: 2}
+  m_ParentStateMachine: {fileID: 110755282}
+  m_Position: {x: 934, y: -158, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1107 &110755282
 StateMachine:
   serializedVersion: 2
@@ -1205,6 +1430,21 @@ StateMachine:
   - {fileID: 110283846}
   - {fileID: 110277148}
   - {fileID: 110269762}
+  - {fileID: 110233790}
+  - {fileID: 110293820}
+  - {fileID: 110293530}
+  - {fileID: 110253924}
+  - {fileID: 110279878}
+  - {fileID: 110270236}
+  - {fileID: 110279376}
+  - {fileID: 110254788}
+  - {fileID: 110248556}
+  - {fileID: 110279580}
+  - {fileID: 110256450}
+  - {fileID: 110208932}
+  - {fileID: 110231936}
+  - {fileID: 110207906}
+  - {fileID: 110226776}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
