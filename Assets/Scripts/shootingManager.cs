@@ -8,17 +8,15 @@ public class shootingManager : MonoBehaviour {
 	public AudioClip reloadSound;
 	public AudioClip clickSound; // optional "no bullets" click sound
 	public int bullets = 5; // how many bullets you have
-	public int bulletsAfterReload = 5;
-	public float reloadTime = 0.2f; // reload time in seconPlayds
+	public int maxBullets = 5;
 	public Rigidbody2D Bullet;
 	public Transform ProjectileShootingPoint;
 	public bool reloading = false; //True while reloading.
 	public double ReloadTime;
-	public float fireRate = 6f;
+	//public float fireRate = 6f;
 	public float PauseTillReload = 1.8f;
 	public Direction direction = Direction.right;
 	public int bulletSpeed = 1000;
-	public static int ShotType = 1;
 
 
 	public int up_projectile_angles = 90;
@@ -70,7 +68,7 @@ public class shootingManager : MonoBehaviour {
 
 		if(Time.time - ReloadTime >= PauseTillReload)
 		{
-			if(bullets<bulletsAfterReload){
+			if(bullets < maxBullets){
 				bullets += 1;
 				ReloadTime = Time.time; 
 			}
@@ -107,15 +105,17 @@ public class shootingManager : MonoBehaviour {
 
 	IEnumerator fireByDirection (Direction x) {
 		var dirName =  getDirName(whichDirToAnimate(x));
+		bool faceright = playerControls.faceRight;
 		anim.SetTrigger("Shoot_" + dirName);
 
 		while (!shooting) {
 			yield return null;
 		}
 		Rigidbody2D BulletInstance;
+
 		BulletInstance = Instantiate(Bullet, ProjectileShootingPoint.position, Quaternion.identity)  as Rigidbody2D;
 		Physics2D.IgnoreCollision (BulletInstance.collider2D, transform.collider2D);
-		if(! playerControls.faceRight) 
+		if(! faceright) 
 		{
 			Flip (BulletInstance);
 		}
@@ -125,23 +125,23 @@ public class shootingManager : MonoBehaviour {
 		{
 
 			case Direction.up://Top
-				angles = playerControls.faceRight ? up_projectile_angles : -1 * up_projectile_angles;
+				angles = faceright ? up_projectile_angles : -1 * up_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (0,1) * bulletSpeed);
 				break;
 			case Direction.down://Downs
-				angles = playerControls.faceRight ? down_projectile_angles : -1 * down_projectile_angles;
+				angles = faceright ? down_projectile_angles : -1 * down_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (0,-1) * bulletSpeed);
 				break;
 			case Direction.right://Right
 				Debug.Log ("shoot right");
-				angles = playerControls.faceRight ? right_projectile_angles : -1 * right_projectile_angles;
+				angles = faceright ? right_projectile_angles : -1 * right_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (1,0) * bulletSpeed );
 				break;
 			case Direction.left: //Left
-				angles = playerControls.faceRight ? left_projectile_angles : -1 * left_projectile_angles;
+				angles = faceright ? left_projectile_angles : -1 * left_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (-1,0) * bulletSpeed);
 				break;
@@ -152,17 +152,17 @@ public class shootingManager : MonoBehaviour {
 				Debug.Log ("shoot up-righ");
 				break;
 			case Direction.up_left://Top-Left
-				angles = playerControls.faceRight ? left_up_projectile_angles : -1 * left_up_projectile_angles;
+				angles = faceright ? left_up_projectile_angles : -1 * left_up_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (-1,(float)0.5) * bulletSpeed);
 				break;
 			case Direction.down_right://Down-Right
-				angles = playerControls.faceRight ? right_down_projectile_angles : -1 * right_down_projectile_angles;
+				angles = faceright ? right_down_projectile_angles : -1 * right_down_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (1,-1) * bulletSpeed);
 				break;
 			case Direction.down_left://Down-Left
-				angles = playerControls.faceRight ? down_left_projectile_angles : -1 * down_left_projectile_angles;
+				angles = faceright ? down_left_projectile_angles : -1 * down_left_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (-1,-1) * bulletSpeed);
 				break;
