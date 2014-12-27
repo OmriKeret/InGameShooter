@@ -77,7 +77,14 @@
      <Compile Include="Assets\Example Games\Hat Trick - The Catch Game\Scripts\HT_SetParticleSortingLayer.cs" />
      <Compile Include="Assets\Example Games\Hat Trick - The Catch Game\Scripts\HT_StartGame.cs" />
      <Compile Include="Assets\Scripts\Direction.cs" />
+     <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuData.cs" />
+     <Compile Include="Assets\Scripts\Menu\UIManagerScrit.cs" />
      <Compile Include="Assets\Scripts\MultiClickInput.cs" />
+     <Compile Include="Assets\Scripts\Pick_Player\CharacterType.cs" />
+     <Compile Include="Assets\Scripts\Pick_Player\PickPlayerData.cs" />
+     <Compile Include="Assets\Scripts\Pick_Player\PickPlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Pick_Player\PlayerData.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
