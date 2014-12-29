@@ -77,6 +77,7 @@
      <Compile Include="Assets\Example Games\Hat Trick - The Catch Game\Scripts\HT_SetParticleSortingLayer.cs" />
      <Compile Include="Assets\Example Games\Hat Trick - The Catch Game\Scripts\HT_StartGame.cs" />
      <Compile Include="Assets\Scripts\Direction.cs" />
+     <Compile Include="Assets\Scripts\GuiFollowPlayer.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuData.cs" />
      <Compile Include="Assets\Scripts\Menu\UIManagerScrit.cs" />

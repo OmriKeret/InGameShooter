@@ -35,7 +35,7 @@ public class shootingManager : MonoBehaviour {
 	private float PlayerHeight;
 	private float PlayerWidth;
 	private float nextFire;
-
+	private PlayerManager playerManager;
 	private PlayerController playerControls;
 	//geting input - omri's addition
 	public bool up;
@@ -51,6 +51,7 @@ public class shootingManager : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		playerControls = GetComponent<PlayerController> ();
+		playerManager = GetComponent<PlayerManager> ();
 		ReloadTime = Time.time;	
 		PlayerWidth = playerCollider.bounds.size.x;
 		PlayerHeight = playerCollider.bounds.size.y;
@@ -114,6 +115,7 @@ public class shootingManager : MonoBehaviour {
 		BulletInstance = Instantiate(Bullet, ProjectileShootingPoint.position, Quaternion.identity)  as Rigidbody2D;
 		Vector2 V = new Vector2 (playerNumber, Time.time);//To make sure the right bullet gets this info...
 		BulletInstance.SendMessage ("SetBulletNumber", V);
+		BulletInstance.SendMessage ("setPlayerManager", playerManager); 
 		Physics2D.IgnoreCollision (BulletInstance.collider2D, transform.collider2D);
 		Physics2D.IgnoreCollision (BulletInstance.rigidbody2D.collider2D, transform.rigidbody2D.collider2D);
 		Physics2D.IgnoreCollision (BulletInstance.collider2D, ProjectileShootingPoint.collider2D);

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System;
 
 public class PlayerManager : MonoBehaviour {
 	
@@ -9,10 +11,10 @@ public class PlayerManager : MonoBehaviour {
 	public int lives = 1;
 	private Animator anim;
 	public AudioClip DeadSound;
-	
+	private int kills = 0;
 	public int playerNumber;
-	
-	
+	public Text playerKillingSpree;
+	public bool Dead;
 	void Awake()
 	{
 		shootingManager = gameObject.GetComponent<shootingManager>();
@@ -25,14 +27,13 @@ public class PlayerManager : MonoBehaviour {
 		Projectile bulletCollidedWith = collided.gameObject.GetComponent<Projectile> ();
 		if (collided.gameObject.tag == "Bullet") {
 			float bulletNumber = bulletCollidedWith.getBulletNumber ();
-			bool Dead = playerController.isDisabled;
+			Dead = playerController.isDisabled;
 			if(Dead) return;
-			if (lives > 0) {
+			if (lives > 1) {
 				lives -= 1;
 			}
 			else {
 
-				Debug.Log ("Bullet number is " + bulletNumber + " and player number is " + playerNumber);
 				if (playerNumber != bulletNumber)
 				{
 					audio.PlayOneShot(DeadSound);
@@ -43,6 +44,10 @@ public class PlayerManager : MonoBehaviour {
 				}	
 			}
 		}	
+	}
+	void Update() 
+	{
+
 	}
 
 
@@ -71,5 +76,15 @@ public class PlayerManager : MonoBehaviour {
 		shootingManager.Enable();
 		playerController.Enable();
 		anim.SetBool ("Revivng", false);
+	}
+	public void addKill() 
+	{
+		kills++;
+		playerKillingSpree.text = String.Format("X{0}",kills);
+	}
+
+	public bool isDead()
+	{
+		return Dead;
 	}
 }

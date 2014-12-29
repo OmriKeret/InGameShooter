@@ -1,18 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Projectile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="21" Column="11" />
-      <File FileName="Assets\Scripts\shootingManager.cs" Line="71" Column="2" />
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="30" Column="20" />
-      <File FileName="Assets\Scripts\ScoreManager.cs" Line="53" Column="1" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="33" Column="1" />
-      <File FileName="Assets\Scripts\Projectile.cs" Line="35" Column="31" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="57" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="217" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="219" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\Pick_Player\PickPlayerManager.cs" line="44" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="28" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="36" />

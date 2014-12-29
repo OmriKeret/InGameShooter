@@ -31,8 +31,10 @@ public class Projectile : MonoBehaviour {
 		}
 		if (collided.gameObject.tag == "Player") {
 			playerNumber = collided.gameObject.GetComponent<PlayerManager> ().getPlayerNumber();
-			if (playerNumber != bulletNumber) {
+			var isThisPlayerDead = collided.gameObject.GetComponent<PlayerManager> ().isDead();
+			if (playerNumber != bulletNumber && !isThisPlayerDead) {
 				anim.SetTrigger("hitPlayer");
+				playerManager.addKill();
 			}
 		}
 		if (collided.gameObject.tag == "Bullet") {

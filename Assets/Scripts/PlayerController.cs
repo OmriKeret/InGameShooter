@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
-
+	public Text playerKillingSpree;
 	public int playerNumber;
 	// DASH parameters
 	public float tapDelayBoost = 0.25f;
@@ -111,6 +111,9 @@ public class PlayerController : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+		theScale = playerKillingSpree.transform.localScale;
+		theScale.x *= -1;
+		playerKillingSpree.transform.localScale = theScale;
 	}
 
 	//calling dash if valid

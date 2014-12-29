@@ -62,7 +62,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Reviving
+  - m_Name: Revivng
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -451,7 +451,7 @@ Transition:
   - m_ConditionMode: 5
     m_ConditionEvent: 
     m_EventTreshold: 0
-    m_ExitTime: 0
+    m_ExitTime: 1
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -625,7 +625,7 @@ Transition:
     m_EventTreshold: 0
     m_ExitTime: .899999976
   - m_ConditionMode: 2
-    m_ConditionEvent: Reviving
+    m_ConditionEvent: Revivng
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -1522,14 +1522,14 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110234538}
-      second:
-      - {fileID: 110125980}
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110151594}
       - {fileID: 110185990}
+    data:
+      first: {fileID: 110234538}
+      second:
+      - {fileID: 110125980}
     data:
       first: {fileID: 110221702}
       second:
@@ -1602,6 +1602,9 @@ StateMachine:
       first: {fileID: 110269762}
       second:
       - {fileID: 110138726}
+    data:
+      first: {fileID: 110205138}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -468, y: -48, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
