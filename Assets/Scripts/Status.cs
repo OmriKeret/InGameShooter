@@ -2,6 +2,7 @@
 using System.Collections;
 
 public enum Status  {
+	NoKill = 0,
 	FirstKill = 1,
 	DoubleKill = 2,
 	TripleKill = 3,

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class LevelManager : MonoBehaviour {
 	PickPlayerData playersData;
@@ -11,8 +12,17 @@ public class LevelManager : MonoBehaviour {
 	public Transform player2Respawn;
 	public Transform player3Respawn;
 	public Transform player4Respawn;
-
+	public ScoreManager scoreManager;
 	public float timeToRespawn;
+
+	public AudioClip FirstKill;
+	public AudioClip SecondKill;
+	public AudioClip ThirdKill;
+	public AudioClip FourthKill;
+	public AudioClip FifthKill;
+	public AudioClip SixthKill;
+	public AudioClip SeventhKill;
+	public AudioClip Dead;
 	// Use this for initialization
 	void Start () {
 		//playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
@@ -32,12 +42,42 @@ public class LevelManager : MonoBehaviour {
 		if (Input.GetKey (KeyCode.C)) {
 			Revive(1);
 				}
-	}
-	public void Revive(int playerNum) 
-	{
-		StartCoroutine(ReviveLogic (playerNum));
+		if (Input.GetKey (KeyCode.X)) {
+			Revive(2);
+		}
 	}
 
+
+	public void Revive(int playerNum) 
+	{
+		resetPlayerSpree (playerNum);
+		StartCoroutine(ReviveLogic (playerNum));
+	}
+	public void gotKill(int playerNum)
+	{
+		addOneToSpree(playerNum);
+		var playerData = playersData.getPlayer (playerNum);
+		var killingSpree = getPlayerSpree (playerNum);
+		Status stats = getStatus(killingSpree);
+		scoreManager.addScoreToPlayer (playerNum,stats);
+	}
+
+	public void addOneToSpree(int playerNum)
+	{
+		var playerData = playersData.getPlayer (playerNum);
+		playerData.killingSpree ++;
+	}
+	public int getPlayerSpree(int playerNum)
+	{
+		var playerData = playersData.getPlayer (playerNum);
+		return playerData.killingSpree;
+	}
+
+	public void resetPlayerSpree(int playerNum)
+	{
+		var playerData = playersData.getPlayer (playerNum);
+		playerData.killingSpree = 0;
+	}
 	private IEnumerator ReviveLogic(int playerNum) 
 	{
 		var playerData = playersData.getPlayer (playerNum);
@@ -50,5 +90,42 @@ public class LevelManager : MonoBehaviour {
 		playerManager.setPlayerNum (playerNum);
 	}
 
-
+	private Status getStatus (int killingSpree) {
+		Status status;
+		switch (killingSpree) {
+		case (0):
+			status = Status.NoKill;
+			break;
+		case (1):
+			status = Status.FirstKill;
+			audio.PlayOneShot(FirstKill);
+			break;
+		case (2):
+			status = Status.DoubleKill;
+			audio.PlayOneShot(SecondKill);
+			break;
+		case (3):
+			status = Status.TripleKill;
+			audio.PlayOneShot(ThirdKill);
+			break;
+		case (4):
+			status = Status.QuadraKill;
+			audio.PlayOneShot(FourthKill);
+			break;
+		case (5):
+			status = Status.PentaKill;
+			audio.PlayOneShot(FifthKill);
+			break;
+		case (6):
+			status = Status.GodLike;
+			audio.PlayOneShot(SixthKill);
+			break;
+		default: 
+			status = Status.MegaMaster;
+			audio.PlayOneShot(SeventhKill);
+			break;
+		}
+		
+		return status;
+	}
 }

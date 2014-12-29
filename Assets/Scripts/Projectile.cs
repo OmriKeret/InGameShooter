@@ -2,28 +2,56 @@
 using System.Collections;
 
 public class Projectile : MonoBehaviour {
-	void OnTriggerEnter (Collider col)
-	{
-		Debug.Log ("hit!");
-		DestroyObject (gameObject);
-	}
-	void OnCollisionEnter2D(Collision2D collided) {
-			Debug.Log ("destory!");
-			DestroyObject (gameObject);
-
-	//	if (collided.gameObject.tag == "Player") {
-	//		DestroyObject (gameObject);
-	//	}
+	
+	private int playerNumber;
+	private float bulletNumber; 
+	private bool Bullet_locked = false;
+	private Animator anim;
+	private PlayerManager playerManager;
+	
+	public Transform Blood_Hit;
+	public Transform Broken_Arrow;
+	
+	public void SetBulletNumber (Vector2 V) {
+		if (V.y == Time.time && !Bullet_locked) {//Same time frame in which it was created.
+			bulletNumber = V.x;
+			Bullet_locked = true;
+		}
+		
 	}
 	void Start () {
+		
+		anim = GetComponent<Animator> ();
+
 
 	}
+	void OnCollisionEnter2D(Collision2D collided) {
+		if (collided.gameObject.tag != "Player") {
+			anim.SetTrigger("break");
+		}
+		if (collided.gameObject.tag == "Player") {
+			playerNumber = collided.gameObject.GetComponent<PlayerManager> ().getPlayerNumber();
+			if (playerNumber != bulletNumber) {
+				anim.SetTrigger("hitPlayer");
+			}
+		}
+		if (collided.gameObject.tag == "Bullet") {
+			anim.SetTrigger("break");
+
+		}
+		
+	}
+	public float getBulletNumber ()
+	{
+		return this.bulletNumber;
+	}
+	
 	//public float movementSpeed = 1;
 	// Update is called once per frame
 	void Update () {
 		leftScreen ();
 	}
-
+	
 	private void leftScreen(){
 		var dist = (transform.position - Camera.main.transform.position).z;
 		var leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0,0,dist)).x; 
@@ -45,8 +73,20 @@ public class Projectile : MonoBehaviour {
 			transform.position = new Vector3 (transform.position.x, topBorder, 0);
 		}
 	}
+
+	private void destoryObject()
+	{
+		DestroyObject (gameObject);
+	}
+
+	public void setPlayerManager(PlayerManager manager) 
+	{
+		playerManager = manager;
+	}
 }
-				
-	
-	
+
+
+
+
+
 

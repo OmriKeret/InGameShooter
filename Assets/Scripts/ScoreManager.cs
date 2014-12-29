@@ -7,8 +7,13 @@ public class ScoreManager : MonoBehaviour {
 	
 	
 	public int numberOfPlayers;
-	private List<Score> scores ;
+	private static List<Score> scores ;
 	private List<Text> scoreText;
+	
+	public static bool PlayerOneAlive = false;
+	public static bool PlayerTwoAlive = false;
+	public static bool PlayerThreeAlive = false;
+	public static bool PlayerFourAlive = false;
 	// Use this for initialization
 	void Start () {
 		scores = new List<Score>(); 
@@ -21,40 +26,38 @@ public class ScoreManager : MonoBehaviour {
 		foreach (Text scoretxt in texts) {
 			scoreText.Add(scoretxt);
 		}
-
+		
+	}
+	void Awake() {
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		showScoresForPlayers (numberOfPlayers);
 
-	/*	if(Input.GetButtonDown("AddScoreToPlayer1"))
-		{
-			addScoreToPlayer(1,Status.FirstKill);
-		}*/
 
-	/*	if(Input.GetButtonDown("AddScoreToPlayer2"))
-		{
-			addScoreToPlayer(2,Status.PentaKill);
-		}*/
 	}
-
+	
 	public void addScoreToPlayer(int playerNum, Status playerStats)
 	{
+		Debug.Log ("I got here, Status is " + playerStats +" and playerNumber is "+ playerNum);
 		scores [playerNum - 1].addScore (playerStats);
+		showScoresForPlayers (numberOfPlayers);
+		showScoresForPlayers (numberOfPlayers);
 	}
-
-
+	
+	
 	public void showScoresForPlayers(int playersNum) 
 	{
 		for(int i = 0; i < playersNum; i++) 
 		{
 			scoreText[i].text = String.Format("Player {0} Score: {1}",i + 1,  scores[i].getScore());
-	    }
-
+		}
+		
 		for (int i = playersNum; i < 4; i++ ) 
 		{
 			scoreText[i].text = null;
 		}
+
 	}
 }

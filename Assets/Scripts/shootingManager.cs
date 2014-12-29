@@ -13,11 +13,10 @@ public class shootingManager : MonoBehaviour {
 	public Transform ProjectileShootingPoint;
 	public bool reloading = false; //True while reloading.
 	public double ReloadTime;
-	//public float fireRate = 6f;
 	public float PauseTillReload = 1.8f;
 	public Direction direction = Direction.right;
 	public int bulletSpeed = 1000;
-
+	public bool isDisabled = true;
 
 	public int up_projectile_angles = 90;
 	public int up_right_projectile_angles = 30;
@@ -66,6 +65,11 @@ public class shootingManager : MonoBehaviour {
 
 	void FixedUpdate() {
 
+	
+
+	}
+
+	void Update () {
 		if(Time.time - ReloadTime >= PauseTillReload)
 		{
 			if(bullets < maxBullets){
@@ -74,13 +78,13 @@ public class shootingManager : MonoBehaviour {
 			}
 			
 		}
-		if (Input.GetButtonDown("fire" + playerNumber))//NEED THE SCRIPT NAME
+		if (Input.GetButtonDown("fire" + playerNumber) && !isDisabled)//NEED THE SCRIPT NAME
 		{
 			if (bullets > 0 && nextFire <= 0)//If there are bullets
 			{
 				nextFire = 1;
 				bullets -= 1;
-
+				
 				whichDirectionToShoot = whichDirToShoot();
 				StartCoroutine(fireByDirection (whichDirectionToShoot));
 			}
@@ -95,11 +99,6 @@ public class shootingManager : MonoBehaviour {
 			//nextFire -= Time.deltaTime * fireRate;
 			
 		}
-
-	}
-
-	void Update () {
-
 	}
 
 
@@ -112,9 +111,12 @@ public class shootingManager : MonoBehaviour {
 			yield return null;
 		}
 		Rigidbody2D BulletInstance;
-
 		BulletInstance = Instantiate(Bullet, ProjectileShootingPoint.position, Quaternion.identity)  as Rigidbody2D;
+		Vector2 V = new Vector2 (playerNumber, Time.time);//To make sure the right bullet gets this info...
+		BulletInstance.SendMessage ("SetBulletNumber", V);
 		Physics2D.IgnoreCollision (BulletInstance.collider2D, transform.collider2D);
+		Physics2D.IgnoreCollision (BulletInstance.rigidbody2D.collider2D, transform.rigidbody2D.collider2D);
+		Physics2D.IgnoreCollision (BulletInstance.collider2D, ProjectileShootingPoint.collider2D);
 		if(! faceright) 
 		{
 			Flip (BulletInstance);
@@ -226,7 +228,15 @@ public class shootingManager : MonoBehaviour {
 
 	}
 		
-
+	public void Disable()
+	{
+		isDisabled = true;
+	}
+	
+	public void Enable()
+	{
+		isDisabled = false;
+	}
 }
 
 

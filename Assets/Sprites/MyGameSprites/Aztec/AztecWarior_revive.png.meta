@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: a13e3a2a9d42dc84eb5c4d0e7b29c931
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AztecWarior_revive_0
+    21300002: AztecWarior_revive_1
+    21300004: AztecWarior_revive_2
+    21300006: AztecWarior_revive_3
+    21300008: AztecWarior_revive_4
+    21300010: AztecWarior_revive_5
+    21300012: AztecWarior_revive_6
+    21300014: AztecWarior_revive_7
+    21300016: AztecWarior_revive_8
+    21300018: AztecWarior_revive_9
+    21300020: AztecWarior_revive_10
+    21300022: AztecWarior_revive_11
+    21300024: AztecWarior_revive_12
+    21300026: AztecWarior_revive_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AztecWarior_revive_0
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 712
+        width: 189
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_1
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 681
+        width: 248
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 673
+        width: 262
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_3
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 670
+        width: 265
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 353
+        width: 269
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 351
+        width: 270
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_6
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 347
+        width: 273
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_7
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 344
+        width: 275
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_8
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 341
+        width: 278
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 24
+        width: 279
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_10
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 20
+        width: 280
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_11
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 15
+        width: 281
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_12
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 11
+        width: 282
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AztecWarior_revive_13
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 6
+        width: 284
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

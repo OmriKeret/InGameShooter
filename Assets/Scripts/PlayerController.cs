@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
 
 	//normal walking machanisem
 	public float maxSpeed = 10f;
-	private bool grounded = false;
+	public bool grounded = false;
 	public bool faceRight = true;
 
 	//jumping
@@ -25,11 +25,15 @@ public class PlayerController : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 500;
 	public float doubleJumpForce = 300;
-
+	public float wallJumpForce = 300;
+	//jump from wall
+	public CircleCollider2D circleCollider;
+	private bool canJumpFromWall;
+	public bool touchingWall;
 	//Animation
 	Animator anim;
 	
-
+	public bool isDisabled = true;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
@@ -37,6 +41,8 @@ public class PlayerController : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (isDisabled)
+						return;
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
@@ -44,26 +50,34 @@ public class PlayerController : MonoBehaviour {
 		{
 			moveHorizontal ();
 		}
-
+		canJumpFromWall = grounded ? true : canJumpFromWall;
 
 
 	}
 
 	void Update() 
 	{
-
+		if (isDisabled)
+			return;
+		checkTouchingWall ();
 
 		if (grounded && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting )
 		{
 			anim.SetBool("Ground", false);
-    			rigidbody2D.AddForce(new Vector2(0, jumpForce));
-				doubleJumpeAvilable = true;
-			//animation.SetBool("DoubleJump", false);
+			rigidbody2D.AddForce(new Vector2(0, jumpForce));
+			doubleJumpeAvilable = true;
+
+		} else if(touchingWall && canJumpFromWall && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting)
+		{
+			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
+			rigidbody2D.AddForce(new Vector2(0, wallJumpForce));
+			canJumpFromWall = false;
+		
+		
 		} else if (!grounded && doubleJumpeAvilable && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting) {
 			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
  			rigidbody2D.AddForce(new Vector2(0, doubleJumpForce));
 			doubleJumpeAvilable = false;
-			//animation.SetBool("DoubleJump", true);
 		}
 
 		if(MultiClickInput.HasDoubleClickedKey("left" + playerNumber, tapDelayBoost) )
@@ -74,9 +88,21 @@ public class PlayerController : MonoBehaviour {
 		{
 			Dash();
 		}
+
+
 		leftScreen ();
 	}
-
+	private void checkTouchingWall() {
+		touchingWall = false;
+		float yCircle = transform.localPosition.y + (circleCollider.center.y * transform.localScale.y);
+		Vector3 circlePosition = new Vector3(transform.localPosition.x , yCircle, transform.localPosition.z);
+		bool hitRight = Physics2D.Raycast(circlePosition, transform.right, circleCollider.radius * transform.localScale.y + transform.localScale.y,  1 << LayerMask.NameToLayer("Wall"));
+		bool hitLeft = Physics2D.Raycast(circlePosition, -transform.right, circleCollider.radius * transform.localScale.y + transform.localScale.y,  1 << LayerMask.NameToLayer("Wall"));
+		if(hitRight || hitLeft) {
+			touchingWall = true;
+		}
+		
+	}
 
 	//fliping  the char when moving left or right
 	void Flip()
@@ -89,7 +115,7 @@ public class PlayerController : MonoBehaviour {
 
 	//calling dash if valid
 	private void Dash() {
-		if (grounded  && canBoost )
+		if ( canBoost )
 		{
 			StartCoroutine(Boost()); //Start the Coroutine called "Boost", and feed it the time we want it to boost us
 		}
@@ -145,6 +171,16 @@ public class PlayerController : MonoBehaviour {
 		if (transform.position.y < buttomBorder) {
 			transform.position = new Vector3 (transform.position.x, topBorder, 0);
 		}
+	}
+
+	public void Disable()
+	{
+		isDisabled = true;
+	}
+
+	public void Enable()
+	{
+		isDisabled = false;
 	}
 
 }

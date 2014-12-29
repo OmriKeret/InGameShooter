@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: e73ebe09ea7309545aabfa0f9863adbb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ARCHER_JumpShoot_down_0
+    21300002: ARCHER_JumpShoot_down_1
+    21300004: ARCHER_JumpShoot_down_2
+    21300006: ARCHER_JumpShoot_down_3
+    21300008: ARCHER_JumpShoot_down_4
+    21300010: ARCHER_JumpShoot_down_5
+    21300012: ARCHER_JumpShoot_down_6
+    21300014: ARCHER_JumpShoot_down_7
+    21300016: ARCHER_JumpShoot_down_8
+    21300018: ARCHER_JumpShoot_down_9
+    21300020: ARCHER_JumpShoot_down_10
+    21300022: ARCHER_JumpShoot_down_11
+    21300024: ARCHER_JumpShoot_down_12
+    21300026: ARCHER_JumpShoot_down_13
+    21300028: ARCHER_JumpShoot_down_14
+    21300030: ARCHER_JumpShoot_down_15
+    21300032: ARCHER_JumpShoot_down_16
+    21300034: ARCHER_JumpShoot_down_17
+    21300036: ARCHER_JumpShoot_down_18
+    21300038: ARCHER_JumpShoot_down_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ARCHER_JumpShoot_down_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 157
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 10
+        width: 157
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 10
+        width: 157
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_3
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 8
+        width: 155
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_4
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 7
+        width: 153
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_5
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 5
+        width: 154
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_6
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 3
+        width: 156
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_7
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 5
+        width: 155
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_8
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 7
+        width: 154
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_9
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 7
+        width: 155
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_10
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 8
+        width: 153
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_11
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 10
+        width: 153
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_12
+      rect:
+        serializedVersion: 2
+        x: 2291
+        y: 12
+        width: 151
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_13
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 14
+        width: 152
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_14
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 14
+        width: 152
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_15
+      rect:
+        serializedVersion: 2
+        x: 2873
+        y: 12
+        width: 151
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_16
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 12
+        width: 140
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_17
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 12
+        width: 141
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_18
+      rect:
+        serializedVersion: 2
+        x: 3461
+        y: 12
+        width: 164
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ARCHER_JumpShoot_down_19
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 12
+        width: 157
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

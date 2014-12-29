@@ -52,6 +52,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &159290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459290}
+  - 58: {fileID: 5859290}
+  m_Layer: 8
+  m_Name: wallCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &444488
 Transform:
   m_ObjectHideFlags: 1
@@ -71,11 +87,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.94429183, y: .668980837, z: 0}
+  m_LocalPosition: {x: -2.41913128, y: 2.07288599, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444492}
   - {fileID: 444488}
+  - {fileID: 459290}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &444492
@@ -90,6 +107,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 444490}
   m_RootOrder: 0
+--- !u!4 &459290
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .109999999, y: .150000006, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 444490}
+  m_RootOrder: 2
 --- !u!50 &5044492
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -105,6 +134,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!58 &5859290
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159290}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 1.30999994
+  m_Center: {x: .0599999987, y: 0}
 --- !u!61 &6144492
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -155,6 +195,7 @@ MonoBehaviour:
   PauseTillReload: 1.5
   direction: 3
   bulletSpeed: 1000
+  isDisabled: 1
   up_projectile_angles: 90
   up_right_projectile_angles: 30
   right_projectile_angles: 0
@@ -186,6 +227,7 @@ MonoBehaviour:
   boostCooldown: 0
   boostDuration: .400000006
   maxSpeed: 11
+  grounded: 0
   faceRight: 1
   groundCheck: {fileID: 444492}
   whatIsGround:
@@ -193,6 +235,10 @@ MonoBehaviour:
     m_Bits: 4294967039
   jumpForce: 800
   doubleJumpForce: 800
+  wallJumpForce: 300
+  circleCollider: {fileID: 5859290}
+  touchingWall: 0
+  isDisabled: 1
 --- !u!114 &11487846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66241c5c3b0843f4ab68b0f2aba7b521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 1
+  DeadSound: {fileID: 0}
+  playerNumber: 0
 --- !u!212 &21244492
 SpriteRenderer:
   m_ObjectHideFlags: 1

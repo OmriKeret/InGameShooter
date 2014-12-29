@@ -12,7 +12,10 @@ public class PlayerData  {
 				set;
 		}
 
-
+	public int killingSpree {
+				get;
+				set;
+		}
 
 	// Use this for initialization
 	void Start () {
