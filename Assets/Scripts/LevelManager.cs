@@ -90,6 +90,17 @@ public class LevelManager : MonoBehaviour {
 		playerManager.setPlayerNum (playerNum);
 	}
 
+	public void endLevel()
+	{
+		int numPlayers = playersData.HowManyPlayers();
+		//get all the scores and update in the players data
+		for(int i = 1 ; i <= numPlayers ; i++ ) {
+			var playerData = playersData.getPlayer (i + 1);
+			playerData.score = scoreManager.getScoreForPlayer(i + 1);
+		}
+
+		//end of level logic come next
+	}
 	private Status getStatus (int killingSpree) {
 		Status status;
 		switch (killingSpree) {

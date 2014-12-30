@@ -45,7 +45,11 @@ public class ScoreManager : MonoBehaviour {
 		showScoresForPlayers (numberOfPlayers);
 		showScoresForPlayers (numberOfPlayers);
 	}
-	
+
+	public int getScoreForPlayer(int playerNum) 
+	{
+		return scores [playerNum - 1].getScore ();
+	}
 	
 	public void showScoresForPlayers(int playersNum) 
 	{
