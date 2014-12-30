@@ -35,6 +35,7 @@ public class LevelManager : MonoBehaviour {
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
 			Revive(i);
 		}
+		DontDestroyOnLoad(transform.gameObject);
 	}
 
 	void Update() {
@@ -99,7 +100,7 @@ public class LevelManager : MonoBehaviour {
 			playerData.score = scoreManager.getScoreForPlayer(i + 1);
 		}
 
-		//end of level logic come next
+		//end of level logic come next - when u load next scene u can get this object by using - GameObject.Find("LevelManager").GetComponent<LevelManager>()
 	}
 	private Status getStatus (int killingSpree) {
 		Status status;
