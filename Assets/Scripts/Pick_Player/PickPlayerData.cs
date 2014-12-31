@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PickPlayerData : MonoBehaviour {
 	PlayerData[] playersData;
+	PlayerData[] playerScores;
 	int playerPointer = 0;
 
 	void Awake() {
@@ -17,6 +18,8 @@ public class PickPlayerData : MonoBehaviour {
 		MenuData menuData = GameObject.Find("MenuData").GetComponent<MenuData>();
 		playersData = new PlayerData[menuData.howManyPlayers];
 
+		//playerScores = new PlayerData[menuData.howManyPlayers];
+
 	}
 	public int HowManyPlayers()
 	{
@@ -29,6 +32,6 @@ public class PickPlayerData : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }

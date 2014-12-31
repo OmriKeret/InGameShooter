@@ -23,6 +23,9 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip SixthKill;
 	public AudioClip SeventhKill;
 	public AudioClip Dead;
+	public AudioClip FinishMusic;
+	
+	public int Gametime = 90;
 	// Use this for initialization
 	void Start () {
 		//playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
@@ -41,12 +44,34 @@ public class LevelManager : MonoBehaviour {
 	void Update() {
 
 		if (Input.GetKey (KeyCode.C)) {
-			Revive(1);
-				}
-		if (Input.GetKey (KeyCode.X)) {
-			Revive(2);
+			Revive (1);
 		}
-	}
+		if (Input.GetKey (KeyCode.X)) {
+			Revive (2);
+		}
+		if (Time.time >= Gametime && (Application.loadedLevelName == "Dash scene")) {
+			Debug.Log ("Game is about to end.");
+			Application.LoadLevel ("EndGame");
+			this.StopAllCoroutines ();
+		}
+		if (Application.loadedLevelName == "EndGame") {
+			//Debug.Log ("GameObject.Find(\"LevelManager\").GetComponent<LevelManager>()");
+			int numPlayers = playersData.HowManyPlayers ();
+			Debug.Log ("there were " + numPlayers + " players");
+			//get all the scores and update in the players data
+			for(int i = 1 ; i <= numPlayers ; i++ ) {
+				var playerData = playersData.getPlayer (i);
+				playerData.score = scoreManager.getScoreForPlayer(i);
+				Debug.Log ("Player" + i + " score is: " + playerData.score);
+
+			}
+			//Play Some animation
+			audio.Play(FinishMusic);
+			Application.LoadLevel(0);
+						
+		}
+		}
+
 
 
 	public void Revive(int playerNum) 
@@ -96,11 +121,10 @@ public class LevelManager : MonoBehaviour {
 		int numPlayers = playersData.HowManyPlayers();
 		//get all the scores and update in the players data
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
-			var playerData = playersData.getPlayer (i + 1);
-			playerData.score = scoreManager.getScoreForPlayer(i + 1);
+			var playerData = playersData.getPlayer (i);
+			playerData.score = scoreManager.getScoreForPlayer(i);
 		}
 
-		//end of level logic come next - when u load next scene u can get this object by using - GameObject.Find("LevelManager").GetComponent<LevelManager>()
 	}
 	private Status getStatus (int killingSpree) {
 		Status status;
