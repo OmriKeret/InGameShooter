@@ -24,10 +24,15 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip SeventhKill;
 	public AudioClip Dead;
 	public AudioClip FinishMusic;
-	
+	public AudioClip FiveLastSec;
+
+	public float startTime = 0;
+	public float elapsedTime;
 	public int Gametime = 90;
+
 	// Use this for initialization
 	void Start () {
+
 		//playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
 	}
 
@@ -42,7 +47,7 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	void Update() {
-
+		//TODO: Remove these revive key codes.
 		if (Input.GetKey (KeyCode.C)) {
 			Revive (1);
 		}
@@ -50,26 +55,14 @@ public class LevelManager : MonoBehaviour {
 			Revive (2);
 		}
 		if (Time.time >= Gametime && (Application.loadedLevelName == "Dash scene")) {
-			Debug.Log ("Game is about to end.");
+			elapsedTime = Time.time - startTime;
 			Application.LoadLevel ("EndGame");
 			this.StopAllCoroutines ();
 		}
-		if (Application.loadedLevelName == "EndGame") {
-			//Debug.Log ("GameObject.Find(\"LevelManager\").GetComponent<LevelManager>()");
-			int numPlayers = playersData.HowManyPlayers ();
-			Debug.Log ("there were " + numPlayers + " players");
-			//get all the scores and update in the players data
-			for(int i = 1 ; i <= numPlayers ; i++ ) {
-				var playerData = playersData.getPlayer (i);
-				playerData.score = scoreManager.getScoreForPlayer(i);
-				Debug.Log ("Player" + i + " score is: " + playerData.score);
-
-			}
-			//Play Some animation
-			audio.Play(FinishMusic);
-			Application.LoadLevel(0);
-						
-		}
+		//HOW TO Make the game restart correctly? 
+		//if (Time.time >= Gametime && (Application.loadedLevelName == "EndGame")) {
+			//Gametime += (int)Time.time;
+				//}
 		}
 
 

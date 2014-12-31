@@ -74,6 +74,46 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &11730361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 11730363}
+  - 114: {fileID: 11730362}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &11730362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11730361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb85d558abddec4d9aa770f3fdb59be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TenLastSec: {fileID: 0}
+--- !u!4 &11730363
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11730361}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 19.2900009, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
 --- !u!1 &103510597
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +980,11 @@ MonoBehaviour:
   SixthKill: {fileID: 0}
   SeventhKill: {fileID: 0}
   Dead: {fileID: 0}
-  Gametime: 90
+  FinishMusic: {fileID: 0}
+  FiveLastSec: {fileID: 0}
+  startTime: 0
+  elapsedTime: 0
+  Gametime: 14
 --- !u!1 &1333057615
 GameObject:
   m_ObjectHideFlags: 0

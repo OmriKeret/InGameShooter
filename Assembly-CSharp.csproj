@@ -96,6 +96,7 @@
      <Compile Include="Assets\Scripts\Status.cs" />
      <Compile Include="Assets\Scripts\UIInGameManager.cs" />
      <Compile Include="Assets\Scripts\shootingManager.cs" />
+     <Compile Include="Assets\Timer.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
