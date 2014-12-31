@@ -143,31 +143,31 @@ public class LevelManager : MonoBehaviour {
 			break;
 		case (1):
 			status = Status.FirstKill;
-			audio.PlayOneShot(FirstKill);
+	//		audio.PlayOneShot(FirstKill);
 			break;
 		case (2):
 			status = Status.DoubleKill;
-			audio.PlayOneShot(SecondKill);
+	//		audio.PlayOneShot(SecondKill);
 			break;
 		case (3):
 			status = Status.TripleKill;
-			audio.PlayOneShot(ThirdKill);
+	//		audio.PlayOneShot(ThirdKill);
 			break;
 		case (4):
 			status = Status.QuadraKill;
-			audio.PlayOneShot(FourthKill);
+	//		audio.PlayOneShot(FourthKill);
 			break;
 		case (5):
 			status = Status.PentaKill;
-			audio.PlayOneShot(FifthKill);
+		//	audio.PlayOneShot(FifthKill);
 			break;
 		case (6):
 			status = Status.GodLike;
-			audio.PlayOneShot(SixthKill);
+		//	audio.PlayOneShot(SixthKill);
 			break;
 		default: 
 			status = Status.MegaMaster;
-			audio.PlayOneShot(SeventhKill);
+		//	audio.PlayOneShot(SeventhKill);
 			break;
 		}
 		
