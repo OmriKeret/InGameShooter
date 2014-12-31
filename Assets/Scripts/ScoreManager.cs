@@ -29,7 +29,8 @@ public class ScoreManager : MonoBehaviour {
 		
 	}
 	void Awake() {
-	
+		this.Start ();
+		DontDestroyOnLoad(transform.gameObject);
 	}
 	
 	// Update is called once per frame
