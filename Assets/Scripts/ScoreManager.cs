@@ -10,10 +10,10 @@ public class ScoreManager : MonoBehaviour {
 	private static List<Score> scores ;
 	private List<Text> scoreText;
 	
-	public static bool PlayerOneAlive = false;
-	public static bool PlayerTwoAlive = false;
-	public static bool PlayerThreeAlive = false;
-	public static bool PlayerFourAlive = false;
+	public bool PlayerOneAlive = false;
+	public bool PlayerTwoAlive = false;
+	public bool PlayerThreeAlive = false;
+	public bool PlayerFourAlive = false;
 	// Use this for initialization
 	void Start () {
 		scores = new List<Score>(); 

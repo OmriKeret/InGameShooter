@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 372fde1fcba3a884b9615fe0fbadaa80
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HipstArcher_STAND_SHOOT_UP_0
+    21300002: HipstArcher_STAND_SHOOT_UP_1
+    21300004: HipstArcher_STAND_SHOOT_UP_2
+    21300006: HipstArcher_STAND_SHOOT_UP_3
+    21300008: HipstArcher_STAND_SHOOT_UP_4
+    21300010: HipstArcher_STAND_SHOOT_UP_5
+    21300012: HipstArcher_STAND_SHOOT_UP_6
+    21300014: HipstArcher_STAND_SHOOT_UP_7
+    21300016: HipstArcher_STAND_SHOOT_UP_8
+    21300018: HipstArcher_STAND_SHOOT_UP_9
+    21300020: HipstArcher_STAND_SHOOT_UP_10
+    21300022: HipstArcher_STAND_SHOOT_UP_11
+    21300024: HipstArcher_STAND_SHOOT_UP_12
+    21300026: HipstArcher_STAND_SHOOT_UP_13
+    21300028: HipstArcher_STAND_SHOOT_UP_14
+    21300030: HipstArcher_STAND_SHOOT_UP_15
+    21300032: HipstArcher_STAND_SHOOT_UP_16
+    21300034: HipstArcher_STAND_SHOOT_UP_17
+    21300036: HipstArcher_STAND_SHOOT_UP_18
+    21300038: HipstArcher_STAND_SHOOT_UP_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HipstArcher_STAND_SHOOT_UP_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1182
+        width: 101
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1182
+        width: 103
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1182
+        width: 116
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_3
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1181
+        width: 123
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_4
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1182
+        width: 112
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_5
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1181
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_6
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1182
+        width: 104
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_7
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1182
+        width: 103
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_8
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1182
+        width: 103
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_9
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 1182
+        width: 102
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_10
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1182
+        width: 102
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_11
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1182
+        width: 102
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_12
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1182
+        width: 102
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 954
+        width: 104
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_14
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 954
+        width: 111
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_15
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 954
+        width: 112
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_16
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 954
+        width: 106
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_17
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 954
+        width: 97
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_18
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 954
+        width: 95
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HipstArcher_STAND_SHOOT_UP_19
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 954
+        width: 101
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

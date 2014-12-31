@@ -84,6 +84,7 @@
      <Compile Include="Assets\Scripts\Menu\MenuData.cs" />
      <Compile Include="Assets\Scripts\Menu\UIManagerScrit.cs" />
      <Compile Include="Assets\Scripts\MultiClickInput.cs" />
+     <Compile Include="Assets\Scripts\PauseGame.cs" />
      <Compile Include="Assets\Scripts\Pick_Player\CharacterType.cs" />
      <Compile Include="Assets\Scripts\Pick_Player\PickPlayerData.cs" />
      <Compile Include="Assets\Scripts\Pick_Player\PickPlayerManager.cs" />

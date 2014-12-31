@@ -4,6 +4,7 @@ using System.Collections;
 public class UIInGameManager : MonoBehaviour {
 	public Animator MenuDialog;
 	private bool menuOpen = false;
+	public LevelManager levelManager;
 	// Use this for initialization
 	void Start () {
 	
@@ -17,6 +18,7 @@ public class UIInGameManager : MonoBehaviour {
 				CloseMenu();
 				menuOpen = false;
 			} else {
+
 				OpenMenu();
 				menuOpen = true;
 			}
@@ -31,15 +33,26 @@ public class UIInGameManager : MonoBehaviour {
 
 	}
 
+
+
 	public void CloseMenu()
 	{
 		MenuDialog.SetBool("isHidden", true);
-	//	Time.timeScale = 1F;
+		Time.timeScale = 1F;
 	}
 
 
 	public void ExitGame()
 	{
-		Application.Quit();
+		var pickData = GameObject.Find ("LevelManager");
+		Destroy (pickData);
+		Application.LoadLevel("MainMenu");
+	}
+
+	public void restart()
+	{
+		levelManager.resetData ();
+		Time.timeScale = 1F;
+		Application.LoadLevel("Dash Scene");
 	}
 }

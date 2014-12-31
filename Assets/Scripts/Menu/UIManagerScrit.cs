@@ -38,6 +38,7 @@ public class UIManagerScrit : MonoBehaviour {
 
 	public void OpenStartGame()
 	{
+		Application.LoadLevel("PickPlayerScene");
 		startButton.enabled = true;
 		settingsButton.enabled = true;
 		startButton.SetBool("isHidden", true);

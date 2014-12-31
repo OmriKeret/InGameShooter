@@ -29,6 +29,7 @@ public class Timer : MonoBehaviour {
 		{
 			elapsedTime = (int)(Time.time - startTime);
 			passedTime = (gameTime - Time.time + startTime);
+			Debug.Log ("Gametime is: " + gameTime + " and elapsed time is: " + elapsedTime);
 			if (gameTime - elapsedTime < 10) {
 				if(!soundplaying) {	audio.PlayOneShot(TenLastSec); Debug.Log ("here"); soundplaying = true;}
 
@@ -42,7 +43,7 @@ public class Timer : MonoBehaviour {
 	void OnGUI(){
 		int textNum = (int)(gameTime - elapsedTime);
 		string text = textNum.ToString();
-		GUI.Label(new Rect(300, 100, 100, 20), 
+		GUI.Label(new Rect(380, 50, 100, 20), 
 				(text));
 	} 
 }

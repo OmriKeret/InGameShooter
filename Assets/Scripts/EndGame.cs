@@ -9,7 +9,7 @@ public class EndGame : MonoBehaviour {
 	private string text = "";
 	public AudioClip FinishMusic;
 
-	private bool gameover = false;
+	bool gameover = false;
 
 	void Awake() 
 	{
@@ -26,7 +26,8 @@ public class EndGame : MonoBehaviour {
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
 			var playerData = playersData.getPlayer (i);
 			playerData.score = scoreManager.getScoreForPlayer(i);
-			text += "Player" + i + " score is: " + playerData.score;
+			text += "Player " + i + " score is: " + playerData.score + " !";
+			text += "\n";
 			Debug.Log ("Player" + i + " score is: " + playerData.score);
 			
 		}
@@ -49,7 +50,7 @@ public class EndGame : MonoBehaviour {
 	void OnTriggerExit(){ text = "";}
 	
 	void OnGUI(){
-		GUI.Label(new Rect(600, 200, 200, 40), 
+		GUI.Label(new Rect(400, 50, 200, 40), 
 		          (text));
 }
 }
