@@ -73,9 +73,9 @@ public class PlayerManager : MonoBehaviour {
 	}
 
 	private void EnablePlayer() {
+		anim.SetBool ("Revivng", false);
 		shootingManager.Enable();
 		playerController.Enable();
-		anim.SetBool ("Revivng", false);
 	}
 	public void addKill() 
 	{

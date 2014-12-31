@@ -4,7 +4,7 @@ using System.Collections;
 public class MenuData : MonoBehaviour {
 	public int howManyPlayers;
 	void Awake() {
-		DontDestroyOnLoad(transform.gameObject);
+		//DontDestroyOnLoad(transform.gameObject);
 	}
 	// Use this for initialization
 	void Start () {

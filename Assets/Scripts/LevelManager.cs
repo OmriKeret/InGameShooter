@@ -66,13 +66,22 @@ public class LevelManager : MonoBehaviour {
 
 			}
 			//Play Some animation
-			audio.Play(FinishMusic);
+		//	audio.Play(FinishMusic);
 			Application.LoadLevel(0);
 						
 		}
+	}
+
+	public void resetData()
+	{
+		int numPlayers = playersData.HowManyPlayers();
+		//get all the scores and update in the players data
+		for(int i = 1 ; i <= numPlayers ; i++ ) {
+			var playerData = playersData.getPlayer (i);
+			playerData.score = 0;
+			playerData.killingSpree = 0;
 		}
-
-
+	}
 
 	public void Revive(int playerNum) 
 	{

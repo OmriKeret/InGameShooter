@@ -1,17 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UIInGameManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="103" Column="58" />
-      <File FileName="Assets\Scripts\Pick_Player\PickPlayerData.cs" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="69" Column="2" />
+      <File FileName="Assets\Scripts\UIInGameManager.cs" Line="31" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="219" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\Pick_Player\PickPlayerManager.cs" line="44" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="28" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="36" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="45" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\GuiFollowPlayer.cs" line="15" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

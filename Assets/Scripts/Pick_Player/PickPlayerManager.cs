@@ -15,7 +15,7 @@ public class PickPlayerManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		menuData = GameObject.Find("MenuData").GetComponent<MenuData>();
+	//	menuData = GameObject.Find("MenuData").GetComponent<MenuData>();
 		playerNumTurn = 1;
 	}
 	
@@ -24,9 +24,8 @@ public class PickPlayerManager : MonoBehaviour {
 		aztec.interactable = false;
 		playerData.insertPlayer (CharacterType.aztec);
 		playerNumTurn ++;
-		if (playerNumTurn > menuData.howManyPlayers) {
-			//move to next scene
-		}
+		if (playerNumTurn == 5)
+			return;
 		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
 	}
 	public void PlayerPickArcher()
@@ -34,9 +33,8 @@ public class PickPlayerManager : MonoBehaviour {
 		archer.interactable = false;
 		playerData.insertPlayer (CharacterType.archer);
 		playerNumTurn ++;
-		if (playerNumTurn > menuData.howManyPlayers) {
-			Application.LoadLevel("Dash scene");
-		}
+		if (playerNumTurn == 5)
+			return;
 		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn);
 	}
 	public void PlayerPickMage()
@@ -44,9 +42,8 @@ public class PickPlayerManager : MonoBehaviour {
 		mage.interactable = false;
 		playerData.insertPlayer (CharacterType.mage);
 		playerNumTurn ++;
-		if (playerNumTurn > menuData.howManyPlayers) {
-			Application.LoadLevel("Dash scene");
-		}
+		if (playerNumTurn == 5)
+			return;
 		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn);
 	}
 	public void PlayerPickTheif()
@@ -54,9 +51,20 @@ public class PickPlayerManager : MonoBehaviour {
 		theif.interactable = false;
 		playerData.insertPlayer (CharacterType.thief);
 		playerNumTurn ++;
-		if (playerNumTurn > menuData.howManyPlayers) {
-			Application.LoadLevel("Dash scene");
-		}
+		if (playerNumTurn == 5)
+						return;
 		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
+	}
+
+	public void start()
+	{
+		Application.LoadLevel("Dash scene");
+	}
+
+	public void goBack()
+	{
+		var pickData = GameObject.Find ("PickPlayerData");
+		Destroy (pickData);
+		Application.LoadLevel("MainMenu");
 	}
 }
