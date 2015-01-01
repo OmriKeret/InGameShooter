@@ -2218,6 +2218,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -2634,7 +2635,9 @@ MonoBehaviour:
   SeventhKill: {fileID: 0}
   Dead: {fileID: 0}
   FinishMusic: {fileID: 0}
-  Gametime: 90
+  FiveLastSec: {fileID: 0}
+  Game_Time: 90
+  gameStarted: 0
 --- !u!1 &1434186536
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3681,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:

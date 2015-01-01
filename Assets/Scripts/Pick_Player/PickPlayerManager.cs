@@ -5,7 +5,7 @@ using System;
 public class PickPlayerManager : MonoBehaviour {
 
 	MenuData menuData;
-	int playerNumTurn;
+	public static int playerNumTurn;
 	public Text title;
 	public Button aztec;
 	public Button archer;
@@ -18,7 +18,6 @@ public class PickPlayerManager : MonoBehaviour {
 	//	menuData = GameObject.Find("MenuData").GetComponent<MenuData>();
 		playerNumTurn = 1;
 	}
-	
 	public void PlayerPickAztec()
 	{
 		aztec.interactable = false;

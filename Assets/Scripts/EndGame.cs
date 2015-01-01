@@ -9,7 +9,8 @@ public class EndGame : MonoBehaviour {
 	private string text = "";
 	public AudioClip FinishMusic;
 
-	bool gameover = false;
+	public static bool gameover = false;
+	public static int winner = 0;
 
 	void Awake() 
 	{
@@ -26,15 +27,36 @@ public class EndGame : MonoBehaviour {
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
 			var playerData = playersData.getPlayer (i);
 			playerData.score = scoreManager.getScoreForPlayer(i);
+			if (playerData.score >= winner) { winner = i;}
 			text += "Player " + i + " score is: " + playerData.score + " !";
 			text += "\n";
-			Debug.Log ("Player" + i + " score is: " + playerData.score);
+			//Debug.Log ("Player" + i + " score is: " + playerData.score);
 			
 		}
+		//Find highest score for displaying the right screen
+		for (int i = 1; i <= numPlayers; i++) {
+			//if (scoreManager.getScoreForPlayer(i) > 
+				}
 		//Play Some animation
-		audio.PlayOneShot(FinishMusic);
-		DestroyObject (GameObject.Find ("ScoreManager"));
-		gameover = true;
+		switch (winner) {
+		case (1):
+			stop ();
+			//Application.LoadLevel ("Winner_is_1");
+			break;
+		case (2):
+			stop ();
+			//Application.LoadLevel ("Winner_is_2");
+			break;
+		case(3):
+			stop ();
+			//Application.LoadLevel ("Winner_is_3");
+			break;
+		case(4):
+			stop ();
+			//Application.LoadLevel ("Winner_is_4");
+			break;
+				}
+
 	}
 			
 	
@@ -42,15 +64,20 @@ public class EndGame : MonoBehaviour {
 	void Update () {
 		if (Input.anyKey) {
 			gameover = false;
-			//Application.LoadLevel (0);
+			Application.LoadLevel (0);
 		}
 	}
+	void stop() {
+		audio.PlayOneShot(FinishMusic);
+		DestroyObject (GameObject.Find ("ScoreManager"));
+		gameover = true;
+		}
 	void OnTriggerEnter(){ text = "";}
 	
 	void OnTriggerExit(){ text = "";}
 	
 	void OnGUI(){
-		GUI.Label(new Rect(400, 50, 200, 40), 
-		          (text));
+		GUI.Label(new Rect(400, 50, 200, 100), 
+		          (text + " and the winner is: " + winner.ToString()));
 }
 }
