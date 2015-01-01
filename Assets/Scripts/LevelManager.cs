@@ -28,7 +28,9 @@ public class LevelManager : MonoBehaviour {
 	
 	private float startTime = 0;
 	private float elapsedTime;
-	public int Gametime;
+	public static int Gametime;
+	public int Game_Time;
+	public bool gameStarted = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -47,9 +49,13 @@ public class LevelManager : MonoBehaviour {
 	
 	void Update() {
 		//TODO: Remove these revive key codes.
-		if (Input.GetKey (KeyCode.C)) {	Revive (1);}
-		if (Input.GetKey (KeyCode.X)) {	Revive (2);}
-		if (Time.time >= Gametime && (Application.loadedLevelName == "Dash scene")) {
+		//if (Input.GetKey (KeyCode.C)) {	Revive (1);}
+		//if (Input.GetKey (KeyCode.X)) {	Revive (2);}
+		if (Application.loadedLevelName == "Dash scene") {
+			gameStarted = true;
+			Gametime = Game_Time;
+				}
+		if (Time.time >= Gametime && (Application.loadedLevelName == "Dash scene") && gameStarted) {
 			elapsedTime = Time.time - startTime;
 			Application.LoadLevel ("EndGame");
 			this.StopAllCoroutines ();

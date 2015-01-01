@@ -42,7 +42,7 @@ public class EndGame : MonoBehaviour {
 	void Update () {
 		if (Input.anyKey) {
 			gameover = false;
-			Application.LoadLevel (0);
+			//Application.LoadLevel (0);
 		}
 	}
 	void OnTriggerEnter(){ text = "";}

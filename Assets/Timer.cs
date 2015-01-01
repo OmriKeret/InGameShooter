@@ -18,19 +18,19 @@ public class Timer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Timer is called by: " + gameObject.name);
-		gameTime = GameObject.Find("LevelManager").GetComponent<LevelManager>().Gametime;
+		gameTime = GameObject.Find("LevelManager").GetComponent<LevelManager>().Game_Time;
 		soundplaying = false;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (startTime >= 0)
+		if (startTime >= 0 && GameObject.Find("LevelManager").GetComponent<LevelManager>().gameStarted)
 		{
 			elapsedTime = (int)(Time.time - startTime);
 			passedTime = (gameTime - Time.time + startTime);
 			Debug.Log ("Gametime is: " + gameTime + " and elapsed time is: " + elapsedTime);
-			if (gameTime - elapsedTime < 10) {
+			if ((int)(gameTime - elapsedTime) < 10) {
 				if(!soundplaying) {	audio.PlayOneShot(TenLastSec); Debug.Log ("here"); soundplaying = true;}
 
 			}
