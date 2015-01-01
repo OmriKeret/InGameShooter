@@ -1,16 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="69" Column="2" />
-      <File FileName="Assets\Scripts\UIInGameManager.cs" Line="13" Column="36" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="29" Column="1" />
+      <File FileName="Assets\Scripts\UIInGameManager.cs" Line="25" Column="4" />
       <File FileName="Assets\Scripts\PauseGame.cs" Line="18" Column="3" />
       <File FileName="Assets\Scripts\ScoreManager.cs" Line="12" Column="2" />
       <File FileName="Assets\Scripts\Status.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\shootingManager.cs" Line="28" Column="44" />
       <File FileName="Assets\Scripts\Pick_Player\PickPlayerManager.cs" Line="66" Column="1" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="76" Column="3" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="150" Column="1" />
       <File FileName="Assets\Scripts\PlayerController.cs" Line="142" Column="52" />
+      <File FileName="Assets\Scripts\GuiFollowPlayer.cs" Line="17" Column="6" />
+      <File FileName="Assets\Scripts\Projectile.cs" Line="17" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -18,7 +20,9 @@
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="219" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="30" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="40" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\GuiFollowPlayer.cs" line="15" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="29" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="37" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="41" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
