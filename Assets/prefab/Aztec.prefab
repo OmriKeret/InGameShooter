@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.71606016, y: 6.29809904, z: 0}
+  m_LocalPosition: {x: -9.96830559, y: -4.05084944, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444492}
@@ -191,8 +191,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 25c1bf9e4eca8f94284729d26584a500, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: 1.73218656, y: 2.52462649}
-  m_Center: {x: .170735836, y: .0323256254}
+  m_Size: {x: 1.34816802, y: 2.52462649}
+  m_Center: {x: .129590988, y: .0323257446}
 --- !u!95 &9544492
 Animator:
   serializedVersion: 3
@@ -336,7 +336,7 @@ MonoBehaviour:
   playerNumber: 1
   tapDelayBoost: .25
   boostForce: 1500
-  boostCooldown: 0
+  boostCooldown: .300000012
   boostDuration: .400000006
   maxSpeed: 11
   grounded: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
     m_Bits: 4294967039
   jumpForce: 800
   doubleJumpForce: 800
-  wallJumpForce: 300
+  wallJumpForce: 600
   circleCollider: {fileID: 5859290}
   touchingWall: 0
   isDisabled: 1

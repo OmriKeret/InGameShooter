@@ -80,11 +80,11 @@ public class PlayerController : MonoBehaviour {
 			doubleJumpeAvilable = false;
 		}
 
-		if(MultiClickInput.HasDoubleClickedKey("left" + playerNumber, tapDelayBoost) )
+		if(MultiClickInput.HasDoubleClickedKey("left" + playerNumber, tapDelayBoost) ||  Input.GetButtonDown ("Dash" + playerNumber) )
 		{
 			Dash();
 		}
-		if(MultiClickInput.HasDoubleClickedKey("right" + playerNumber, tapDelayBoost)  )
+		if(MultiClickInput.HasDoubleClickedKey("right" + playerNumber, tapDelayBoost) || Input.GetButtonDown ("Dash" + playerNumber)  )
 		{
 			Dash();
 		}
