@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb5583658d8146429e1241dbba10e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
+  playerNumber: 3
   shotSound: {fileID: 0}
   reloadSound: {fileID: 0}
   clickSound: {fileID: 0}
