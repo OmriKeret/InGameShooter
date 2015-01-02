@@ -4,8 +4,8 @@ using System.Collections;
 public class Next : MonoBehaviour {
 
 	public int MovieTime;
-	public AudioClip EndOfMovie;
-	public AudioClip StartOfMovie;
+	//public AudioClip EndOfMovie;
+	//public AudioClip StartOfMovie;
 
 	public Animator animation;
 
@@ -17,6 +17,7 @@ public class Next : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if ((Input.anyKey) || (Time.time >= MovieTime)) {
+			Debug.Log ("Movie ends now.");
 			Stop ();
 		}
 		//if (Time.time >= MovieTime) {
@@ -26,8 +27,10 @@ public class Next : MonoBehaviour {
 	}
 	private void Stop() {
 		//audio.PlayOneShot (EndOfMovie);
-		animation.StopPlayback();
-		//audio.Stop ();
+		//animation.StopPlayback();
+		animation.StopPlayback ();
+		//AnimatorOverrideController.Destroy ();
+		audio.Stop ();
 		this.StopAllCoroutines();
 		Application.LoadLevel ("MainMenu");
 	}

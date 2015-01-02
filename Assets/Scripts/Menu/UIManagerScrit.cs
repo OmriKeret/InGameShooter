@@ -11,13 +11,14 @@ public class UIManagerScrit : MonoBehaviour {
 	public Animator settingsButton;
 	public Animator dialog;
 	public Animator howManyPlayersDialog;
+	
 	// Use this for initialization
 	void Start () {
 		/*var buttons = GameObject.FindObjectsOfType<Button> ();
 		foreach (Button btn in buttons) {
 			Buttons.Add(btn);
-		}
-		*/
+		}*/
+
 
 	}
 	public void OpenSettings()

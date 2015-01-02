@@ -23,18 +23,15 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip SixthKill;
 	public AudioClip SeventhKill;
 	public AudioClip Dead;
-	public AudioClip FinishMusic;
-	public AudioClip FiveLastSec;
 	
-	private float startTime = 0;
-	private float elapsedTime;
-	public static int Gametime;
-	public int Game_Time;
-	public bool gameStarted = false;
+	//private float startTime = 0;
+	//private float elapsedTime;
+	//public static int Gametime;
+	//public int Game_Time;
+	//public bool gameStarted = false;
 	
 	// Use this for initialization
 	void Start () {
-		
 		playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
 	}
 	
@@ -48,18 +45,13 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	void Update() {
-		//TODO: Remove these revive key codes.
-		//if (Input.GetKey (KeyCode.C)) {	Revive (1);}
-		//if (Input.GetKey (KeyCode.X)) {	Revive (2);}
 		if (Application.loadedLevelName == "Dash scene") {
-			gameStarted = true;
-			Gametime = Game_Time;
+			audio.Play ();
+			}
+		if (Application.loadedLevelName == "EndGame") {
+			audio.Stop ();
 				}
-		if (Time.time >= Gametime && (Application.loadedLevelName == "Dash scene") && gameStarted) {
-			elapsedTime = Time.time - startTime;
-			Application.LoadLevel ("EndGame");
-			this.StopAllCoroutines ();
-		}
+
 		//HOW TO Make the game restart correctly? 
 		//if (Time.time >= Gametime && (Application.loadedLevelName == "EndGame")) {
 		//Gametime += (int)Time.time;
