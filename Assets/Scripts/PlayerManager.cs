@@ -36,7 +36,7 @@ public class PlayerManager : MonoBehaviour {
 
 				if (playerNumber != bulletNumber)
 				{
-		//			audio.PlayOneShot(DeadSound);
+					audio.PlayOneShot(DeadSound);
 					levelManager.gotKill((int)bulletNumber);
 					levelManager.Revive(playerNumber);
 					anim.SetTrigger("Die");

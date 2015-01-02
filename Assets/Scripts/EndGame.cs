@@ -6,7 +6,7 @@ public class EndGame : MonoBehaviour {
 	LevelManager levelManager;
 	PickPlayerData playersData;
 	ScoreManager scoreManager;
-	private string text = "";
+	private string text;
 	//public AudioClip FinishMusic;
 
 	//public static bool gameover = false;
@@ -23,7 +23,6 @@ public class EndGame : MonoBehaviour {
 	void Start () {
 		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 		int numPlayers = playersData.HowManyPlayers ();
-		//Debug.Log ("there were " + numPlayers + " players");
 		//get all the scores and update in the players data
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
 			var playerData = playersData.getPlayer (i);
@@ -31,8 +30,7 @@ public class EndGame : MonoBehaviour {
 			if (playerData.score >= winner) { winner = i;}
 			text += "Player " + i + " score is: " + playerData.score + " !";
 			text += "\n";
-			//Debug.Log ("Player" + i + " score is: " + playerData.score);
-			
+
 		}
 		switch (winner) {
 		case (1):
@@ -90,6 +88,6 @@ public class EndGame : MonoBehaviour {
 	
 	void OnGUI(){
 		GUI.Label(new Rect(400, 50, 200, 100), 
-		          (text + " and the winner is: " + winner.ToString()));
+		         (text + " and the winner is: " + winner.ToString()));
 }
 }

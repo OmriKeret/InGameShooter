@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip FifthKill;
 	public AudioClip SixthKill;
 	public AudioClip SeventhKill;
-	public AudioClip Dead;
+	//public AudioClip Dead;
 	
 	//private float startTime = 0;
 	//private float elapsedTime;
@@ -113,17 +113,6 @@ public class LevelManager : MonoBehaviour {
 		var playerManager = PlayerInstance.GetComponent<PlayerManager> ();
 		playerManager.setPlayerNum (playerNum);
 	}
-	
-	//public void endLevel()
-	//{
-	//	int numPlayers = playersData.HowManyPlayers();
-		//get all the scores and update in the players data
-	//	for(int i = 1 ; i <= numPlayers ; i++ ) {
-	//		var playerData = playersData.getPlayer (i);
-	//		playerData.score = scoreManager.getScoreForPlayer(i);
-	//	}
-		
-//}
 	private Status getStatus (int killingSpree) {
 		Status status;
 		switch (killingSpree) {
@@ -132,31 +121,31 @@ public class LevelManager : MonoBehaviour {
 			break;
 		case (1):
 			status = Status.FirstKill;
-	//		audio.PlayOneShot(FirstKill);
+			audio.PlayOneShot(FirstKill);
 			break;
 		case (2):
 			status = Status.DoubleKill;
-	//		audio.PlayOneShot(SecondKill);
+			audio.PlayOneShot(SecondKill);
 			break;
 		case (3):
 			status = Status.TripleKill;
-	//		audio.PlayOneShot(ThirdKill);
+			audio.PlayOneShot(ThirdKill);
 			break;
 		case (4):
 			status = Status.QuadraKill;
-	//		audio.PlayOneShot(FourthKill);
+			audio.PlayOneShot(FourthKill);
 			break;
 		case (5):
 			status = Status.PentaKill;
-		//	audio.PlayOneShot(FifthKill);
+			audio.PlayOneShot(FifthKill);
 			break;
 		case (6):
 			status = Status.GodLike;
-		//	audio.PlayOneShot(SixthKill);
+			audio.PlayOneShot(SixthKill);
 			break;
 		default: 
 			status = Status.MegaMaster;
-		//	audio.PlayOneShot(SeventhKill);
+			audio.PlayOneShot(SeventhKill);
 			break;
 		}
 		
