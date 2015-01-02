@@ -43,11 +43,11 @@ public class Timer : MonoBehaviour {
 		if (startTime >= 0 && gameStarted) {
 			elapsedTime = (int)(Time.time - startTime);
 			passedTime = (GameTime - Time.time + startTime);
-			Debug.Log ("Gametime is: " + GameTime + " and elapsed time is: " + elapsedTime);
+			//Debug.Log ("Gametime is: " + GameTime + " and elapsed time is: " + elapsedTime);
 			if ((int)(GameTime - elapsedTime) < 10 && ((int)GameTime - elapsedTime > 0)) {
 				if (!soundplaying) {
 					audio.Play ();
-					Debug.Log ("here");
+					//Debug.Log ("here");
 					soundplaying = true;
 				}
 

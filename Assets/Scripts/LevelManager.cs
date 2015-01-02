@@ -23,8 +23,6 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip SixthKill;
 	public AudioClip SeventhKill;
 	public AudioClip Dead;
-	public AudioClip FinishMusic;
-	public AudioClip FiveLastSec;
 	
 	//private float startTime = 0;
 	//private float elapsedTime;
@@ -47,13 +45,12 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	void Update() {
-		//TODO: Remove these revive key codes.
-		//if (Input.GetKey (KeyCode.C)) {	Revive (1);}
-		//if (Input.GetKey (KeyCode.X)) {	Revive (2);}
-		//if (Application.loadedLevelName == "Dash scene") {
-		//	gameStarted = true;
-		//	Gametime = Game_Time;
-		//		}
+		if (Application.loadedLevelName == "Dash scene") {
+			audio.Play ();
+			}
+		if (Application.loadedLevelName == "EndGame") {
+			audio.Stop ();
+				}
 
 		//HOW TO Make the game restart correctly? 
 		//if (Time.time >= Gametime && (Application.loadedLevelName == "EndGame")) {

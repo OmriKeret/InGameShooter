@@ -15,3 +15,11 @@ EditorBuildSettings:
     path: Assets/Dash scene.unity
   - enabled: 1
     path: Assets/EndGame.unity
+  - enabled: 1
+    path: Assets/Winner_Is_1.unity
+  - enabled: 1
+    path: Assets/Winner_Is_2.unity
+  - enabled: 1
+    path: Assets/Winner_Is_3.unity
+  - enabled: 1
+    path: Assets/Winner_Is_4.unity
