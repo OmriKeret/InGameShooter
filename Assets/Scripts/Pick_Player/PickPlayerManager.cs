@@ -21,7 +21,7 @@ public class PickPlayerManager : MonoBehaviour {
 	public void PlayerPickAztec()
 	{
 		aztec.interactable = false;
-		playerData.insertPlayer (CharacterType.aztec);
+		playerData.insertPlayer (CharacterType.Aztec);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
@@ -30,7 +30,7 @@ public class PickPlayerManager : MonoBehaviour {
 	public void PlayerPickArcher()
 	{
 		archer.interactable = false;
-		playerData.insertPlayer (CharacterType.archer);
+		playerData.insertPlayer (CharacterType.Archer);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
@@ -39,7 +39,7 @@ public class PickPlayerManager : MonoBehaviour {
 	public void PlayerPickMage()
 	{
 		mage.interactable = false;
-		playerData.insertPlayer (CharacterType.mage);
+		playerData.insertPlayer (CharacterType.Mage);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
@@ -48,7 +48,7 @@ public class PickPlayerManager : MonoBehaviour {
 	public void PlayerPickTheif()
 	{
 		theif.interactable = false;
-		playerData.insertPlayer (CharacterType.thief);
+		playerData.insertPlayer (CharacterType.Thief);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;

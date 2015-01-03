@@ -22,8 +22,12 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip FifthKill;
 	public AudioClip SixthKill;
 	public AudioClip SeventhKill;
+	public AudioClip EightKill;
+	public AudioClip NineKill;
+	public AudioClip TenKill;
 	//public AudioClip Dead;
-	
+
+	private System.Random randomNumber;
 	//private float startTime = 0;
 	//private float elapsedTime;
 	//public static int Gametime;
@@ -32,7 +36,7 @@ public class LevelManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
+	//	playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
 	}
 	
 	void Awake() {
@@ -43,14 +47,15 @@ public class LevelManager : MonoBehaviour {
 		}
 		DontDestroyOnLoad(transform.gameObject);
 		scoreManager.setNumOfPlayers (numPlayers);
+		randomNumber = new System.Random();
 	}
 	
 	void Update() {
 		if (Application.loadedLevelName == "Dash scene") {
-			audio.Play ();
+//			audio.Play ();
 			}
 		if (Application.loadedLevelName == "EndGame") {
-			audio.Stop ();
+	//		audio.Stop ();
 				}
 
 		//HOW TO Make the game restart correctly? 
@@ -82,7 +87,14 @@ public class LevelManager : MonoBehaviour {
 		var playerData = playersData.getPlayer (playerNum);
 		var killingSpree = getPlayerSpree (playerNum);
 		Status stats = getStatus(killingSpree);
-		scoreManager.addScoreToPlayer (playerNum,stats);
+		var popUp = playSoundByStatus(stats);
+		var score = scoreManager.addScoreToPlayer (playerNum,stats);
+
+		var player = getPlayerObject (playerNum);
+		PlayerManager playerManager = player.GetComponent<PlayerManager> ();
+		playerManager.showScore (score);
+		playerManager.popUp (popUp);
+
 	}
 	
 	public void addOneToSpree(int playerNum)
@@ -103,9 +115,9 @@ public class LevelManager : MonoBehaviour {
 	}
 	private IEnumerator ReviveLogic(int playerNum) {
 		var playerData = playersData.getPlayer (playerNum);
-		var characterToInstantiate = playerData.character == CharacterType.aztec ? Aztec : 
-			playerData.character == CharacterType.archer ? Archer :
-				playerData.character == CharacterType.mage ? Mage : Theif;
+		var characterToInstantiate = playerData.character == CharacterType.Aztec ? Aztec : 
+			playerData.character == CharacterType.Archer ? Archer :
+				playerData.character == CharacterType.Mage ? Mage : Theif;
 		var whereToInstantiate = playerNum == 1 ? player1Respawn : playerNum == 2 ? player2Respawn : 
 			playerNum == 3 ? player3Respawn : player4Respawn;
 		yield return new WaitForSeconds (timeToRespawn);
@@ -113,43 +125,115 @@ public class LevelManager : MonoBehaviour {
 		                                         Quaternion.identity) as Rigidbody2D;
 		var playerManager = PlayerInstance.GetComponent<PlayerManager> ();
 		playerManager.setPlayerNum (playerNum);
+		var score = scoreManager.getScoreForPlayer (playerNum);
+		playerManager.showScore (score);
 	}
 	private Status getStatus (int killingSpree) {
 		Status status;
+
 		switch (killingSpree) {
 		case (0):
 			status = Status.NoKill;
 			break;
 		case (1):
 			status = Status.FirstKill;
-			audio.PlayOneShot(FirstKill);
+			//audio.PlayOneShot(FirstKill);
 			break;
 		case (2):
 			status = Status.DoubleKill;
-			audio.PlayOneShot(SecondKill);
+			//audio.PlayOneShot(SecondKill);
 			break;
 		case (3):
 			status = Status.TripleKill;
-			audio.PlayOneShot(ThirdKill);
+			//audio.PlayOneShot(ThirdKill);
 			break;
 		case (4):
 			status = Status.QuadraKill;
-			audio.PlayOneShot(FourthKill);
-			break;
+		//	PlayRandom ();
+				break;
 		case (5):
 			status = Status.PentaKill;
-			audio.PlayOneShot(FifthKill);
-			break;
+			PlayRandom ();
+				break;
 		case (6):
 			status = Status.GodLike;
-			audio.PlayOneShot(SixthKill);
-			break;
+		//	PlayRandom ();
+				break;
 		default: 
 			status = Status.MegaMaster;
-			audio.PlayOneShot(SeventhKill);
-			break;
+		//	PlayRandom ();
+				break;
 		}
 		
 		return status;
 	}
+
+	private GameObject getPlayerObject(int playerNum) 
+	{
+		CharacterType character = playersData.getPlayer(playerNum).character;
+		string characterName = character.ToString();
+		return GameObject.Find(characterName + "(Clone)");
+	}
+
+	PopUpStatus playSoundByStatus(Status status)
+	{
+		switch (status) {
+		case(Status.NoKill):
+				break;
+		case (Status.FirstKill):
+			//audio.PlayOneShot(FirstKill);
+			return PopUpStatus.FirstKill;
+
+		case (Status.DoubleKill):
+			//audio.PlayOneShot(SecondKill);
+			return PopUpStatus.DoubleKill;
+
+		case (Status.TripleKill):
+			//audio.PlayOneShot(ThirdKill);
+			return PopUpStatus.TripleKill;
+
+
+		default: 
+			var pop = PlayRandom ();
+			return pop;
+
+		}
+		return PopUpStatus.FirstKill;
+	}
+	PopUpStatus PlayRandom () {
+
+		switch (randomNumber.Next(1,7)) {
+			case (1):
+			//	audio.PlayOneShot(FourthKill);
+				return PopUpStatus.BRUTAL;
+
+			case(2) :
+			//	audio.PlayOneShot(FifthKill);
+				return PopUpStatus.GLORY_DEATH;
+
+			case(3):
+			//	audio.PlayOneShot(SixthKill);
+				return PopUpStatus.KILLER;
+	
+			case(4):
+			//	audio.PlayOneShot(SeventhKill);
+				return PopUpStatus.KILLTASTIC;
+		
+			case(5):
+			//	audio.PlayOneShot(EightKill);
+				return PopUpStatus.OH_SNAP;
+		
+			case(6):
+			//	audio.PlayOneShot(NineKill);
+				return PopUpStatus.U_MAD;
+		
+			case(7):
+			//	audio.PlayOneShot(TenKill);
+				return PopUpStatus.WOW;
+		
+			default:
+				return PopUpStatus.FirstKill;
+
+		}
+		}
 }

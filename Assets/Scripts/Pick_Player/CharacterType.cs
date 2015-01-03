@@ -2,8 +2,8 @@
 
 
 public enum CharacterType  {
-	aztec = 1,
-	archer = 2,
-	mage = 3,
-	thief = 4
+	Aztec = 1,
+	Archer = 2,
+	Mage = 3,
+	Thief = 4
 }
