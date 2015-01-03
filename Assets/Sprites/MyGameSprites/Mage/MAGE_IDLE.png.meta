@@ -1,0 +1,443 @@
+fileFormatVersion: 2
+guid: e77ab9891fec5cc49929aa54ec5e4cf6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MAGE_IDLE_0
+    21300002: MAGE_IDLE_1
+    21300004: MAGE_IDLE_2
+    21300006: MAGE_IDLE_3
+    21300008: MAGE_IDLE_4
+    21300010: MAGE_IDLE_5
+    21300012: MAGE_IDLE_6
+    21300014: MAGE_IDLE_7
+    21300016: MAGE_IDLE_8
+    21300018: MAGE_IDLE_9
+    21300020: MAGE_IDLE_10
+    21300022: MAGE_IDLE_11
+    21300024: MAGE_IDLE_12
+    21300026: MAGE_IDLE_13
+    21300028: MAGE_IDLE_14
+    21300030: MAGE_IDLE_15
+    21300032: MAGE_IDLE_16
+    21300034: MAGE_IDLE_17
+    21300036: MAGE_IDLE_18
+    21300038: MAGE_IDLE_19
+    21300040: MAGE_IDLE_20
+    21300042: MAGE_IDLE_21
+    21300044: MAGE_IDLE_22
+    21300046: MAGE_IDLE_23
+    21300048: MAGE_IDLE_24
+    21300050: MAGE_IDLE_25
+    21300052: MAGE_IDLE_26
+    21300054: MAGE_IDLE_27
+    21300056: MAGE_IDLE_28
+    21300058: MAGE_IDLE_29
+    21300060: MAGE_IDLE_30
+    21300062: MAGE_IDLE_31
+    21300064: MAGE_IDLE_32
+    21300066: MAGE_IDLE_33
+    21300068: MAGE_IDLE_34
+    21300070: MAGE_IDLE_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MAGE_IDLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1864
+        width: 119
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1866
+        width: 118
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1864
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1866
+        width: 118
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1864
+        width: 118
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1866
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_6
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1864
+        width: 118
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_7
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1866
+        width: 119
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1864
+        width: 119
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1866
+        width: 119
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_10
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 1864
+        width: 119
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_11
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1866
+        width: 119
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_12
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1864
+        width: 119
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_13
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1866
+        width: 119
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_14
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1864
+        width: 121
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_15
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1866
+        width: 121
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1680
+        width: 120
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1680
+        width: 120
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_18
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1680
+        width: 119
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_19
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1680
+        width: 119
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_20
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1680
+        width: 119
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_21
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1680
+        width: 119
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_22
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1680
+        width: 119
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_23
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1680
+        width: 119
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_24
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1680
+        width: 119
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_25
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1680
+        width: 119
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_26
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 1680
+        width: 119
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_27
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1680
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_28
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1680
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_29
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1680
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_30
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 1680
+        width: 118
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_31
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1680
+        width: 121
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1492
+        width: 118
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_33
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1494
+        width: 118
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_34
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1492
+        width: 118
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_IDLE_35
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1494
+        width: 119
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

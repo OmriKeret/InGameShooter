@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 538d7468a2b88724d9fb2d2ffb5e9aff
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MAGE_JUMP_0
+    21300002: MAGE_JUMP_1
+    21300004: MAGE_JUMP_2
+    21300006: MAGE_JUMP_3
+    21300008: MAGE_JUMP_4
+    21300010: MAGE_JUMP_5
+    21300012: MAGE_JUMP_6
+    21300014: MAGE_JUMP_7
+    21300016: MAGE_JUMP_8
+    21300018: MAGE_JUMP_9
+    21300020: MAGE_JUMP_10
+    21300022: MAGE_JUMP_11
+    21300024: MAGE_JUMP_12
+    21300026: MAGE_JUMP_13
+    21300028: MAGE_JUMP_14
+    21300030: MAGE_JUMP_15
+    21300032: MAGE_JUMP_16
+    21300034: MAGE_JUMP_17
+    21300036: MAGE_JUMP_18
+    21300038: MAGE_JUMP_19
+    21300040: MAGE_JUMP_20
+    21300042: MAGE_JUMP_21
+    21300044: MAGE_JUMP_22
+    21300046: MAGE_JUMP_23
+    21300048: MAGE_JUMP_24
+    21300050: MAGE_JUMP_25
+    21300052: MAGE_JUMP_26
+    21300054: MAGE_JUMP_27
+    21300056: MAGE_JUMP_28
+    21300058: MAGE_JUMP_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MAGE_JUMP_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1843
+        width: 119
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1842
+        width: 114
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1846
+        width: 114
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1847
+        width: 114
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_4
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1844
+        width: 114
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_5
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1843
+        width: 117
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_6
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 1844
+        width: 119
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_7
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1846
+        width: 123
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_8
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1848
+        width: 126
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_9
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1849
+        width: 132
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_10
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1851
+        width: 132
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_11
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1852
+        width: 135
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_12
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 1853
+        width: 138
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1633
+        width: 140
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1634
+        width: 143
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_15
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1630
+        width: 141
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1627
+        width: 138
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_17
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1624
+        width: 136
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_18
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1622
+        width: 133
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_19
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1620
+        width: 131
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_20
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1618
+        width: 128
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_21
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1617
+        width: 126
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_22
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1615
+        width: 123
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_23
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1614
+        width: 120
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_24
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1613
+        width: 118
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_25
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1612
+        width: 119
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1391
+        width: 119
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_27
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1391
+        width: 120
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_28
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1390
+        width: 126
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_JUMP_29
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1390
+        width: 128
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -38,7 +38,10 @@ public class ScoreManager : MonoBehaviour {
 
 
 	}
-	
+	public void setNumOfPlayers(int i ) 
+	{
+		numberOfPlayers = i;
+	}
 	public void addScoreToPlayer(int playerNum, Status playerStats)
 	{
 		Debug.Log ("I got here, Status is " + playerStats +" and playerNumber is "+ playerNum);

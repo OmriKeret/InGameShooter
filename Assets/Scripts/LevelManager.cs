@@ -42,6 +42,7 @@ public class LevelManager : MonoBehaviour {
 			Revive(i);
 		}
 		DontDestroyOnLoad(transform.gameObject);
+		scoreManager.setNumOfPlayers (numPlayers);
 	}
 	
 	void Update() {

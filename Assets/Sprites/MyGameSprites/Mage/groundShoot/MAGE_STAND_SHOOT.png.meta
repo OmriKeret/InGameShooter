@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 40989ca6768c14d4287f6807e7574ede
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MAGE_STAND_SHOOT_0
+    21300002: MAGE_STAND_SHOOT_1
+    21300004: MAGE_STAND_SHOOT_2
+    21300006: MAGE_STAND_SHOOT_3
+    21300008: MAGE_STAND_SHOOT_4
+    21300010: MAGE_STAND_SHOOT_5
+    21300012: MAGE_STAND_SHOOT_6
+    21300014: MAGE_STAND_SHOOT_7
+    21300016: MAGE_STAND_SHOOT_8
+    21300018: MAGE_STAND_SHOOT_9
+    21300020: MAGE_STAND_SHOOT_10
+    21300022: MAGE_STAND_SHOOT_11
+    21300024: MAGE_STAND_SHOOT_12
+    21300026: MAGE_STAND_SHOOT_13
+    21300028: MAGE_STAND_SHOOT_14
+    21300030: MAGE_STAND_SHOOT_15
+    21300032: MAGE_STAND_SHOOT_16
+    21300034: MAGE_STAND_SHOOT_17
+    21300036: MAGE_STAND_SHOOT_18
+    21300038: MAGE_STAND_SHOOT_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 75
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MAGE_STAND_SHOOT_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1858
+        width: 119
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1856
+        width: 140
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_2
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1858
+        width: 163
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_3
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1858
+        width: 183
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_4
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1856
+        width: 197
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_5
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1858
+        width: 198
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_6
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1858
+        width: 198
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_7
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1858
+        width: 200
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1663
+        width: 201
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_9
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1663
+        width: 201
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_10
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1663
+        width: 202
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_11
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 1665
+        width: 207
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_12
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1666
+        width: 224
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_13
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1668
+        width: 240
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_14
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 1667
+        width: 206
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_15
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 1664
+        width: 182
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1470
+        width: 166
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_17
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1470
+        width: 149
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_18
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1468
+        width: 134
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_STAND_SHOOT_19
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1468
+        width: 119
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

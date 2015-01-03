@@ -123,7 +123,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.96830559, y: -4.05084944, z: 0}
+  m_LocalPosition: {x: -14.6201019, y: 12.9451027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444492}
@@ -151,7 +151,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .109999999, y: .150000006, z: 0}
+  m_LocalPosition: {x: .0599999987, y: -.119999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 444490}
@@ -180,7 +180,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: 1.30999994
+  m_Radius: .885406494
   m_Center: {x: .0599999987, y: 0}
 --- !u!61 &6144492
 BoxCollider2D:
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb5583658d8146429e1241dbba10e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
+  playerNumber: 4
   shotSound: {fileID: 0}
   reloadSound: {fileID: 0}
   clickSound: {fileID: 0}
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerKillingSpree: {fileID: 11422318}
-  playerNumber: 1
+  playerNumber: 4
   tapDelayBoost: .25
   boostForce: 1500
   boostCooldown: .300000012
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 1
   DeadSound: {fileID: 0}
-  playerNumber: 0
+  playerNumber: 4
   playerKillingSpree: {fileID: 11422318}
   Dead: 0
 --- !u!212 &21244492

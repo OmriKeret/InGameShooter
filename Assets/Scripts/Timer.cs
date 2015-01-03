@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour {
 
 	void Awake(){ 
 		startTime = 0; 
-		DontDestroyOnLoad (gameObject);
+	
 	}
 	// Use this for initialization
 	void Start () {

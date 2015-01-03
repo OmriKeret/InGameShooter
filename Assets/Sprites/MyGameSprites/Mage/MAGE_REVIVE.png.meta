@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 1d3d12530b80314468b5060dac1d2ab9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MAGE_REVIVE_0
+    21300002: MAGE_REVIVE_1
+    21300004: MAGE_REVIVE_2
+    21300006: MAGE_REVIVE_3
+    21300008: MAGE_REVIVE_4
+    21300010: MAGE_REVIVE_5
+    21300012: MAGE_REVIVE_6
+    21300014: MAGE_REVIVE_7
+    21300016: MAGE_REVIVE_8
+    21300018: MAGE_REVIVE_9
+    21300020: MAGE_REVIVE_10
+    21300022: MAGE_REVIVE_11
+    21300024: MAGE_REVIVE_12
+    21300026: MAGE_REVIVE_13
+    21300028: MAGE_REVIVE_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MAGE_REVIVE_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 87
+        width: 126
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 32
+        width: 171
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_2
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 19
+        width: 172
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 16
+        width: 169
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 13
+        width: 163
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_5
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 11
+        width: 162
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_6
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 9
+        width: 159
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_7
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 9
+        width: 159
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_8
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 7
+        width: 159
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_9
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 7
+        width: 159
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_10
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 7
+        width: 161
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_11
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 7
+        width: 164
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_12
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 7
+        width: 164
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_13
+      rect:
+        serializedVersion: 2
+        x: 2846
+        y: 7
+        width: 166
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_REVIVE_14
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 7
+        width: 166
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

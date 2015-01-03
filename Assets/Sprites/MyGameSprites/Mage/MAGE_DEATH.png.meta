@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 584da14b48df65a4792dd9df2661d2e6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MAGE_DEATH_0
+    21300002: MAGE_DEATH_1
+    21300004: MAGE_DEATH_2
+    21300006: MAGE_DEATH_3
+    21300008: MAGE_DEATH_4
+    21300010: MAGE_DEATH_5
+    21300012: MAGE_DEATH_6
+    21300014: MAGE_DEATH_7
+    21300016: MAGE_DEATH_8
+    21300018: MAGE_DEATH_9
+    21300020: MAGE_DEATH_10
+    21300022: MAGE_DEATH_11
+    21300024: MAGE_DEATH_12
+    21300026: MAGE_DEATH_13
+    21300028: MAGE_DEATH_14
+    21300030: MAGE_DEATH_15
+    21300032: MAGE_DEATH_16
+    21300034: MAGE_DEATH_17
+    21300036: MAGE_DEATH_18
+    21300038: MAGE_DEATH_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MAGE_DEATH_0
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 566
+        width: 174
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 569
+        width: 195
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_2
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 573
+        width: 208
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_3
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 576
+        width: 215
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_4
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 579
+        width: 222
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_5
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 580
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_6
+      rect:
+        serializedVersion: 2
+        x: 1780
+        y: 580
+        width: 237
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_7
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 302
+        width: 244
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_8
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 302
+        width: 246
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 302
+        width: 247
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_10
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 303
+        width: 247
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_11
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 304
+        width: 245
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_12
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 304
+        width: 243
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_13
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 305
+        width: 241
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 27
+        width: 237
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_15
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 27
+        width: 237
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_16
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 28
+        width: 237
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_17
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 29
+        width: 236
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_18
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 29
+        width: 235
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MAGE_DEATH_19
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 34
+        width: 228
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
