@@ -44,6 +44,7 @@ public class UIInGameManager : MonoBehaviour {
 
 	public void ExitGame()
 	{
+		Time.timeScale = 1F;
 		var pickData = GameObject.Find ("LevelManager");
 		Destroy (pickData);
 		Application.LoadLevel("MainMenu");
@@ -51,8 +52,9 @@ public class UIInGameManager : MonoBehaviour {
 
 	public void restart()
 	{
-		levelManager.resetData ();
 		Time.timeScale = 1F;
-		Application.LoadLevel("Dash Scene");
+		levelManager.resetData ();
+
+		Application.LoadLevel("Dash scene");
 	}
 }
