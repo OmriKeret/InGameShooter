@@ -2627,14 +2627,13 @@ MonoBehaviour:
   player4Respawn: {fileID: 0}
   scoreManager: {fileID: 1215182826}
   timeToRespawn: 1
-  FirstKill: {fileID: 0}
-  SecondKill: {fileID: 0}
-  ThirdKill: {fileID: 0}
-  FourthKill: {fileID: 0}
-  FifthKill: {fileID: 0}
-  SixthKill: {fileID: 0}
-  SeventhKill: {fileID: 0}
-  Dead: {fileID: 0}
+  FirstKill: {fileID: 8300000, guid: c0afeff11114c524cbcf981b57dbb10b, type: 3}
+  SecondKill: {fileID: 8300000, guid: 11fa9c0408f6a9d4b85d8b03fe947ae3, type: 3}
+  ThirdKill: {fileID: 8300000, guid: aa1f9386a7319fa4fadccbccb75e176d, type: 3}
+  FourthKill: {fileID: 8300000, guid: 872ed07d0e5394f4ba68c83b3829886d, type: 3}
+  FifthKill: {fileID: 8300000, guid: e87d919ffb9628f4395bf9f8677712a0, type: 3}
+  SixthKill: {fileID: 8300000, guid: 325ee9b9fc0d39b429119601a3358d32, type: 3}
+  SeventhKill: {fileID: 8300000, guid: 152da884e1d12cb489cb10c3bf06fd70, type: 3}
 --- !u!82 &1315686330
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2643,7 +2642,7 @@ AudioSource:
   m_GameObject: {fileID: 1315686327}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a99b0bb3271c6dc4ba965cfb1ceb453e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2baf48cf9d75b1342890a7d6ab5370ef, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2655,7 +2654,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -3579,7 +3578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuDialog: {fileID: 2041490481}
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 1315686329}
 --- !u!4 &1956033348
 Transform:
   m_ObjectHideFlags: 0

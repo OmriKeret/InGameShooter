@@ -41,7 +41,6 @@ public class ScoreManager : MonoBehaviour {
 	
 	public void addScoreToPlayer(int playerNum, Status playerStats)
 	{
-		Debug.Log ("I got here, Status is " + playerStats +" and playerNumber is "+ playerNum);
 		scores [playerNum - 1].addScore (playerStats);
 		showScoresForPlayers (numberOfPlayers);
 		showScoresForPlayers (numberOfPlayers);

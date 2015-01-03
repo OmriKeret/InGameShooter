@@ -6,6 +6,11 @@ public class Timer : MonoBehaviour {
 	private float startTime; 
 	private float elapsedTime;
 	private float passedTime;
+
+	private int textNum;
+	private string text;
+
+	//public GUIText guitext = gameObject.GUIText;
 	//private int gameTime;
 
 	private bool soundplaying = false;
@@ -19,8 +24,6 @@ public class Timer : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("Timer is called by: " + gameObject.name);
-		//gameTime = GameObject.Find("LevelManager").GetComponent<LevelManager>().Game_Time;
 		soundplaying = false;
 
 	}
@@ -33,26 +36,27 @@ public class Timer : MonoBehaviour {
 				}
 		//Game Ended
 		 if ((Time.time >= GameTime + startTime) && gameStarted) {
-			//elapsedTime = Time.time - startTime;
 			Application.LoadLevel ("EndGame");
 			this.StopAllCoroutines ();
 			Reset ();
 		}
 		 
-
+		//Game running
 		if (startTime >= 0 && gameStarted) {
 			elapsedTime = (int)(Time.time - startTime);
 			passedTime = (GameTime - Time.time + startTime);
-			//Debug.Log ("Gametime is: " + GameTime + " and elapsed time is: " + elapsedTime);
-			if ((int)(GameTime - elapsedTime) < 10 && ((int)GameTime - elapsedTime > 0)) {
+			if ((int)(GameTime - elapsedTime) <= 10/* && ((int)GameTime - elapsedTime > 0)*/) {
 				if (!soundplaying) {
 					audio.Play ();
-					//Debug.Log ("here");
 					soundplaying = true;
 				}
 
 			}
+
+
+
 		}
+
 				
 	}
 	void OnTriggerEnter(){ }
@@ -62,11 +66,13 @@ public class Timer : MonoBehaviour {
 	void OnGUI(){
 		if (gameStarted) {
 			int textNum = (int)(GameTime - elapsedTime);
-			string text = textNum.ToString ();
+			text = textNum.ToString ();
 			GUI.Label (new Rect (380, 50, 100, 20), 
 			(text));
+			//guiText.text = text;
 		}
 	} 
+
 	void Reset () {
 		startTime = 0;
 		elapsedTime = 0;
