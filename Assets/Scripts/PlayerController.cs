@@ -2,7 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
-	public Text playerKillingSpree;
+//	public Text playerScore;
+//	public Text playerKillingSpree;
+	public Canvas scoreboard;
 	public int playerNumber;
 	// DASH parameters
 	public float tapDelayBoost = 0.25f;
@@ -111,9 +113,17 @@ public class PlayerController : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
-		theScale = playerKillingSpree.transform.localScale;
+
+		theScale = scoreboard.transform.localScale;
 		theScale.x *= -1;
-		playerKillingSpree.transform.localScale = theScale;
+		scoreboard.transform.localScale = theScale;
+		//theScale = playerKillingSpree.transform.localScale;
+		//theScale.x *= -1;
+		//playerKillingSpree.transform.localScale = theScale;
+		//theScale = playerScore.transform.localScale;
+		//theScale.x *= -1;
+		//playerScore.transform.localScale = theScale;
+
 	}
 
 	//calling dash if valid

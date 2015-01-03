@@ -5,10 +5,10 @@ using System;
 
 public class ScoreManager : MonoBehaviour {
 	
-	
+	public LevelManager levelManager;
 	public int numberOfPlayers;
 	private static List<Score> scores ;
-	private List<Text> scoreText;
+	//private List<Text> scoreText;
 	
 	public bool PlayerOneAlive = false;
 	public bool PlayerTwoAlive = false;
@@ -17,15 +17,15 @@ public class ScoreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		scores = new List<Score>(); 
-		scoreText = new List<Text>();
+		//scoreText = new List<Text>();
 		for(int i = 0; i < 4 ; i++)
 		{
 			scores.Add (new Score ());
 		}
-		var texts = gameObject.GetComponentsInChildren<Text> ();
-		foreach (Text scoretxt in texts) {
-			scoreText.Add(scoretxt);
-		}
+	//	var texts = gameObject.GetComponentsInChildren<Text> ();
+	//	foreach (Text scoretxt in texts) {
+	//		scoreText.Add(scoretxt);
+	//	}
 		
 	}
 	void Awake() {
@@ -35,18 +35,16 @@ public class ScoreManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
 	}
 	public void setNumOfPlayers(int i ) 
 	{
 		numberOfPlayers = i;
 	}
-	public void addScoreToPlayer(int playerNum, Status playerStats)
+	public int addScoreToPlayer(int playerNum, Status playerStats)
 	{
 		scores [playerNum - 1].addScore (playerStats);
-		showScoresForPlayers (numberOfPlayers);
-		showScoresForPlayers (numberOfPlayers);
+		return getScoreForPlayer (playerNum);
+
 	}
 
 	public int getScoreForPlayer(int playerNum) 
@@ -58,12 +56,12 @@ public class ScoreManager : MonoBehaviour {
 	{
 		for(int i = 0; i < playersNum; i++) 
 		{
-			scoreText[i].text = String.Format("Player {0} Score: {1}",i + 1,  scores[i].getScore());
+	//		scoreText[i].text = String.Format("Player {0} Score: {1}",i + 1,  scores[i].getScore());
 		}
 		
 		for (int i = playersNum; i < 4; i++ ) 
 		{
-			scoreText[i].text = null;
+	//		scoreText[i].text = null;
 		}
 
 	}

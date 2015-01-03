@@ -2,11 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Timer.cs" Line="38" Column="3" />
-      <File FileName="Assets\Scripts\Menu\UIManagerScrit.cs" Line="31" Column="28" />
-      <File FileName="Assets\Scripts\MenuBackground.cs" Line="10" Column="3" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="29" Column="31" />
-      <File FileName="Assets\Scripts\ScoreManager.cs" Line="71" Column="2" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="56" Column="2" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="103" Column="3" />
+      <File FileName="Assets\Scripts\PopUpStatus.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\ScoreManager.cs" Line="44" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -14,10 +13,6 @@
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="219" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="30" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="40" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="29" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="37" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="41" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="39" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

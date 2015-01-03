@@ -8,19 +8,24 @@ public class PlayerManager : MonoBehaviour {
 	private shootingManager shootingManager;
 	private PlayerController playerController;
 	private LevelManager levelManager;
+	//private ScoreManager scoreManager;
 	public int lives = 1;
 	private Animator anim;
+	public Animator statsAmimator;
 	public AudioClip DeadSound;
 	private int kills = 0;
 	public int playerNumber;
 	public Text playerKillingSpree;
+	public Text playerScore;
 	public bool Dead;
 	void Awake()
 	{
+		//scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
 		shootingManager = gameObject.GetComponent<shootingManager>();
 		playerController = gameObject.GetComponent<PlayerController>();
 		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 		anim = GetComponent<Animator> ();
+		//showScore ();
 	}
 	
 	void OnCollisionEnter2D(Collision2D collided) {
@@ -86,5 +91,16 @@ public class PlayerManager : MonoBehaviour {
 	public bool isDead()
 	{
 		return Dead;
+	}
+
+	public void showScore(int score)
+	{
+		playerScore.text = String.Format ("SCORE:{0}",score);
+	}
+
+	public void popUp(PopUpStatus popUp)
+	{
+
+		statsAmimator.SetTrigger (popUp.ToString());
 	}
 }
