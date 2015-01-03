@@ -6,10 +6,8 @@ public class EndGame : MonoBehaviour {
 	LevelManager levelManager;
 	PickPlayerData playersData;
 	ScoreManager scoreManager;
-	private string text;
-	
-	//public static bool gameover = false;
-	public static int winner = 0;
+
+	public static int winner = 1;
 
 	void Awake() 
 	{
@@ -21,16 +19,21 @@ public class EndGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+	}
+			
+	
+	// Update is called once per frame
+	void Update () {
 		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 		int numPlayers = playersData.HowManyPlayers ();
 		//get all the scores and update in the players data
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
 			var playerData = playersData.getPlayer (i);
 			playerData.score = scoreManager.getScoreForPlayer(i);
-			if (playerData.score >= winner) { winner = i;}
-			text += "Player " + i + " score is: " + playerData.score + " !";
-			text += "\n";
-
+			if (scoreManager.getScoreForPlayer(i) >= scoreManager.getScoreForPlayer(winner)) { winner = i;}
+			//text += "Player " + i + " score is: " + playerData.score + " !";
+			//text += "\n";
+			
 		}
 		switch (winner) {
 		case (1):
@@ -52,13 +55,7 @@ public class EndGame : MonoBehaviour {
 		default:
 			Application.LoadLevel ("Winner_Is_1");
 			break;
-				}
-
-	}
-			
-	
-	// Update is called once per frame
-	void Update () {
+		}
 		if (Application.loadedLevelName == "Winner_Is_1" || Application.loadedLevelName == "Winner_Is_2" ||
 						Application.loadedLevelName == "Winner_Is_3" || Application.loadedLevelName == "Winner_Is_4") {
 			if(!audio.isPlaying) {
@@ -79,16 +76,18 @@ public class EndGame : MonoBehaviour {
 		//return;
 		//gameover = true;
 		}
-	void OnTriggerEnter(){ text = "";}
+	void OnTriggerEnter(){ }
 	
-	void OnTriggerExit(){ text = "";}
+	void OnTriggerExit(){ }
 	
 	void OnGUI(){
 		//GUI.Label(new Rect(400, 50, 200, 100), 
 		       //  (text + " and the winner is: " + winner.ToString()));
 		if (Application.loadedLevelName == "Winner_Is_1" || Application.loadedLevelName == "Winner_Is_2" ||
 			Application.loadedLevelName == "Winner_Is_3" || Application.loadedLevelName == "Winner_Is_4") {
-			GUI.Box(new Rect(200,50,300,100), "THE WINNER IS PLAYER " + winner.ToString ());
+			GUI.Box(new Rect(300,50,300,100), "THE WINNER IS PLAYER " + 
+			        winner.ToString () + " \nWITH " + scoreManager.getScoreForPlayer(winner) +
+			        " POINTS!!!");
 			if (GUI.Button (new Rect (400, 150, 100, 50), "Restart")) {
 				stop ();
 				Application.LoadLevel (0);

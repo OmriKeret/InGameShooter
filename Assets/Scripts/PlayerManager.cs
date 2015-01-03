@@ -20,12 +20,10 @@ public class PlayerManager : MonoBehaviour {
 	public bool Dead;
 	void Awake()
 	{
-		//scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
 		shootingManager = gameObject.GetComponent<shootingManager>();
 		playerController = gameObject.GetComponent<PlayerController>();
 		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 		anim = GetComponent<Animator> ();
-		//showScore ();
 	}
 	
 	void OnCollisionEnter2D(Collision2D collided) {
@@ -63,7 +61,6 @@ public class PlayerManager : MonoBehaviour {
 	
 
 	public int getPlayerNumber () {
-		Debug.Log (this.playerNumber);
 		return this.playerNumber;
 	}
 	public void setPlayerNum (int playerNum) {

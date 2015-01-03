@@ -25,18 +25,11 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip EightKill;
 	public AudioClip NineKill;
 	public AudioClip TenKill;
-	//public AudioClip Dead;
 
 	private System.Random randomNumber;
-	//private float startTime = 0;
-	//private float elapsedTime;
-	//public static int Gametime;
-	//public int Game_Time;
-	//public bool gameStarted = false;
 	
 	// Use this for initialization
 	void Start () {
-	//	playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
 	}
 	
 	void Awake() {
@@ -51,17 +44,6 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	void Update() {
-		if (Application.loadedLevelName == "Dash scene") {
-//			audio.Play ();
-			}
-		if (Application.loadedLevelName == "EndGame") {
-	//		audio.Stop ();
-				}
-
-		//HOW TO Make the game restart correctly? 
-		//if (Time.time >= Gametime && (Application.loadedLevelName == "EndGame")) {
-		//Gametime += (int)Time.time;
-		//}
 	}
 	
 	
@@ -138,31 +120,25 @@ public class LevelManager : MonoBehaviour {
 			break;
 		case (1):
 			status = Status.FirstKill;
-			//audio.PlayOneShot(FirstKill);
 			break;
 		case (2):
 			status = Status.DoubleKill;
-			//audio.PlayOneShot(SecondKill);
 			break;
 		case (3):
 			status = Status.TripleKill;
-			//audio.PlayOneShot(ThirdKill);
 			break;
 		case (4):
 			status = Status.QuadraKill;
-		//	PlayRandom ();
 				break;
 		case (5):
 			status = Status.PentaKill;
-			PlayRandom ();
+			//PlayRandom ();
 				break;
 		case (6):
 			status = Status.GodLike;
-		//	PlayRandom ();
 				break;
 		default: 
 			status = Status.MegaMaster;
-		//	PlayRandom ();
 				break;
 		}
 		
@@ -180,15 +156,16 @@ public class LevelManager : MonoBehaviour {
 	{
 		switch (status) {
 		case (Status.FirstKill):
-			//audio.PlayOneShot(FirstKill);
+			audio.PlayOneShot(FirstKill);
 			return PopUpStatus.FirstKill;
 
 		case (Status.DoubleKill):
-			//audio.PlayOneShot(SecondKill);
+			//SecondKill.Play ();
+			audio.PlayOneShot(SecondKill);
 			return PopUpStatus.DoubleKill;
 
 		case (Status.TripleKill):
-			//audio.PlayOneShot(ThirdKill);
+			audio.PlayOneShot(ThirdKill);
 			return PopUpStatus.TripleKill;
 
 
@@ -197,41 +174,43 @@ public class LevelManager : MonoBehaviour {
 			return pop;
 
 		}
-		return PopUpStatus.FirstKill;
+		//return PopUpStatus.FirstKill;
 	}
 	PopUpStatus PlayRandom () {
 
-		switch (randomNumber.Next(1,7)) {
+		switch (randomNumber.Next(1,8)) {
 			case (1):
-			//	audio.PlayOneShot(FourthKill);
+				audio.PlayOneShot(FourthKill);
 				return PopUpStatus.BRUTAL;
 
 			case(2) :
-			//	audio.PlayOneShot(FifthKill);
+				audio.PlayOneShot(FifthKill);
 				return PopUpStatus.GLORY_DEATH;
 
 			case(3):
-			//	audio.PlayOneShot(SixthKill);
+				audio.PlayOneShot(SixthKill);
 				return PopUpStatus.KILLER;
 	
 			case(4):
-			//	audio.PlayOneShot(SeventhKill);
+				audio.PlayOneShot(SeventhKill);
 				return PopUpStatus.KILLTASTIC;
 		
 			case(5):
-			//	audio.PlayOneShot(EightKill);
+				audio.PlayOneShot(EightKill);
 				return PopUpStatus.OH_SNAP;
 		
 			case(6):
-			//	audio.PlayOneShot(NineKill);
+				audio.PlayOneShot(NineKill);
 				return PopUpStatus.U_MAD;
 		
 			case(7):
-			//	audio.PlayOneShot(TenKill);
+				audio.PlayOneShot(TenKill);
 				return PopUpStatus.WOW;
 		
 			default:
-				return PopUpStatus.FirstKill;
+			audio.PlayOneShot(TenKill);
+			return PopUpStatus.WOW;
+				//return PopUpStatus.FirstKill;
 
 		}
 		}
