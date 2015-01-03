@@ -87,6 +87,7 @@ public class LevelManager : MonoBehaviour {
 		var playerData = playersData.getPlayer (playerNum);
 		var killingSpree = getPlayerSpree (playerNum);
 		Status stats = getStatus(killingSpree);
+
 		var popUp = playSoundByStatus(stats);
 		var score = scoreManager.addScoreToPlayer (playerNum,stats);
 
@@ -178,8 +179,6 @@ public class LevelManager : MonoBehaviour {
 	PopUpStatus playSoundByStatus(Status status)
 	{
 		switch (status) {
-		case(Status.NoKill):
-				break;
 		case (Status.FirstKill):
 			//audio.PlayOneShot(FirstKill);
 			return PopUpStatus.FirstKill;

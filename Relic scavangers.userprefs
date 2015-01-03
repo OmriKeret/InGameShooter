@@ -1,18 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="56" Column="2" />
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="103" Column="3" />
-      <File FileName="Assets\Scripts\PopUpStatus.cs" Line="16" Column="1" />
-      <File FileName="Assets\Scripts\ScoreManager.cs" Line="44" Column="3" />
+      <File FileName="Assets\Scripts\UIInGameManager.cs" Line="55" Column="1" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="97" Column="20" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="102" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="219" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="30" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="40" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="58" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="70" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="72" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="55" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="74" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
