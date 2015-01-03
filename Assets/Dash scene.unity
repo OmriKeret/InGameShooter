@@ -3661,15 +3661,15 @@ MonoBehaviour:
   scoreManager: {fileID: 1215182826}
   timeToRespawn: 1
   FirstKill: {fileID: 0}
-  SecondKill: {fileID: 0}
-  ThirdKill: {fileID: 0}
-  FourthKill: {fileID: 0}
-  FifthKill: {fileID: 0}
-  SixthKill: {fileID: 0}
-  SeventhKill: {fileID: 0}
-  EightKill: {fileID: 0}
-  NineKill: {fileID: 0}
-  TenKill: {fileID: 0}
+  SecondKill: {fileID: 8300000, guid: 11fa9c0408f6a9d4b85d8b03fe947ae3, type: 3}
+  ThirdKill: {fileID: 8300000, guid: aa1f9386a7319fa4fadccbccb75e176d, type: 3}
+  FourthKill: {fileID: 8300000, guid: 152da884e1d12cb489cb10c3bf06fd70, type: 3}
+  FifthKill: {fileID: 8300000, guid: 325ee9b9fc0d39b429119601a3358d32, type: 3}
+  SixthKill: {fileID: 8300000, guid: 872ed07d0e5394f4ba68c83b3829886d, type: 3}
+  SeventhKill: {fileID: 8300000, guid: 886a8daf339b76c4caa6e4c79a1c8843, type: 3}
+  EightKill: {fileID: 8300000, guid: e87d919ffb9628f4395bf9f8677712a0, type: 3}
+  NineKill: {fileID: 8300000, guid: f403381cafe55e346906f1ab60591442, type: 3}
+  TenKill: {fileID: 8300000, guid: c0afeff11114c524cbcf981b57dbb10b, type: 3}
 --- !u!1 &1434186536
 GameObject:
   m_ObjectHideFlags: 0

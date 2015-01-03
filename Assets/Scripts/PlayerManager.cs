@@ -100,7 +100,9 @@ public class PlayerManager : MonoBehaviour {
 
 	public void popUp(PopUpStatus popUp)
 	{
-
+		if (popUp == PopUpStatus.FirstKill) {
+						return;
+				}
 		statsAmimator.SetTrigger (popUp.ToString());
 	}
 }
