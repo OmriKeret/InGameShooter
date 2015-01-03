@@ -7,16 +7,16 @@ public class EndGame : MonoBehaviour {
 	PickPlayerData playersData;
 	ScoreManager scoreManager;
 	private string text;
-	//public AudioClip FinishMusic;
-
+	
 	//public static bool gameover = false;
 	public static int winner = 0;
 
 	void Awake() 
 	{
-		playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
-		scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
-		DontDestroyOnLoad(gameObject);
+		playersData = GameObject.Find ("PickPlayerData").GetComponent<PickPlayerData> ();
+		scoreManager = GameObject.Find ("ScoreManager").GetComponent<ScoreManager> ();
+		DontDestroyOnLoad (gameObject);
+
 	}
 
 	// Use this for initialization
@@ -34,20 +34,23 @@ public class EndGame : MonoBehaviour {
 		}
 		switch (winner) {
 		case (1):
-			stop ();
+			//stop ();
 			Application.LoadLevel ("Winner_Is_1");
 			break;
 		case (2):
-			stop ();
+			//stop ();
 			Application.LoadLevel ("Winner_Is_2");
 			break;
 		case(3):
-			stop ();
+			//stop ();
 			Application.LoadLevel ("Winner_Is_3");
 			break;
 		case(4):
-			stop ();
+			//stop ();
 			Application.LoadLevel ("Winner_Is_4");
+			break;
+		default:
+			Application.LoadLevel ("Winner_Is_1");
 			break;
 				}
 
@@ -57,29 +60,23 @@ public class EndGame : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Application.loadedLevelName == "Winner_Is_1" || Application.loadedLevelName == "Winner_Is_2" ||
-			Application.loadedLevelName == "Winner_Is_3" || Application.loadedLevelName == "Winner_Is_4") {
-				wait();
-				if (Input.anyKey) {
-					//gameover = false;
-					audio.Stop ();
-					Application.LoadLevel (0); 
-					Destroy (gameObject);
-
-				}
+						Application.loadedLevelName == "Winner_Is_3" || Application.loadedLevelName == "Winner_Is_4") {
+			if(!audio.isPlaying) {
+				audio.Play();
 			}
+				}
 	}
 	IEnumerator wait() {
 		yield return new WaitForSeconds (2);
 	}
 	void stop() {
-		audio.Play();
+		if (audio.isPlaying){
+			audio.Stop ();
+		}
 		DestroyObject (GameObject.Find ("ScoreManager"));
-		Debug.Log ("Score Destroyed.");
 		DestroyObject (GameObject.Find ("PickPlayerData"));
-		Debug.Log ("PickPlayer Destroyed.");
 		DestroyObject (GameObject.Find ("LevelManager"));
-		Debug.Log ("LevelMgr Destroyed.");
-		return;
+		//return;
 		//gameover = true;
 		}
 	void OnTriggerEnter(){ text = "";}
@@ -87,7 +84,23 @@ public class EndGame : MonoBehaviour {
 	void OnTriggerExit(){ text = "";}
 	
 	void OnGUI(){
-		GUI.Label(new Rect(400, 50, 200, 100), 
-		         (text + " and the winner is: " + winner.ToString()));
+		//GUI.Label(new Rect(400, 50, 200, 100), 
+		       //  (text + " and the winner is: " + winner.ToString()));
+		if (Application.loadedLevelName == "Winner_Is_1" || Application.loadedLevelName == "Winner_Is_2" ||
+			Application.loadedLevelName == "Winner_Is_3" || Application.loadedLevelName == "Winner_Is_4") {
+			GUI.Box(new Rect(200,50,300,100), "THE WINNER IS PLAYER " + winner.ToString ());
+			if (GUI.Button (new Rect (400, 150, 100, 50), "Restart")) {
+				stop ();
+				Application.LoadLevel (0);
+				DestroyObject (gameObject);
+			}
+			if(GUI.Button (new Rect(400,200,100,50), "Rematch!")) {
+				Application.LoadLevel("Dash scene");
+				GameObject.Find ("UIManager").GetComponent <UIInGameManager>().restart();
+				GameObject.Find ("Timer").GetComponent<Timer>().Reset ();
+				DestroyObject (gameObject);
+
+			}
+		}
 }
 }

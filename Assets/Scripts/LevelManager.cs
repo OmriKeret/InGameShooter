@@ -47,10 +47,10 @@ public class LevelManager : MonoBehaviour {
 	
 	void Update() {
 		if (Application.loadedLevelName == "Dash scene") {
-			audio.Play ();
+			//audio.Play ();
 			}
 		if (Application.loadedLevelName == "EndGame") {
-			audio.Stop ();
+			//audio.Stop ();
 				}
 
 		//HOW TO Make the game restart correctly? 
