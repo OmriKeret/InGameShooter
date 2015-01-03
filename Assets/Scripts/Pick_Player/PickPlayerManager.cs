@@ -51,7 +51,7 @@ public class PickPlayerManager : MonoBehaviour {
 		playerData.insertPlayer (CharacterType.thief);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
-						return;
+			return;
 		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
 	}
 
