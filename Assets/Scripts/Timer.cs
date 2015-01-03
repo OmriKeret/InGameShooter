@@ -22,6 +22,9 @@ public class Timer : MonoBehaviour {
 		startTime = 0; 
 	
 	}
+	//public void Reset() {
+	//	startTime = Time.time;
+	//}
 	// Use this for initialization
 	void Start () {
 		soundplaying = false;
@@ -37,7 +40,7 @@ public class Timer : MonoBehaviour {
 		//Game Ended
 		 if ((Time.time >= GameTime + startTime) && gameStarted) {
 			Application.LoadLevel ("EndGame");
-			this.StopAllCoroutines ();
+			//this.StopAllCoroutines ();
 			Reset ();
 		}
 		 
@@ -73,13 +76,14 @@ public class Timer : MonoBehaviour {
 		}
 	} 
 
-	void Reset () {
+	public void Reset () {
 		startTime = 0;
 		elapsedTime = 0;
 		passedTime = 0;
 		soundplaying = false;
 		gameStarted = false;
 		audio.Stop ();
+		startTime = Time.time;
 
 	}
 }
