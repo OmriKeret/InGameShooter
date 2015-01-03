@@ -207,10 +207,10 @@ public class shootingManager : MonoBehaviour {
 		}
 
 	private Direction whichDirToShoot(){
-		right = (Input.GetButton ("right" + playerNumber) || Input.GetAxis ("Horizontal" + playerNumber) > 0 );
-		left = (Input.GetButton ("left" + playerNumber) || Input.GetAxis ("Horizontal" + playerNumber) < 0 );
-		up = Input.GetButton ("up" + playerNumber) || Input.GetAxis ("Vertical" + playerNumber) > 0;
-		down = Input.GetButton ("down" + playerNumber) || Input.GetAxis ("Vertical" + playerNumber) < 0;
+		right = (Input.GetButton ("right" + playerNumber) || Input.GetAxis ("Horizontal" + playerNumber) == 1 );
+		left = (Input.GetButton ("left" + playerNumber) || Input.GetAxis ("Horizontal" + playerNumber) == -1 );
+		up = Input.GetButton ("up" + playerNumber) || Input.GetAxis ("Vertical" + playerNumber) == 1;
+		down = Input.GetButton ("down" + playerNumber) || Input.GetAxis ("Vertical" + playerNumber) == -1;
 
 		if(right){
 			return up ? Direction.up_right : down ? Direction.down_right : Direction.right;
