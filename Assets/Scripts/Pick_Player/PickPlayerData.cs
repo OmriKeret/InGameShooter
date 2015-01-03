@@ -15,7 +15,7 @@ public class PickPlayerData : MonoBehaviour {
 		playerPointer++;
 	}
 	// Use this for initialization
-	void Start () {
+	 void Start () {
 	//	MenuData menuData = GameObject.Find("MenuData").GetComponent<MenuData>();
 		playersData = new List<PlayerData> ();
 
