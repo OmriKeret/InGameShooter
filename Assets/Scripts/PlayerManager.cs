@@ -39,7 +39,7 @@ public class PlayerManager : MonoBehaviour {
 					audio.PlayOneShot(DeadSound);
 					levelManager.gotKill((int)bulletNumber);
 					levelManager.Revive(playerNumber);
-					anim.SetTrigger("Die");
+					anim.SetBool("Die",true);
 					disablePlayer();
 				}	
 			}

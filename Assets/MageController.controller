@@ -56,17 +56,17 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Die
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
   - m_Name: Revivng
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
+    m_Controller: {fileID: 9100000}
+  - m_Name: Die
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
@@ -493,7 +493,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: Die
+    m_ConditionEvent: Shoot_right
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -513,7 +513,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: Revivng
+    m_ConditionEvent: Ground
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -646,6 +646,10 @@ Transition:
     m_ExitTime: .899999976
   - m_ConditionMode: 2
     m_ConditionEvent: Revivng
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  - m_ConditionMode: 2
+    m_ConditionEvent: Die
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -1079,36 +1083,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110202330
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_jump_shoot_up
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: e31ebe94aafd5434cb8f6f670ac9c3a2, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 636, y: 1620, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110204222
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Revive_mage
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 84a142fced427ec4aac66e1f64ab8f7a, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 286, y: 970, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110205890
 State:
   m_ObjectHideFlags: 3
@@ -1121,21 +1095,6 @@ State:
   - {fileID: 7400000, guid: ca228c2e7d6cca147b527033202bcef1, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: 636, y: -216, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110208570
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_11
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 910a252f7729fb44597b8bf15ec54d74, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -504, y: -336, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1169,21 +1128,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110216150
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_6
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 2167583fb475fc44da111b9cf70c0538, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -528, y: -492, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110217862
 State:
   m_ObjectHideFlags: 3
@@ -1196,51 +1140,6 @@ State:
   - {fileID: 20617862}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: -24, y: -432, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110218812
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_ground_shoot_up
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 3ff54b654df6b3844a0949bf7d47e206, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 461, y: 1295, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110218992
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_ground_shoot_up_right
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: b43cd88fc59670d4a81cd2f5c35d80a2, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 496, y: 1360, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110219280
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_9
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 8a2a73936cd202642a8a016818d801ec, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -576, y: -456, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1274,21 +1173,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110231908
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_3
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 3a344db01f614344398b69fe1b87d65a, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -444, y: -384, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110232210
 State:
   m_ObjectHideFlags: 3
@@ -1301,21 +1185,6 @@ State:
   - {fileID: 7400000, guid: c64b11716c2385e4ba44051900a00809, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: 180, y: -300, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110234852
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_ground_shoot_right
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: c0e457879db78fe4ebb92202da1c7db2, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 356, y: 1100, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1334,51 +1203,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110242634
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_7
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 10c53547a61b9184aab1f0f90a2c256b, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -492, y: -420, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110244136
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_2
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 969a07e59a956f54e8cad5dd89622533, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -480, y: -444, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110250820
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_8
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 8f8a38908dc844c488e9b661bd22aa3d, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -456, y: -360, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110252338
 State:
   m_ObjectHideFlags: 3
@@ -1394,21 +1218,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110266788
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Idle 0
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 6e490f71233196241a78a8db8ce48da0, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -169, y: 125, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110267164
 State:
   m_ObjectHideFlags: 3
@@ -1421,66 +1230,6 @@ State:
   - {fileID: 7400000, guid: c11fea828ade6074abd6a6de9a26a33f, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: -36, y: -300, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110267320
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_ground_shoot_down
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 7672fef8320d76842bd276459e2d0fb2, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 391, y: 1165, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110268044
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_4
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 27bd63960317760478dcd301d428aeef, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -504, y: -324, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110268674
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: death_mage
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: e4f5483004949b84abafeb9637686980, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 251, y: 905, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110269652
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_jump_shoot_down
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: c64b11716c2385e4ba44051900a00809, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 566, y: 1490, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1514,21 +1263,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110275160
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_jump_shoot_right
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 315f22f0e3da6cb49a8ac35b14f2c66c, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 531, y: 1425, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110277148
 State:
   m_ObjectHideFlags: 3
@@ -1541,51 +1275,6 @@ State:
   - {fileID: 7400000, guid: e31ebe94aafd5434cb8f6f670ac9c3a2, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: 408, y: -288, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110278266
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_10
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: dabe8fa6634489440b224b0d3dc293ec, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -540, y: -408, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110282620
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_1
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 0c6c77ae613e62148bc7a66a5590ac9e, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -516, y: -516, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110283196
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: run_mage
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 71d3039edca9c3f42951fed1cf327b2a, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 321, y: 1035, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1604,36 +1293,6 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110285288
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_jump_shoot_up_right
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: 52fc487f6f67bce4284bcdcb3d06df07, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 671, y: 1685, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110289304
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_jump_shoot_down_right
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: c11fea828ade6074abd6a6de9a26a33f, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 601, y: 1555, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
 --- !u!1102 &110289468
 State:
   m_ObjectHideFlags: 3
@@ -1646,36 +1305,6 @@ State:
   - {fileID: 7400000, guid: b43cd88fc59670d4a81cd2f5c35d80a2, type: 2}
   m_ParentStateMachine: {fileID: 110755282}
   m_Position: {x: 408, y: -216, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110293884
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: mage_ground_shoot_down_right
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: ca228c2e7d6cca147b527033202bcef1, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: 426, y: 1230, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110297010
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: jump_mage_5
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: ab7cc734d8eb64641b82df62f07061a8, type: 2}
-  m_ParentStateMachine: {fileID: 110755282}
-  m_Position: {x: -564, y: -552, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1703,31 +1332,6 @@ StateMachine:
   - {fileID: 110269762}
   - {fileID: 110252338}
   - {fileID: 110220522}
-  - {fileID: 110266788}
-  - {fileID: 110282620}
-  - {fileID: 110244136}
-  - {fileID: 110231908}
-  - {fileID: 110268044}
-  - {fileID: 110297010}
-  - {fileID: 110216150}
-  - {fileID: 110242634}
-  - {fileID: 110250820}
-  - {fileID: 110219280}
-  - {fileID: 110278266}
-  - {fileID: 110208570}
-  - {fileID: 110268674}
-  - {fileID: 110204222}
-  - {fileID: 110283196}
-  - {fileID: 110234852}
-  - {fileID: 110267320}
-  - {fileID: 110293884}
-  - {fileID: 110218812}
-  - {fileID: 110218992}
-  - {fileID: 110275160}
-  - {fileID: 110269652}
-  - {fileID: 110289304}
-  - {fileID: 110202330}
-  - {fileID: 110285288}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
@@ -1736,30 +1340,6 @@ StateMachine:
       second:
       - {fileID: 110151594}
       - {fileID: 110164376}
-    data:
-      first: {fileID: 110205890}
-      second:
-      - {fileID: 110194234}
-      - {fileID: 110152000}
-    data:
-      first: {fileID: 110212472}
-      second:
-      - {fileID: 110129902}
-      - {fileID: 110171034}
-    data:
-      first: {fileID: 110213716}
-      second:
-      - {fileID: 110102274}
-      - {fileID: 110150298}
-    data:
-      first: {fileID: 110217862}
-      second:
-      - {fileID: 110140592}
-      - {fileID: 110195790}
-      - {fileID: 110153654}
-      - {fileID: 110164232}
-      - {fileID: 110143040}
-      - {fileID: 110143218}
     data:
       first: {fileID: 110220522}
       second:
@@ -1774,10 +1354,6 @@ StateMachine:
       - {fileID: 110187400}
       - {fileID: 110102936}
     data:
-      first: {fileID: 110232210}
-      second:
-      - {fileID: 110161242}
-    data:
       first: {fileID: 110236466}
       second:
       - {fileID: 110199360}
@@ -1787,34 +1363,62 @@ StateMachine:
       - {fileID: 110174368}
       - {fileID: 110157538}
     data:
-      first: {fileID: 110252338}
-      second: []
+      first: {fileID: 110217862}
+      second:
+      - {fileID: 110140592}
+      - {fileID: 110195790}
+      - {fileID: 110153654}
+      - {fileID: 110164232}
+      - {fileID: 110143040}
+      - {fileID: 110143218}
+    data:
+      first: {fileID: 110212472}
+      second:
+      - {fileID: 110129902}
+      - {fileID: 110171034}
     data:
       first: {fileID: 110267164}
       second:
       - {fileID: 110156746}
-    data:
-      first: {fileID: 110269762}
-      second:
-      - {fileID: 110138726}
     data:
       first: {fileID: 110273410}
       second:
       - {fileID: 110186086}
       - {fileID: 110180842}
     data:
-      first: {fileID: 110277148}
+      first: {fileID: 110232210}
       second:
-      - {fileID: 110178218}
+      - {fileID: 110161242}
     data:
-      first: {fileID: 110283846}
+      first: {fileID: 110205890}
       second:
-      - {fileID: 110121028}
+      - {fileID: 110194234}
+      - {fileID: 110152000}
     data:
       first: {fileID: 110289468}
       second:
       - {fileID: 110125666}
       - {fileID: 110171374}
+    data:
+      first: {fileID: 110213716}
+      second:
+      - {fileID: 110102274}
+      - {fileID: 110150298}
+    data:
+      first: {fileID: 110283846}
+      second:
+      - {fileID: 110121028}
+    data:
+      first: {fileID: 110277148}
+      second:
+      - {fileID: 110178218}
+    data:
+      first: {fileID: 110269762}
+      second:
+      - {fileID: 110138726}
+    data:
+      first: {fileID: 110252338}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -468, y: -48, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
