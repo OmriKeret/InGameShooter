@@ -220,6 +220,7 @@ GameObject:
   - 114: {fileID: 11444490}
   - 95: {fileID: 9544492}
   - 114: {fileID: 11487846}
+  - 82: {fileID: 8200000}
   m_Layer: 15
   m_Name: Archer
   m_TagString: Player
@@ -295,7 +296,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.25272369, y: 11.6950521, z: 0}
+  m_LocalPosition: {x: -17.1178761, y: 2.39197278, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444492}
@@ -365,6 +366,64 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.32895267, y: 2.24969482}
   m_Center: {x: -.0308811069, y: .0231614113}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144490}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9509642
 Animator:
   serializedVersion: 3
@@ -669,8 +728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb5583658d8146429e1241dbba10e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
-  shotSound: {fileID: 0}
+  playerNumber: 3
+  shotSound: {fileID: 8300000, guid: 642cad1d88235484898037ef9a72ce79, type: 3}
   reloadSound: {fileID: 0}
   clickSound: {fileID: 0}
   bullets: 1
@@ -709,7 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreboard: {fileID: 22333968}
-  playerNumber: 1
+  playerNumber: 3
   tapDelayBoost: .25
   boostForce: 1700
   boostCooldown: .300000012
@@ -726,6 +785,7 @@ MonoBehaviour:
   wallJumpForce: 600
   circleCollider: {fileID: 5844894}
   touchingWall: 0
+  jump_sound: {fileID: 8300000, guid: 233490db6c1ce984987dd4f8574a0427, type: 3}
   isDisabled: 1
 --- !u!114 &11464514
 MonoBehaviour:
@@ -777,8 +837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 1
   statsAmimator: {fileID: 9509642}
-  DeadSound: {fileID: 0}
-  playerNumber: 0
+  DeadSound: {fileID: 8300000, guid: c5e18e08ad4048d48901ab375c791d98, type: 3}
+  playerNumber: 3
   playerKillingSpree: {fileID: 11464514}
   playerScore: {fileID: 11433972}
   Dead: 0

@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: 7372f45c5383f5846809412125f73dd2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mainMenuCUTS_0
+    21300002: mainMenuCUTS_1
+    21300004: mainMenuCUTS_2
+    21300006: mainMenuCUTS_3
+    21300008: mainMenuCUTS_4
+    21300010: mainMenuCUTS_5
+    21300012: mainMenuCUTS_6
+    21300014: mainMenuCUTS_7
+    21300016: mainMenuCUTS_8
+    21300018: mainMenuCUTS_9
+    21300020: mainMenuCUTS_10
+    21300022: mainMenuCUTS_11
+    21300024: mainMenuCUTS_12
+    21300026: mainMenuCUTS_13
+    21300028: mainMenuCUTS_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mainMenuCUTS_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 382
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 382
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_2
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 380
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_3
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 261
+        width: 224
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_4
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 261
+        width: 224
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 266
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_6
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 266
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_7
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 264
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 158
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_9
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 158
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_10
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 156
+        width: 453
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 23
+        width: 218
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_12
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 48
+        width: 453
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_13
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 48
+        width: 453
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mainMenuCUTS_14
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 46
+        width: 453
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -72,7 +72,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: btn_Toturial_slid_in
-  m_Speed: -1
+  m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 23369d316c45d8541b93b296ad7a93cc, type: 2}
@@ -87,7 +87,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: btn_Toturial_slid_out
-  m_Speed: 1
+  m_Speed: -1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 23369d316c45d8541b93b296ad7a93cc, type: 2}

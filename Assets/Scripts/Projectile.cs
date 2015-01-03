@@ -8,9 +8,10 @@ public class Projectile : MonoBehaviour {
 	private bool Bullet_locked = false;
 	private Animator anim;
 	private PlayerManager playerManager;
-	
-	public Transform Blood_Hit;
-	public Transform Broken_Arrow;
+	public AudioClip hit;
+	public AudioClip breaking;
+	//public Transform Blood_Hit;
+	//public Transform Broken_Arrow;
 	
 	public void SetBulletNumber (Vector2 V) {
 		if (V.y == Time.time && !Bullet_locked) {//Same time frame in which it was created.
@@ -27,9 +28,11 @@ public class Projectile : MonoBehaviour {
 	}
 	void OnCollisionEnter2D(Collision2D collided) {
 		if (collided.gameObject.tag != "Player") {
+			audio.PlayOneShot(breaking);
 			anim.SetTrigger("break");
 		}
 		if (collided.gameObject.tag == "Player") {
+			audio.PlayOneShot(hit);
 			playerNumber = collided.gameObject.GetComponent<PlayerManager> ().getPlayerNumber();
 			var isThisPlayerDead = collided.gameObject.GetComponent<PlayerManager> ().isDead();
 			if (playerNumber != bulletNumber && !isThisPlayerDead) {
@@ -38,7 +41,8 @@ public class Projectile : MonoBehaviour {
 			}
 		}
 		if (collided.gameObject.tag == "Bullet") {
-			anim.SetTrigger("break");
+			audio.PlayOneShot(hit);
+			anim.SetTrigger("breaking");
 
 		}
 		

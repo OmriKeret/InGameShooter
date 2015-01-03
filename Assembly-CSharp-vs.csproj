@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\GuiFollowPlayer.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Menu\MenuData.cs" />
+     <Compile Include="Assets\Scripts\Menu\Music.cs" />
      <Compile Include="Assets\Scripts\Menu\UIManagerScrit.cs" />
      <Compile Include="Assets\Scripts\MenuBackground.cs" />
      <Compile Include="Assets\Scripts\MultiClickInput.cs" />

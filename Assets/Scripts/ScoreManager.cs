@@ -43,26 +43,26 @@ public class ScoreManager : MonoBehaviour {
 	public int addScoreToPlayer(int playerNum, Status playerStats)
 	{
 		scores [playerNum - 1].addScore (playerStats);
-		return getScoreForPlayer (playerNum);
+		return (getScoreForPlayer (playerNum));
 
 	}
 
 	public int getScoreForPlayer(int playerNum) 
 	{
-		return scores [playerNum - 1].getScore ();
+		return (scores [playerNum - 1].getScore ())*100;
 	}
 	
 	public void showScoresForPlayers(int playersNum) 
 	{
-		for(int i = 0; i < playersNum; i++) 
-		{
+		//for(int i = 0; i < playersNum; i++) 
+		//{
 	//		scoreText[i].text = String.Format("Player {0} Score: {1}",i + 1,  scores[i].getScore());
-		}
+		//}
 		
-		for (int i = playersNum; i < 4; i++ ) 
-		{
+		//for (int i = playersNum; i < 4; i++ ) 
+		//{
 	//		scoreText[i].text = null;
-		}
+		//}
 
 	}
 }

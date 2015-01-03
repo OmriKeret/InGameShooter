@@ -93,12 +93,11 @@ public class shootingManager : MonoBehaviour {
 			{
 				if(clickSound) //Empty sound?
 				{
-					audio.PlayOneShot(clickSound);
+					//audio.PlayOneShot(clickSound);
 				}
 			}
 			nextFire = -1;
-			//nextFire -= Time.deltaTime * fireRate;
-			
+
 		}
 	}
 
@@ -125,6 +124,7 @@ public class shootingManager : MonoBehaviour {
 		}
 		shooting = false;
 		var angles = 0;
+		audio.PlayOneShot(shotSound);
 		switch (x)
 		{
 
@@ -139,7 +139,6 @@ public class shootingManager : MonoBehaviour {
 				BulletInstance.AddForce (new Vector2 (0,-1) * bulletSpeed);
 				break;
 			case Direction.right://Right
-				Debug.Log ("shoot right");
 				angles = faceright ? right_projectile_angles : -1 * right_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 				BulletInstance.AddForce (new Vector2 (1,0) * bulletSpeed );
@@ -153,7 +152,6 @@ public class shootingManager : MonoBehaviour {
 				angles = playerControls.faceRight ? up_right_projectile_angles : -1 * up_right_projectile_angles;
 				BulletInstance.transform.rotation = Quaternion.AngleAxis(angles, Vector3.forward);
 	            BulletInstance.AddForce (new Vector2 (1,(float)0.5) * bulletSpeed);
-				Debug.Log ("shoot up-righ");
 				break;
 			case Direction.up_left://Top-Left
 				angles = faceright ? left_up_projectile_angles : -1 * left_up_projectile_angles;

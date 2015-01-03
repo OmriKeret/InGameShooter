@@ -87,7 +87,7 @@ GameObject:
   - 114: {fileID: 214672881}
   - 82: {fileID: 214672882}
   m_Layer: 0
-  m_Name: 10
+  m_Name: Animationn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14bfa9560b1e0c34ab51e8829810a527, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovieTime: 15
-  animation: {fileID: 214672878}
 --- !u!82 &214672882
 AudioSource:
   m_ObjectHideFlags: 0
@@ -173,7 +171,7 @@ AudioSource:
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
-  Pan2D: 0
+  Pan2D: .5
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
@@ -346,7 +344,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.61199999
+  orthographic size: 3.5999999
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

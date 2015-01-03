@@ -13,31 +13,37 @@ public class UIManagerScrit : MonoBehaviour {
 	public Animator howManyPlayersDialog;
 	public Animator tutorialButton;
 	public Animator QuitButton;
+	public AudioClip click_sound;
+	public AudioClip Title_sound;
 	// Use this for initialization
 	void Start () {
 		/*var buttons = GameObject.FindObjectsOfType<Button> ();
 		foreach (Button btn in buttons) {
 			Buttons.Add(btn);
 		}*/
-
+		audio.PlayOneShot (Title_sound);
 
 	}
+
+
 	public void MenuEntered() 
 	{
-		startButton.enabled = true;
-		settingsButton.enabled = true;
-		tutorialButton.enabled = true;
-		QuitButton.enabled = true;
-		tutorialButton.SetBool("isHidden", false);
-		QuitButton.SetBool("isHidden", false);
-		startButton.SetBool("isHidden", false);
-		settingsButton.SetBool("isHidden", false);
+		//audio.PlayOneShot (Title_sound);
+		//startButton.enabled = true;
+	//	settingsButton.enabled = true;
+	//	tutorialButton.enabled = true;
+	//	QuitButton.enabled = true;
+	//	tutorialButton.SetBool("isHidden", false);
+	//	QuitButton.SetBool("isHidden", false);
+	//	startButton.SetBool("isHidden", false);
+	//	settingsButton.SetBool("isHidden", false);
 
 	}
 	public void OpenSettings()
 	{
 		//startButton.enabled = true;
 	//	settingsButton.enabled = true;
+		audio.PlayOneShot (click_sound);
 		tutorialButton.SetBool("isHidden", true);
 		QuitButton.SetBool("isHidden", true);
 		startButton.SetBool("isHidden", true);
@@ -47,6 +53,7 @@ public class UIManagerScrit : MonoBehaviour {
 	}
 	public void CloseSettings()
 	{
+		audio.PlayOneShot (click_sound);
 		tutorialButton.SetBool("isHidden", false);
 		QuitButton.SetBool("isHidden", false);
 		startButton.SetBool("isHidden", false);
@@ -56,6 +63,7 @@ public class UIManagerScrit : MonoBehaviour {
 
 	public void OpenStartGame()
 	{
+		audio.PlayOneShot (click_sound);
 		Application.LoadLevel("PickPlayerScene");
 		startButton.enabled = true;
 		settingsButton.enabled = true;
@@ -72,6 +80,7 @@ public class UIManagerScrit : MonoBehaviour {
 	}
 	public void OpenTutorial()
 	{
+		audio.PlayOneShot (click_sound);
 		//load scene tutorial
 	}
 
@@ -79,8 +88,5 @@ public class UIManagerScrit : MonoBehaviour {
 	{
 		Application.Quit();
 	}
-	// Update is called once per frame
-	void Update () {
 
-	}
 }

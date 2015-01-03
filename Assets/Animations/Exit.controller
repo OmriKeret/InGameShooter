@@ -72,7 +72,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: btn_Exit_slid_out
-  m_Speed: 1
+  m_Speed: -1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 30f67937e9b396b4d8744af18b56b068, type: 2}
@@ -87,7 +87,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: btn_Exit_slid_in
-  m_Speed: -1
+  m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 30f67937e9b396b4d8744af18b56b068, type: 2}
@@ -111,13 +111,13 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110283182}
-      second:
-      - {fileID: 110137348}
-    data:
       first: {fileID: 110200978}
       second:
       - {fileID: 110176446}
+    data:
+      first: {fileID: 110283182}
+      second:
+      - {fileID: 110137348}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

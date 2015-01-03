@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 	public float maxSpeed = 10f;
 	public bool grounded = false;
 	public bool faceRight = true;
-
+	//public AudioClip run_sound;
 	//jumping
 	private bool doubleJumpeAvilable = false;
 	public Transform groundCheck;
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour {
 	public CircleCollider2D circleCollider;
 	private bool canJumpFromWall;
 	public bool touchingWall;
+	public AudioClip jump_sound;
 	//Animation
 	Animator anim;
 	
@@ -65,18 +66,21 @@ public class PlayerController : MonoBehaviour {
 
 		if (grounded && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting )
 		{
+			audio.PlayOneShot(jump_sound);
 			anim.SetBool("Ground", false);
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 			doubleJumpeAvilable = true;
 
 		} else if(touchingWall && canJumpFromWall && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting)
 		{
+			audio.PlayOneShot(jump_sound);
 			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
 			rigidbody2D.AddForce(new Vector2(0, wallJumpForce));
 			canJumpFromWall = false;
 		
 		
 		} else if (!grounded && doubleJumpeAvilable && Input.GetButtonDown ("Jump" + playerNumber) && !isBoosting) {
+			audio.PlayOneShot(jump_sound);
 			rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, 0);
  			rigidbody2D.AddForce(new Vector2(0, doubleJumpForce));
 			doubleJumpeAvilable = false;
@@ -155,6 +159,7 @@ public class PlayerController : MonoBehaviour {
 	
 
 	private void moveHorizontal() {
+		//audio.PlayOneShot(run_sound);
 		float move = Input.GetAxis ("Horizontal" + playerNumber);
 		anim.SetFloat ("Speed", Mathf.Abs (move));
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);

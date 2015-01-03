@@ -7,6 +7,7 @@ public class PickPlayerData : MonoBehaviour {
 	List<PlayerData> playersData;
 	int playerPointer = 0;
 
+
 	void Awake() {
 		DontDestroyOnLoad(transform.gameObject);
 	}

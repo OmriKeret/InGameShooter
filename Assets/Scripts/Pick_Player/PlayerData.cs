@@ -2,6 +2,10 @@
 using System.Collections;
 
 public class PlayerData  {
+	public int howManyKills {
+				get;
+				set;
+		}
 
 	public int playerNum {
 				get;

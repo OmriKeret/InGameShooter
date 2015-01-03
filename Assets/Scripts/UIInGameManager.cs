@@ -5,6 +5,7 @@ public class UIInGameManager : MonoBehaviour {
 	public Animator MenuDialog;
 	private bool menuOpen = false;
 	public LevelManager levelManager;
+	public AudioClip click_sound;
 	// Use this for initialization
 	void Start () {
 	
@@ -45,6 +46,7 @@ public class UIInGameManager : MonoBehaviour {
 	public void ExitGame()
 	{
 		Time.timeScale = 1F;
+		audio.PlayOneShot (click_sound);
 		var pickData = GameObject.Find ("LevelManager");
 		Destroy (pickData);
 		Application.LoadLevel("MainMenu");
@@ -52,6 +54,7 @@ public class UIInGameManager : MonoBehaviour {
 
 	public void restart()
 	{
+		audio.PlayOneShot (click_sound);
 		Time.timeScale = 1F;
 		levelManager.resetData ();
 
