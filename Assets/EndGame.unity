@@ -184,9 +184,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 874349331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 516bfb5939f5e944fbd0fbdccc9d609b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a12b5626cf4eac4dbe55034eb9f5a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AztecK: {fileID: 0}
+  ArcherK: {fileID: 0}
+  WizardK: {fileID: 0}
+  RogueK: {fileID: 0}
+  AztecS: {fileID: 0}
+  ArcherS: {fileID: 0}
+  WizardS: {fileID: 0}
+  RogueS: {fileID: 0}
 --- !u!82 &874349333
 AudioSource:
   m_ObjectHideFlags: 0
@@ -196,7 +204,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 11c7c2a94b6bcfe41a3173d4cc508e39, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
