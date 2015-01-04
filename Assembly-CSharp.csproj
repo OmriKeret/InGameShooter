@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Pick_Player\PickPlayerData.cs" />
      <Compile Include="Assets\Scripts\Pick_Player\PickPlayerManager.cs" />
      <Compile Include="Assets\Scripts\Pick_Player\PlayerData.cs" />
+     <Compile Include="Assets\Scripts\Pick_Player\playerManager.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\PopUpStatus.cs" />

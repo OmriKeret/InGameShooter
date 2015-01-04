@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
-
+using System.Collections.Generic;
 public class LevelManager : MonoBehaviour {
 	PickPlayerData playersData;
 	public Rigidbody2D Aztec;
@@ -37,8 +37,18 @@ public class LevelManager : MonoBehaviour {
 	void Awake() {
 		playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
 		int numPlayers = playersData.HowManyPlayers();
-		for(int i = 1 ; i <= numPlayers ; i++ ) {
-			Revive(i);
+		//for(int i = 1 ; i <= numPlayers ; i++ ) {
+		//	Revive(i);
+		//}
+		var players = playersData.getAllPlayers ();
+		List<int> playerNumbers = new List<int> ();
+		foreach( var player in players)
+		{
+			playerNumbers.Add(player.playerNum);
+		}
+		foreach(var playerNumToRevive in playerNumbers)
+		{
+			Revive(playerNumToRevive);
 		}
 		DontDestroyOnLoad(transform.gameObject);
 		scoreManager.setNumOfPlayers (numPlayers);
@@ -51,13 +61,10 @@ public class LevelManager : MonoBehaviour {
 	
 	
 	public void resetData()	{
-		int numPlayers = playersData.HowManyPlayers();
-		//get all the scores and update in the players data
-		for(int i = 1 ; i <= numPlayers ; i++ ) {
-			var playerData = playersData.getPlayer (i);
-			playerData.score = 0;
-			playerData.killingSpree = 0;
-			playerData.howManyKills = 0;
+		var players = playersData.getAllPlayers ();
+		foreach(var player in players)
+		{
+			player.reset();
 		}
 	}
 	

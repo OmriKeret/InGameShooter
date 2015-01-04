@@ -5,15 +5,17 @@ using System.Collections.Generic;
 
 public class PickPlayerData : MonoBehaviour {
 	List<PlayerData> playersData;
-	int playerPointer = 0;
 
 
+	public List<PlayerData> getAllPlayers()
+	{
+		return playersData;
+	}
 	void Awake() {
 		DontDestroyOnLoad(transform.gameObject);
 	}
-	public void insertPlayer(CharacterType character) {
-		playersData.Add( new PlayerData{character = character, playerNum = playerPointer + 1});
-		playerPointer++;
+	public void insertPlayer(CharacterType character, int playerNumber) {
+		playersData.Add( new PlayerData{character = character, playerNum = playerNumber});
 	}
 	// Use this for initialization
 	 void Start () {
@@ -30,7 +32,12 @@ public class PickPlayerData : MonoBehaviour {
 
 	public PlayerData getPlayer(int playerNum)
 	{
-		return playersData[playerNum - 1]; 
+		foreach (var player in playersData) {
+			if( player.playerNum == playerNum) {
+				return player;
+			}
+		}
+		return null;
 	}
 	// Update is called once per frame
 	void Update () {

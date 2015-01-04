@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using System.Collections.Generic;
 public class PickPlayerManager : MonoBehaviour {
 
 	MenuData menuData;
@@ -13,47 +14,73 @@ public class PickPlayerManager : MonoBehaviour {
 	public Button theif;
 	public PickPlayerData playerData;
 
+	public List<CharacterType> freeChar;
 	// Use this for initialization
 	void Start () {
+		freeChar = new List<CharacterType> ();
 	//	menuData = GameObject.Find("MenuData").GetComponent<MenuData>();
-		playerNumTurn = 1;
+		for(int i = 1 ; i < 5; i++ )
+		{
+			freeChar.Add ((CharacterType)i);
+		}
 	}
-	public void PlayerPickAztec()
+
+//	public CharacterType getNextFreeChar(CharacterType e)
+//	{
+	//	foreach(var char in 
+	//}
+	public bool Pick(int playerNumber,CharacterType character) 
 	{
-		aztec.interactable = false;
-		playerData.insertPlayer (CharacterType.Aztec);
+		if(freeChar.Contains(character)){
+			playerData.insertPlayer (character, playerNumber);
+			playerNumTurn ++;
+			if (playerNumTurn == 5)
+				return true;
+			freeChar.Remove (character);
+			return true;
+		}
+		return false;
+	}
+/*	public void PlayerPickAztec(int playerNumber)
+	{
+	//	aztec.interactable = false;
+		playerData.insertPlayer (CharacterType.Aztec, playerNumber);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
-		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
+		freeChar.Remove (CharacterType.Aztec);
+		//title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
 	}
-	public void PlayerPickArcher()
+	public void PlayerPickArcher(int playerNumber)
 	{
-		archer.interactable = false;
-		playerData.insertPlayer (CharacterType.Archer);
+	//	archer.interactable = false;
+		playerData.insertPlayer (CharacterType.Archer, playerNumber);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
-		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn);
+		//title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn);
+		freeChar.Remove (CharacterType.Archer);
 	}
-	public void PlayerPickMage()
+	public void PlayerPickMage(int playerNumber)
 	{
-		mage.interactable = false;
-		playerData.insertPlayer (CharacterType.Mage);
+		//mage.interactable = false;
+		playerData.insertPlayer (CharacterType.Mage,playerNumber);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
-		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn);
+		//title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn);
+		freeChar.Remove (CharacterType.Mage);
 	}
-	public void PlayerPickTheif()
+	public void PlayerPickTheif(int playerNumber)
 	{
-		theif.interactable = false;
-		playerData.insertPlayer (CharacterType.Thief);
+		//theif.interactable = false;
+		playerData.insertPlayer (CharacterType.Thief, playerNumber);
 		playerNumTurn ++;
 		if (playerNumTurn == 5)
 			return;
-		title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
-	}
+		//title.text = String.Format("Player {0},Pick Your Fighter!",playerNumTurn );
+		freeChar.Remove (CharacterType.Thief);
+	}*/
 
 	public void start()
 	{

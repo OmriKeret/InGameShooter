@@ -25,6 +25,13 @@ public class PlayerData  {
 		get;
 		set;
 	}
+
+	public void reset()
+	{
+		score = 0;
+		killingSpree = 0;
+		howManyKills = 0;
+	}
 	// Use this for initialization
 	void Start () {
 	
