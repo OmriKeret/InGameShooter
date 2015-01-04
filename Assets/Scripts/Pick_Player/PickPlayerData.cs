@@ -27,15 +27,17 @@ public class PickPlayerData : MonoBehaviour {
 	}
 	public int getWinner()
 	{
-		int temp = 0;
+		int winning_player = 4;
+		int temp_score = 0;
 		foreach(var player in playersData)
 		{
-			if (player.score > temp)
+			if (player.score > temp_score)
 			{
-				temp = player.playerNum;
+				temp_score = player.score;
+				winning_player = player.playerNum;
 			}
 		}
-		return temp;
+		return winning_player;
 	}
 
 	public int HowManyPlayers()

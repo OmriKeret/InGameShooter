@@ -82,7 +82,7 @@ public class LevelManager : MonoBehaviour {
 
 		var popUp = playSoundByStatus(stats);
 		var score = scoreManager.addScoreToPlayer (playerNum,stats);
-
+		playerData.score = score;
 		var player = getPlayerObject (playerNum);
 		PlayerManager playerManager = player.GetComponent<PlayerManager> ();
 		playerManager.showScore (score);

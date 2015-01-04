@@ -61,7 +61,7 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 
 	void chooseScene () {
 		int winner = playersData.getWinner ();
-		switch ((CharacterType)winner) {
+		switch (playersData.getPlayer(winner).character) {
 		case (CharacterType.Aztec ):
 						Application.LoadLevel ("Winner_Is_1");
 						break;
