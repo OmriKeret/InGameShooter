@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: ffc1b5b2b45fbda4aa74ee035ff688ce
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pickCharacter_0
+    21300002: pickCharacter_1
+    21300004: pickCharacter_2
+    21300006: pickCharacter_3
+    21300008: pickCharacter_4
+    21300010: pickCharacter_5
+    21300012: pickCharacter_6
+    21300014: pickCharacter_7
+    21300016: pickCharacter_8
+    21300018: pickCharacter_9
+    21300020: pickCharacter_10
+    21300022: pickCharacter_11
+    21300024: pickCharacter_12
+    21300026: pickCharacter_13
+    21300028: pickCharacter_14
+    21300030: pickCharacter_15
+    21300032: pickCharacter_16
+    21300034: pickCharacter_17
+    21300036: pickCharacter_18
+    21300038: pickCharacter_19
+    21300040: pickCharacter_20
+    21300042: pickCharacter_21
+    21300044: pickCharacter_22
+    21300046: pickCharacter_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pickCharacter_0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2297
+        width: 794
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1832
+        width: 281
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1832
+        width: 282
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_3
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1828
+        width: 282
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_4
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1832
+        width: 282
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1741
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1741
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1462
+        width: 243
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1462
+        width: 242
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_9
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1462
+        width: 243
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1684
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1684
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_12
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1100
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_13
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1100
+        width: 248
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_14
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1100
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_15
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 746
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_16
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 746
+        width: 248
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_17
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 746
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_18
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 391
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_19
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 391
+        width: 248
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_20
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 391
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_21
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 29
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_22
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 29
+        width: 248
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pickCharacter_23
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 29
+        width: 247
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
