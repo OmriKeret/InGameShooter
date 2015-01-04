@@ -18,7 +18,7 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 	ScoreManager scoreManager;
 	private int numPlayers;
 
-	public static int winner = 1;
+	private int winner = 1;
 		
 	void Awake (){
 		playersData = GameObject.Find ("PickPlayerData").GetComponent<PickPlayerData> ();
@@ -34,37 +34,34 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 	}
 	//TODO: Make this more readable for the next version - after the deadline.
 	public void FillText() {
-		//get all the scores and update in the players data
-		for (int i = 1; i <= numPlayers; i++) {
-			if(playersData.getPlayer (i).character == CharacterType.Aztec) {
-				AztecK.text = (playersData.getPlayer (i).howManyKills).ToString ();
-				AztecS.text = (playersData.getPlayer (i).score).ToString ();
-			}
-			if(playersData.getPlayer (i).character == CharacterType.Archer) {
-				ArcherK.text = (playersData.getPlayer (i).howManyKills).ToString ();
-				ArcherS.text = (playersData.getPlayer (i).score).ToString ();
-			}
-			if(playersData.getPlayer (i).character == CharacterType.Mage) {
-				WizardK.text = (playersData.getPlayer (i).howManyKills).ToString ();
-				WizardS.text = (playersData.getPlayer (i).score).ToString ();
-			}
-			if(playersData.getPlayer (i).character == CharacterType.Thief) {
-				RogueK.text = (playersData.getPlayer (i).howManyKills).ToString ();
-				RogueS.text = (playersData.getPlayer (i).score).ToString ();
-			}
-				}
+		var players = playersData.getAllPlayers ();
+		foreach(var player in players)
+		{
 
+		//get all the scores and update in the players data
+			if(player.character == CharacterType.Aztec) {
+				AztecK.text = (player.howManyKills).ToString ();
+				AztecS.text = (player.score).ToString ();
+			}
+			if(player.character == CharacterType.Archer) {
+				ArcherK.text = (player.howManyKills).ToString ();
+				ArcherS.text = (player.score).ToString ();
+			}
+			if(player.character == CharacterType.Mage) {
+				WizardK.text = (player.howManyKills).ToString ();
+				WizardS.text = (player.score).ToString ();
+			}
+			if(player.character == CharacterType.Thief) {
+				RogueK.text = (player.howManyKills).ToString ();
+				RogueS.text = (player.score).ToString ();
+			}
 		}
+
+	}
 
 	void chooseScene () {
-		for (int i = 1; i <= numPlayers; i++) {
-			var playerData = playersData.getPlayer (i);
-			playerData.score = scoreManager.getScoreForPlayer (i);
-			if (scoreManager.getScoreForPlayer (i) >= scoreManager.getScoreForPlayer (winner)) {
-				winner = i;
-			}
-		}
-		switch (playersData.getPlayer (winner).character) {
+		int winner = playersData.getWinner ();
+		switch ((CharacterType)winner) {
 		case (CharacterType.Aztec ):
 						Application.LoadLevel ("Winner_Is_1");
 						break;
@@ -81,6 +78,7 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 						Application.LoadLevel ("Winner_Is_4");
 						break;
 				}
+
 		}
 	public void restart() {
 		Application.LoadLevel("Dash scene");
