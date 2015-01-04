@@ -1,7 +1,21 @@
 fileFormatVersion: 2
 guid: 5712fc845dacfee45b0baf5cf374819b
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: gameMenuCUTS_0
+    21300002: gameMenuCUTS_1
+    21300004: gameMenuCUTS_2
+    21300006: gameMenuCUTS_3
+    21300008: gameMenuCUTS_4
+    21300010: gameMenuCUTS_5
+    21300012: gameMenuCUTS_6
+    21300014: gameMenuCUTS_7
+    21300016: gameMenuCUTS_8
+    21300018: gameMenuCUTS_9
+    21300020: gameMenuCUTS_10
+    21300022: gameMenuCUTS_11
+    21300024: gameMenuCUTS_12
+    21300026: gameMenuCUTS_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,16 +36,16 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +56,146 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: gameMenuCUTS_0
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 31
+        width: 793
+        height: 583
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 382
+        width: 575
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_2
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 382
+        width: 576
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_3
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 382
+        width: 575
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_4
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 31
+        width: 791
+        height: 475
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 273
+        width: 572
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_6
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 273
+        width: 573
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_7
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 273
+        width: 572
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 166
+        width: 569
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_9
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 166
+        width: 570
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_10
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 166
+        width: 570
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_11
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 58
+        width: 565
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_12
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 58
+        width: 567
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gameMenuCUTS_13
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 58
+        width: 566
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

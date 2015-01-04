@@ -57,7 +57,10 @@ public class PickPlayerManager : MonoBehaviour {
 
 	public void start()
 	{
-		Application.LoadLevel("Dash scene");
+		var music = GameObject.Find("MainMenuMusic");
+		music.GetComponent<Music> ().fadeOut ();
+		AutoFade.LoadLevel ("Dash scene", 1, 1, Color.black);
+		Destroy (music);
 	}
 
 	public void goBack()

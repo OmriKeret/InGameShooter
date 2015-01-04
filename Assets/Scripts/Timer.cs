@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour {
 	private int textNum;
 	private string text;
 
+	private bool calledFadeOut;
 	//public GUIText guitext = gameObject.GUIText;
 	//private int gameTime;
 
@@ -20,8 +21,8 @@ public class Timer : MonoBehaviour {
 
 	void Awake(){ 
 		startTime = 0; 
-	
-	}
+		calledFadeOut = false;
+	}	
 	//public void Reset() {
 	//	startTime = Time.time;
 	//}
@@ -38,10 +39,11 @@ public class Timer : MonoBehaviour {
 			startTime = Time.time;
 				}
 		//Game Ended
-		 if ((Time.time >= GameTime + startTime) && gameStarted) {
-			Application.LoadLevel ("EndGame");
+		if ((Time.time >= GameTime + startTime) && gameStarted && !calledFadeOut) {
+			calledFadeOut = true;
+			AutoFade.LoadLevel("EndGame",2,1,Color.black);
 			//this.StopAllCoroutines ();
-			Reset ();
+			//Reset ();
 		}
 		 
 		//Game running
@@ -62,6 +64,8 @@ public class Timer : MonoBehaviour {
 
 				
 	}
+
+
 	void OnTriggerEnter(){ }
 	
 	void OnTriggerExit(){ }

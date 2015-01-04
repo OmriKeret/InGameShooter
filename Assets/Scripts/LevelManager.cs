@@ -27,7 +27,6 @@ public class LevelManager : MonoBehaviour {
 	public AudioClip SeventhKill;
 	public AudioClip EightKill;
 	public AudioClip NineKill;
-	public AudioClip TenKill;
 
 	private System.Random randomNumber;
 	
@@ -186,37 +185,34 @@ public class LevelManager : MonoBehaviour {
 	}
 	PopUpStatus PlayRandom () {
 
-		switch (randomNumber.Next(1,8)) {
+		switch (randomNumber.Next(1,7)) {
 			case (1):
 				audio.PlayOneShot(FourthKill);
-				return PopUpStatus.BRUTAL;
+				return PopUpStatus.KILLER;
 
 			case(2) :
 				audio.PlayOneShot(FifthKill);
-				return PopUpStatus.GLORY_DEATH;
+				return PopUpStatus.OH_SNAP;
 
 			case(3):
 				audio.PlayOneShot(SixthKill);
-				return PopUpStatus.KILLER;
+				return PopUpStatus.U_MAD;
 	
 			case(4):
 				audio.PlayOneShot(SeventhKill);
-				return PopUpStatus.KILLTASTIC;
+				return PopUpStatus.BRUTAL;
 		
 			case(5):
 				audio.PlayOneShot(EightKill);
-				return PopUpStatus.OH_SNAP;
+				return PopUpStatus.WOW;
 		
 			case(6):
 				audio.PlayOneShot(NineKill);
-				return PopUpStatus.U_MAD;
+				return PopUpStatus.KILLTASTIC;
 		
-			case(7):
-				audio.PlayOneShot(TenKill);
-				return PopUpStatus.WOW;
 		
 			default:
-			audio.PlayOneShot(TenKill);
+			audio.PlayOneShot(EightKill);
 			return PopUpStatus.WOW;
 				//return PopUpStatus.FirstKill;
 

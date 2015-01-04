@@ -10,6 +10,5 @@ public enum PopUpStatus  {
 	U_MAD = 6,
 	BRUTAL = 7,
 	WOW = 8,
-	GLORY_DEATH = 9,
-	KILLTASTIC = 10
+	KILLTASTIC = 9
 }

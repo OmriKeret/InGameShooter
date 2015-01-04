@@ -64,13 +64,13 @@ public class UIManagerScrit : MonoBehaviour {
 	public void OpenStartGame()
 	{
 		audio.PlayOneShot (click_sound);
-		Application.LoadLevel("PickPlayerScene");
-		startButton.enabled = true;
-		settingsButton.enabled = true;
-		startButton.SetBool("isHidden", true);
-		settingsButton.SetBool("isHidden", true);
-		howManyPlayersDialog.enabled = true;
-		howManyPlayersDialog.SetBool("isHidden", false);
+		AutoFade.LoadLevel ("PickPlayerScene", 1, 1, Color.black);
+	//	startButton.enabled = true;
+		//settingsButton.enabled = true;
+		//startButton.SetBool("isHidden", true);
+		//settingsButton.SetBool("isHidden", true);
+		//howManyPlayersDialog.enabled = true;
+		//howManyPlayersDialog.SetBool("isHidden", false);
 	}
 	public void CloseHowManyPlayers()
 	{
@@ -81,7 +81,7 @@ public class UIManagerScrit : MonoBehaviour {
 	public void OpenTutorial()
 	{
 		audio.PlayOneShot (click_sound);
-		//load scene tutorial
+		//load scene tutorial 	AutoFade.LoadLevel ("Dash scene", 2, 1, Color.black);
 	}
 
 	public void quitGame()

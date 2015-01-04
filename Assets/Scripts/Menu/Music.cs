@@ -4,12 +4,16 @@ using System.Collections;
 public class Music : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		audio.PlayDelayed (2f);
 	}
-	
-	// Update is called once per frame
-	void Update () {
+	void Awake()
+	{
+		DontDestroyOnLoad(transform.gameObject);
+	}
+	public void fadeOut(){
+		audio.volume -= 1 * Time.deltaTime;
 	
 	}
 }
