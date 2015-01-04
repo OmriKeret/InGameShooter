@@ -2871,7 +2871,7 @@ MonoBehaviour:
   Aztec: {fileID: 5044492, guid: 7ef1853795b978b439139c5918d8cd03, type: 2}
   Archer: {fileID: 5044492, guid: c415228ffce143c45b60cb1f3bed0538, type: 2}
   Mage: {fileID: 5044492, guid: a38a0dca6f9e9b44193ae5a0076eaa1f, type: 2}
-  Theif: {fileID: 5044492, guid: 6c157503950b9194189ea2f4c32e2acf, type: 2}
+  Rough: {fileID: 5044492, guid: 6c157503950b9194189ea2f4c32e2acf, type: 2}
   player1Respawn: {fileID: 831491193}
   player2Respawn: {fileID: 872343220}
   player3Respawn: {fileID: 1801216846}

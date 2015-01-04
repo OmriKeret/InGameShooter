@@ -32,21 +32,23 @@ public class PlayerManager : MonoBehaviour {
 			float bulletNumber = bulletCollidedWith.getBulletNumber ();
 			Dead = playerController.isDisabled;
 			if(Dead) return;
-			if (lives > 1) {
-				lives -= 1;
-			}
-			else {
 
 				if (playerNumber != bulletNumber)
 				{
+					if (lives > 1) {
+						lives --;
+						return;
+					}
+
 					audio.PlayOneShot(DeadSound);
 					levelManager.gotKill((int)bulletNumber);
 					levelManager.Revive(playerNumber);
 					anim.SetBool("Die",true);
 					disablePlayer();
-				}	
-			}
-		}	
+					}
+		}		
+			
+			
 	}
 	void Update() 
 	{

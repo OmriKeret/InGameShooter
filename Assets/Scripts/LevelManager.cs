@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour {
 	public Rigidbody2D Aztec;
 	public Rigidbody2D Archer;
 	public Rigidbody2D Mage;
-	public Rigidbody2D Theif;
+	public Rigidbody2D Rough;
 	public Transform player1Respawn;
 	public Transform player2Respawn;
 	public Transform player3Respawn;
@@ -114,7 +114,7 @@ public class LevelManager : MonoBehaviour {
 		var playerData = playersData.getPlayer (playerNum);
 		var characterToInstantiate = playerData.character == CharacterType.Aztec ? Aztec : 
 			playerData.character == CharacterType.Archer ? Archer :
-				playerData.character == CharacterType.Mage ? Mage : Theif;
+				playerData.character == CharacterType.Mage ? Mage : Rough;
 		var whereToInstantiate = playerNum == 1 ? player1Respawn : playerNum == 2 ? player2Respawn : 
 			playerNum == 3 ? player3Respawn : player4Respawn;
 		yield return new WaitForSeconds (timeToRespawn);
@@ -164,7 +164,9 @@ public class LevelManager : MonoBehaviour {
 	{
 		CharacterType character = playersData.getPlayer(playerNum).character;
 		string characterName = character.ToString();
-		return GameObject.Find(characterName + "(Clone)");
+		characterName = characterName + "(Clone)";
+		var s = GameObject.Find("DMG");
+		return GameObject.Find(characterName);
 	}
 
 	PopUpStatus playSoundByStatus(Status status)

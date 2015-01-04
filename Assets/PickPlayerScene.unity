@@ -836,11 +836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dabd3e4b9feedb499b065c20dccd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  aztec: {fileID: 0}
-  archer: {fileID: 0}
-  mage: {fileID: 0}
-  theif: {fileID: 0}
   playerData: {fileID: 2000129773}
   freeChar: 
 --- !u!1 &499849460

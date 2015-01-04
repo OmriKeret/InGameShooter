@@ -51,7 +51,7 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 				WizardK.text = (player.howManyKills).ToString ();
 				WizardS.text = (player.score).ToString ();
 			}
-			if(player.character == CharacterType.Thief) {
+			if(player.character == CharacterType.Rough) {
 				RogueK.text = (player.howManyKills).ToString ();
 				RogueS.text = (player.score).ToString ();
 			}
@@ -62,16 +62,16 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 	void chooseScene () {
 		int winner = playersData.getWinner ();
 		switch (playersData.getPlayer(winner).character) {
-		case (CharacterType.Aztec ):
+				case (CharacterType.Aztec ):
 						Application.LoadLevel ("Winner_Is_1");
 						break;
-		case (CharacterType.Archer ):
+				case (CharacterType.Archer ):
 						Application.LoadLevel ("Winner_Is_2");
 						break;
 				case(CharacterType.Mage):
 						Application.LoadLevel ("Winner_Is_3");
 						break;
-				case(CharacterType.Thief):
+				case(CharacterType.Rough):
 						Application.LoadLevel ("Winner_Is_4");
 						break;
 				default:

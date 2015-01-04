@@ -7,11 +7,6 @@ public class PickPlayerManager : MonoBehaviour {
 
 	MenuData menuData;
 	public static int playerNumTurn;
-	public Text title;
-	public Button aztec;
-	public Button archer;
-	public Button mage;
-	public Button theif;
 	public PickPlayerData playerData;
 
 	public List<CharacterType> freeChar;
@@ -92,6 +87,8 @@ public class PickPlayerManager : MonoBehaviour {
 
 	public void goBack()
 	{
+		var music = GameObject.Find("MainMenuMusic");
+		Destroy (music);
 		var pickData = GameObject.Find ("PickPlayerData");
 		Destroy (pickData);
 		Application.LoadLevel("MainMenu");
