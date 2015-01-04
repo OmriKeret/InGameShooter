@@ -32,9 +32,11 @@ public class LevelManager : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+
 	}
 	
 	void Awake() {
+
 		playersData = GameObject.Find("PickPlayerData").GetComponent<PickPlayerData>();
 		int numPlayers = playersData.HowManyPlayers();
 		//for(int i = 1 ; i <= numPlayers ; i++ ) {
@@ -111,6 +113,10 @@ public class LevelManager : MonoBehaviour {
 		playerData.killingSpree = 0;
 	}
 	private IEnumerator ReviveLogic(int playerNum) {
+		player1Respawn = GameObject.Find ("Player1Respawn").GetComponent<Transform> ();
+		player2Respawn = GameObject.Find ("Player2Respawn").GetComponent<Transform> ();
+		player3Respawn = GameObject.Find ("Player3Respawn").GetComponent<Transform> ();
+		player4Respawn = GameObject.Find ("Player4Respawn").GetComponent<Transform> ();
 		var playerData = playersData.getPlayer (playerNum);
 		var characterToInstantiate = playerData.character == CharacterType.Aztec ? Aztec : 
 			playerData.character == CharacterType.Archer ? Archer :

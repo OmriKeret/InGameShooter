@@ -70,10 +70,12 @@
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\PopUpStatus.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Respawn.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Status.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\TutorialGuiManager.cs" />
      <Compile Include="Assets\Scripts\UIInGameManager.cs" />
      <Compile Include="Assets\Scripts\UIManagerScriptEndGame.cs" />
      <Compile Include="Assets\Scripts\shootingManager.cs" />

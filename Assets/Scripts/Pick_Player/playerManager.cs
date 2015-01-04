@@ -16,6 +16,10 @@ public class playerManager : MonoBehaviour {
 	float delay = 0.2f;
 	public Button right_btn;
 	public Button left_btn;
+
+	public AudioClip click_sound;
+	public AudioClip Pick_sound;
+	public AudioClip block_sound;
 	// Use this for initialization
 	void Start () {
 		timeLeft = delay;
@@ -35,9 +39,10 @@ public class playerManager : MonoBehaviour {
 			{
 				pickedCharacter = pickPlayerManager.Pick(playerNum, currentChar);
 				if(pickedCharacter){
+					audio.PlayOneShot (Pick_sound);
 					anim.SetBool("pickedCharacter",true);
 				} else {
-					//play sound for not available
+					audio.PlayOneShot (block_sound);
 				}
 			}
 			timeLeft -= Time.deltaTime;
@@ -57,6 +62,7 @@ public class playerManager : MonoBehaviour {
 
 	public void showNextCharRight() 
 	{
+		audio.PlayOneShot (click_sound);
 		pointer++;
 		pointer = pointer % 4;
 		var fixedPointer = pointer < 0 ? -1 * pointer : pointer;
@@ -68,6 +74,7 @@ public class playerManager : MonoBehaviour {
 
 	public void showNextCharLeft() 
 	{
+		audio.PlayOneShot (click_sound);
 		pointer--;
 		pointer = pointer % 4;
 		var fixedPointer = pointer < 0 ? -1 * pointer : pointer;

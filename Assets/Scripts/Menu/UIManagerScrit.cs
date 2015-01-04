@@ -81,7 +81,7 @@ public class UIManagerScrit : MonoBehaviour {
 	public void OpenTutorial()
 	{
 		audio.PlayOneShot (click_sound);
-		//load scene tutorial 	AutoFade.LoadLevel ("Dash scene", 2, 1, Color.black);
+		AutoFade.LoadLevel ("Tutorial", 2, 1, Color.black);
 	}
 
 	public void quitGame()

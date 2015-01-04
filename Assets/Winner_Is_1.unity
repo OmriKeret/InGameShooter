@@ -1195,6 +1195,7 @@ MonoBehaviour:
   ArcherS: {fileID: 1770882445}
   WizardS: {fileID: 891092000}
   RogueS: {fileID: 20185684}
+  click_sound: {fileID: 8300000, guid: 99dc8f207c0ceca4b841f0baa8e7f916, type: 3}
 --- !u!4 &1388918565
 Transform:
   m_ObjectHideFlags: 0
@@ -1202,7 +1203,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1388918563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 195.365936, y: 68.2129364, z: 0}
+  m_LocalPosition: {x: -.209999993, y: .200000003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

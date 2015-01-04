@@ -13,13 +13,14 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 	public Text WizardS;
 	public Text RogueS;
 
+	public AudioClip click_sound;
 	LevelManager levelManager;
 	PickPlayerData playersData;
 	ScoreManager scoreManager;
 	private int numPlayers;
 
 	private int winner = 1;
-		
+	public static bool loaded_scene = false;
 	void Awake (){
 		playersData = GameObject.Find ("PickPlayerData").GetComponent<PickPlayerData> ();
 		scoreManager = GameObject.Find ("ScoreManager").GetComponent<ScoreManager> ();
@@ -60,40 +61,55 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 	}
 
 	void chooseScene () {
+		if (loaded_scene) {
+						return;
+				}
 		int winner = playersData.getWinner ();
 		switch (playersData.getPlayer(winner).character) {
 				case (CharacterType.Aztec ):
 						Application.LoadLevel ("Winner_Is_1");
+						loaded_scene = true;
 						break;
 				case (CharacterType.Archer ):
 						Application.LoadLevel ("Winner_Is_2");
+			loaded_scene = true;
 						break;
 				case(CharacterType.Mage):
 						Application.LoadLevel ("Winner_Is_3");
+			loaded_scene = true;
 						break;
 				case(CharacterType.Rough):
 						Application.LoadLevel ("Winner_Is_4");
+			loaded_scene = true;
 						break;
 				default:
 						Application.LoadLevel ("Winner_Is_4");
+			loaded_scene = true;
 						break;
 				}
 
 		}
 	public void restart() {
+		audio.PlayOneShot (click_sound);
+		loaded_scene = false;
 		Application.LoadLevel("Dash scene");
 		GameObject.Find ("UIManager").GetComponent <UIInGameManager>().restart();
-		GameObject.Find ("Timer").GetComponent<Timer>().Reset ();
+		GameObject.Find ("TimerText").GetComponent<Timer>().Reset ();
 		DestroyObject (gameObject);
 	}
 
 	public void MainMenu() {
+		audio.PlayOneShot (click_sound);
+		loaded_scene = false;
 		if (audio.isPlaying){
 			audio.Stop ();
 		}
-		DestroyObject (GameObject.Find ("ScoreManager"));
-		DestroyObject (GameObject.Find ("PickPlayerData"));
-		DestroyObject (GameObject.Find ("LevelManager"));
+		var playersDataToDes = GameObject.Find ("PickPlayerData");
+		var scoreManagerToDes = GameObject.Find ("ScoreManager");
+		var levelManagerToDes = GameObject.Find ("LevelManager");
+		Destroy (playersDataToDes);
+		Destroy (scoreManagerToDes);
+		Destroy (levelManagerToDes);
 		Application.LoadLevel (1);
 		DestroyObject (gameObject);
 	}

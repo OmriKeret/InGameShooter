@@ -32,7 +32,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: Thief
+  - m_Name: Rough
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -63,7 +63,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Thief
+    m_ConditionEvent: Rough
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -358,25 +358,12 @@ StateMachine:
       - {fileID: 110185640}
       - {fileID: 110193928}
     data:
-      first: {fileID: 110208142}
-      second:
-      - {fileID: 110111970}
-    data:
-      first: {fileID: 110219530}
-      second: []
-    data:
-      first: {fileID: 110256324}
-      second: []
-    data:
       first: {fileID: 110263022}
       second: []
     data:
       first: {fileID: 110276572}
       second:
       - {fileID: 110197568}
-    data:
-      first: {fileID: 110284716}
-      second: []
     data:
       first: {fileID: 110297622}
       second:
@@ -385,6 +372,19 @@ StateMachine:
       first: {fileID: 110298204}
       second:
       - {fileID: 110172112}
+    data:
+      first: {fileID: 110208142}
+      second:
+      - {fileID: 110111970}
+    data:
+      first: {fileID: 110219530}
+      second: []
+    data:
+      first: {fileID: 110284716}
+      second: []
+    data:
+      first: {fileID: 110256324}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 168, y: 36, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

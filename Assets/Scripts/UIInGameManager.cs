@@ -54,6 +54,7 @@ public class UIInGameManager : MonoBehaviour {
 
 	public void restart()
 	{
+
 		audio.PlayOneShot (click_sound);
 		Time.timeScale = 1F;
 		levelManager.resetData ();

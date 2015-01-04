@@ -1105,6 +1105,7 @@ MonoBehaviour:
   ArcherS: {fileID: 1770882445}
   WizardS: {fileID: 891092000}
   RogueS: {fileID: 20185684}
+  click_sound: {fileID: 8300000, guid: 99dc8f207c0ceca4b841f0baa8e7f916, type: 3}
 --- !u!4 &1388918565
 Transform:
   m_ObjectHideFlags: 0
