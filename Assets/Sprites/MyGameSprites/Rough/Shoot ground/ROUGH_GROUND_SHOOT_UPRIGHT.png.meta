@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: c8968088b0b6c954183a584ff93bfd85
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ROUGH_GROUND_SHOOT_UPRIGHT_0
+    21300002: ROUGH_GROUND_SHOOT_UPRIGHT_1
+    21300004: ROUGH_GROUND_SHOOT_UPRIGHT_2
+    21300006: ROUGH_GROUND_SHOOT_UPRIGHT_3
+    21300008: ROUGH_GROUND_SHOOT_UPRIGHT_4
+    21300010: ROUGH_GROUND_SHOOT_UPRIGHT_5
+    21300012: ROUGH_GROUND_SHOOT_UPRIGHT_6
+    21300014: ROUGH_GROUND_SHOOT_UPRIGHT_7
+    21300016: ROUGH_GROUND_SHOOT_UPRIGHT_8
+    21300018: ROUGH_GROUND_SHOOT_UPRIGHT_9
+    21300020: ROUGH_GROUND_SHOOT_UPRIGHT_10
+    21300022: ROUGH_GROUND_SHOOT_UPRIGHT_11
+    21300024: ROUGH_GROUND_SHOOT_UPRIGHT_12
+    21300026: ROUGH_GROUND_SHOOT_UPRIGHT_13
+    21300028: ROUGH_GROUND_SHOOT_UPRIGHT_14
+    21300030: ROUGH_GROUND_SHOOT_UPRIGHT_15
+    21300032: ROUGH_GROUND_SHOOT_UPRIGHT_16
+    21300034: ROUGH_GROUND_SHOOT_UPRIGHT_17
+    21300036: ROUGH_GROUND_SHOOT_UPRIGHT_18
+    21300038: ROUGH_GROUND_SHOOT_UPRIGHT_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1244
+        width: 66
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1244
+        width: 67
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1245
+        width: 70
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_3
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1245
+        width: 75
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1245
+        width: 80
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1245
+        width: 83
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_6
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1245
+        width: 87
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_7
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1244
+        width: 74
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_8
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1244
+        width: 69
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_9
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1243
+        width: 70
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_10
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1242
+        width: 74
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_11
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1242
+        width: 99
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_12
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1243
+        width: 120
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_13
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 1242
+        width: 103
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_14
+      rect:
+        serializedVersion: 2
+        x: 1884
+        y: 1243
+        width: 101
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_15
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1077
+        width: 90
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1077
+        width: 74
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_17
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1077
+        width: 67
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_18
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1077
+        width: 65
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_UPRIGHT_19
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1077
+        width: 66
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

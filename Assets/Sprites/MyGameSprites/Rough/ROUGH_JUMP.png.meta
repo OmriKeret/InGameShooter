@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 30c0f3c6a1bcec44280184bbae530129
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ROUGH_JUMP_0
+    21300002: ROUGH_JUMP_1
+    21300004: ROUGH_JUMP_2
+    21300006: ROUGH_JUMP_3
+    21300008: ROUGH_JUMP_4
+    21300010: ROUGH_JUMP_5
+    21300012: ROUGH_JUMP_6
+    21300014: ROUGH_JUMP_7
+    21300016: ROUGH_JUMP_8
+    21300018: ROUGH_JUMP_9
+    21300020: ROUGH_JUMP_10
+    21300022: ROUGH_JUMP_11
+    21300024: ROUGH_JUMP_12
+    21300026: ROUGH_JUMP_13
+    21300028: ROUGH_JUMP_14
+    21300030: ROUGH_JUMP_15
+    21300032: ROUGH_JUMP_16
+    21300034: ROUGH_JUMP_17
+    21300036: ROUGH_JUMP_18
+    21300038: ROUGH_JUMP_19
+    21300040: ROUGH_JUMP_20
+    21300042: ROUGH_JUMP_21
+    21300044: ROUGH_JUMP_22
+    21300046: ROUGH_JUMP_23
+    21300048: ROUGH_JUMP_24
+    21300050: ROUGH_JUMP_25
+    21300052: ROUGH_JUMP_26
+    21300054: ROUGH_JUMP_27
+    21300056: ROUGH_JUMP_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ROUGH_JUMP_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1246
+        width: 72
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1245
+        width: 71
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1243
+        width: 70
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_3
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1242
+        width: 69
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_4
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1241
+        width: 68
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_5
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1240
+        width: 67
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_6
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1240
+        width: 69
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_7
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1240
+        width: 75
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1241
+        width: 80
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_9
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1241
+        width: 83
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_10
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1241
+        width: 85
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_11
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1241
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_12
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1241
+        width: 88
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_13
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1242
+        width: 88
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_14
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 1242
+        width: 87
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_15
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1243
+        width: 86
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_16
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 1243
+        width: 86
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_17
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1243
+        width: 84
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_18
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 1243
+        width: 83
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_19
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1074
+        width: 83
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1075
+        width: 81
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_21
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1075
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_22
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1075
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_23
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1075
+        width: 84
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_24
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1075
+        width: 85
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_25
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1076
+        width: 85
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_26
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1076
+        width: 86
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_27
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1076
+        width: 86
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_28
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1076
+        width: 87
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

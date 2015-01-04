@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: ace607e096271d4488813c253ac35d75
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ROUGH_JUMP_SHOOT_DOWN_0
+    21300002: ROUGH_JUMP_SHOOT_DOWN_1
+    21300004: ROUGH_JUMP_SHOOT_DOWN_2
+    21300006: ROUGH_JUMP_SHOOT_DOWN_3
+    21300008: ROUGH_JUMP_SHOOT_DOWN_4
+    21300010: ROUGH_JUMP_SHOOT_DOWN_5
+    21300012: ROUGH_JUMP_SHOOT_DOWN_6
+    21300014: ROUGH_JUMP_SHOOT_DOWN_7
+    21300016: ROUGH_JUMP_SHOOT_DOWN_8
+    21300018: ROUGH_JUMP_SHOOT_DOWN_9
+    21300020: ROUGH_JUMP_SHOOT_DOWN_10
+    21300022: ROUGH_JUMP_SHOOT_DOWN_11
+    21300024: ROUGH_JUMP_SHOOT_DOWN_12
+    21300026: ROUGH_JUMP_SHOOT_DOWN_13
+    21300028: ROUGH_JUMP_SHOOT_DOWN_14
+    21300030: ROUGH_JUMP_SHOOT_DOWN_15
+    21300032: ROUGH_JUMP_SHOOT_DOWN_16
+    21300034: ROUGH_JUMP_SHOOT_DOWN_17
+    21300036: ROUGH_JUMP_SHOOT_DOWN_18
+    21300038: ROUGH_JUMP_SHOOT_DOWN_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ROUGH_JUMP_SHOOT_DOWN_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1241
+        width: 66
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1241
+        width: 66
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1241
+        width: 67
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_3
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1242
+        width: 68
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_4
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1243
+        width: 69
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_5
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1245
+        width: 71
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_6
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1247
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_7
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1246
+        width: 73
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_8
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 1245
+        width: 74
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_9
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1245
+        width: 77
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_10
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1244
+        width: 74
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_11
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1244
+        width: 79
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_12
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 1250
+        width: 95
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_13
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1255
+        width: 113
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_14
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1255
+        width: 94
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_15
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1252
+        width: 75
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_16
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1247
+        width: 69
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_17
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1076
+        width: 68
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1073
+        width: 67
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_JUMP_SHOOT_DOWN_19
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1073
+        width: 66
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

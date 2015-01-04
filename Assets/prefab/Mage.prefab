@@ -10,7 +10,7 @@ GameObject:
   - 224: {fileID: 22408556}
   - 222: {fileID: 22208556}
   - 114: {fileID: 11408556}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: GloryDeath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 224: {fileID: 22408558}
   - 222: {fileID: 22208558}
   - 114: {fileID: 11408558}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: WOW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 224: {fileID: 22408560}
   - 222: {fileID: 22208560}
   - 114: {fileID: 11408560}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: U MAD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 224: {fileID: 22408562}
   - 222: {fileID: 22208562}
   - 114: {fileID: 11408562}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: OH SNAP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 224: {fileID: 22408564}
   - 222: {fileID: 22208564}
   - 114: {fileID: 11408564}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: KILLTATSTIC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 224: {fileID: 22408566}
   - 222: {fileID: 22208566}
   - 114: {fileID: 11408566}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Killer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - 224: {fileID: 22408568}
   - 222: {fileID: 22208568}
   - 114: {fileID: 11408568}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: TripleKill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - 224: {fileID: 22408570}
   - 222: {fileID: 22208570}
   - 114: {fileID: 11408570}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: DoubleKill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - 224: {fileID: 22408572}
   - 222: {fileID: 22208572}
   - 114: {fileID: 11408572}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Brutal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - 222: {fileID: 22223756}
   - 114: {fileID: 11423758}
   - 114: {fileID: 11423756}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - 114: {fileID: 11433968}
   - 114: {fileID: 11433970}
   - 95: {fileID: 9508556}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: playerScoreBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - 222: {fileID: 22233968}
   - 114: {fileID: 11433972}
   - 114: {fileID: 11433974}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: PlayerKillingSpree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444488}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: projectileShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: -1003283189, guid: 0000000000000000d000000000000000, type: 0}
@@ -239,7 +239,7 @@ GameObject:
   - 95: {fileID: 9544492}
   - 114: {fileID: 11487846}
   - 82: {fileID: 8200000}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: Mage
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444492}
-  m_Layer: 15
+  m_Layer: 16
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -1203168336, guid: 0000000000000000d000000000000000, type: 0}
@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444894}
   - 58: {fileID: 5844894}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: wallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.93196106, y: 2.42652154, z: 0}
+  m_LocalPosition: {x: -4.8691721, y: 7.3283, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444492}
@@ -312,7 +312,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .100000001, y: -1.26999998, z: 0}
+  m_LocalPosition: {x: -.189999998, y: -1.30999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 444490}
@@ -353,8 +353,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .881554604
-  m_Center: {x: 0, y: 0}
+  m_Radius: 1.04045439
+  m_Center: {x: .100000001, y: 0}
 --- !u!61 &6144492
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -364,8 +364,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 25c1bf9e4eca8f94284729d26584a500, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: 1.32895267, y: 2.24969482}
-  m_Center: {x: -.0308811069, y: .0231614113}
+  m_Size: {x: 1.74787009, y: 2.45915413}
+  m_Center: {x: -.00198984146, y: -.0815682411}
 --- !u!82 &8200000
 AudioSource:
   m_ObjectHideFlags: 1
@@ -816,7 +816,7 @@ MonoBehaviour:
   groundCheck: {fileID: 444492}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294934527
+    m_Bits: 4294901759
   jumpForce: 800
   doubleJumpForce: 800
   wallJumpForce: 600

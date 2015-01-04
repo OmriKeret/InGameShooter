@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 0317b26dcbfb6d748a87652139049e03
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ROUGH_RUN_0
+    21300002: ROUGH_RUN_1
+    21300004: ROUGH_RUN_2
+    21300006: ROUGH_RUN_3
+    21300008: ROUGH_RUN_4
+    21300010: ROUGH_RUN_5
+    21300012: ROUGH_RUN_6
+    21300014: ROUGH_RUN_7
+    21300016: ROUGH_RUN_8
+    21300018: ROUGH_RUN_9
+    21300020: ROUGH_RUN_10
+    21300022: ROUGH_RUN_11
+    21300024: ROUGH_RUN_12
+    21300026: ROUGH_RUN_13
+    21300028: ROUGH_RUN_14
+    21300030: ROUGH_RUN_15
+    21300032: ROUGH_RUN_16
+    21300034: ROUGH_RUN_17
+    21300036: ROUGH_RUN_18
+    21300038: ROUGH_RUN_19
+    21300040: ROUGH_RUN_20
+    21300042: ROUGH_RUN_21
+    21300044: ROUGH_RUN_22
+    21300046: ROUGH_RUN_23
+    21300048: ROUGH_RUN_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ROUGH_RUN_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1264
+        width: 113
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1262
+        width: 104
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1260
+        width: 96
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_3
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1259
+        width: 92
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_4
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1259
+        width: 91
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_5
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1261
+        width: 91
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_6
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1262
+        width: 90
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_7
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1263
+        width: 94
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_8
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1263
+        width: 97
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_9
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1263
+        width: 101
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_10
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 1263
+        width: 105
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_11
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 1263
+        width: 108
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_12
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 1265
+        width: 112
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_13
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1265
+        width: 115
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_14
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 1263
+        width: 106
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_15
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1260
+        width: 96
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_16
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 1258
+        width: 89
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1104
+        width: 90
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1102
+        width: 90
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1104
+        width: 90
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_20
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1105
+        width: 91
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_21
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1106
+        width: 92
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_22
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1107
+        width: 96
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_23
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1109
+        width: 101
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_RUN_24
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 1110
+        width: 107
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

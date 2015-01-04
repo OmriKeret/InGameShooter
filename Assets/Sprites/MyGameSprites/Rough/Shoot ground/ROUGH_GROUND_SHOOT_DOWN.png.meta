@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 59bacdded8480ca45a81029c5d2c4c0d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ROUGH_GROUND_SHOOT_DOWN_0
+    21300002: ROUGH_GROUND_SHOOT_DOWN_1
+    21300004: ROUGH_GROUND_SHOOT_DOWN_2
+    21300006: ROUGH_GROUND_SHOOT_DOWN_3
+    21300008: ROUGH_GROUND_SHOOT_DOWN_4
+    21300010: ROUGH_GROUND_SHOOT_DOWN_5
+    21300012: ROUGH_GROUND_SHOOT_DOWN_6
+    21300014: ROUGH_GROUND_SHOOT_DOWN_7
+    21300016: ROUGH_GROUND_SHOOT_DOWN_8
+    21300018: ROUGH_GROUND_SHOOT_DOWN_9
+    21300020: ROUGH_GROUND_SHOOT_DOWN_10
+    21300022: ROUGH_GROUND_SHOOT_DOWN_11
+    21300024: ROUGH_GROUND_SHOOT_DOWN_12
+    21300026: ROUGH_GROUND_SHOOT_DOWN_13
+    21300028: ROUGH_GROUND_SHOOT_DOWN_14
+    21300030: ROUGH_GROUND_SHOOT_DOWN_15
+    21300032: ROUGH_GROUND_SHOOT_DOWN_16
+    21300034: ROUGH_GROUND_SHOOT_DOWN_17
+    21300036: ROUGH_GROUND_SHOOT_DOWN_18
+    21300038: ROUGH_GROUND_SHOOT_DOWN_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ROUGH_GROUND_SHOOT_DOWN_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1244
+        width: 66
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1245
+        width: 66
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1245
+        width: 71
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_3
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1245
+        width: 75
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_4
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1246
+        width: 79
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_5
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1246
+        width: 83
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_6
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1246
+        width: 87
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_7
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1244
+        width: 75
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_8
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1244
+        width: 74
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_9
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 1243
+        width: 77
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_10
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1243
+        width: 75
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_11
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 1243
+        width: 84
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_12
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1243
+        width: 94
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_13
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1242
+        width: 102
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_14
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1243
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_15
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 1244
+        width: 79
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_16
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1244
+        width: 69
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_17
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1244
+        width: 68
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1077
+        width: 67
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ROUGH_GROUND_SHOOT_DOWN_19
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1077
+        width: 66
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
