@@ -25,6 +25,19 @@ public class PickPlayerData : MonoBehaviour {
 		//playerScores = new PlayerData[menuData.howManyPlayers];
 
 	}
+	public int getWinner()
+	{
+		int temp = 0;
+		foreach(var player in playersData)
+		{
+			if (player.score > temp)
+			{
+				temp = player.playerNum;
+			}
+		}
+		return temp;
+	}
+
 	public int HowManyPlayers()
 	{
 		return playersData.Count;

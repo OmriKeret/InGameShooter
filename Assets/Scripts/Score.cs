@@ -16,7 +16,7 @@ public class Score {
 
 	public void addScore(Status stat)
 	{
-		currentScore = currentScore + (int)stat * 1;
+		currentScore = currentScore + (int)stat * 100;
 	}
 
 }
