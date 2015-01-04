@@ -1,39 +1,43 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Timer.cs">
     <Files>
-      <File FileName="Assets\Scripts\Pick_Player\PickPlayerManager.cs" Line="46" Column="1" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="28" Column="29" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="109" Column="2" />
+      <File FileName="Assets\Scripts\Pick_Player\PickPlayerManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ScoreManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pick_Player\CharacterType.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pick_Player\PickPlayerData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pick_Player\playerManager.cs" Line="48" Column="31" />
-      <File FileName="c:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIManagerScriptEndGame.cs" Line="83" Column="25" />
-      <File FileName="Assets\Scripts\Menu\UIManagerScrit.cs" Line="58" Column="28" />
-      <File FileName="Assets\Scripts\UIInGameManager.cs" Line="50" Column="28" />
-      <File FileName="Assets\Scripts\TutorialGuiManager.cs" Line="6" Column="31" />
-      <File FileName="Assets\Scripts\Timer.cs" Line="8" Column="28" />
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="44" Column="46" />
-      <File FileName="Assets\Scripts\Projectile.cs" Line="49" Column="1" />
+      <File FileName="Assets\Scripts\Pick_Player\playerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\UIManagerScrit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UIInGameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TutorialGuiManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Timer.cs" Line="62" Column="22" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Projectile.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Respawn.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="308" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="310" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="312" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="314" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\Fading.cs" line="29" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\Fading.cs" line="16" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\Pick_Player\playerManager.cs" line="43" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\shootingManager.cs" line="220" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="93" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="177" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="176" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="87" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="175" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="174" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIInGameManager.cs" line="59" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="72" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="66" />
       <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\PlayerManager.cs" line="45" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="45" />
-      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="37" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="39" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\LevelManager.cs" line="117" />
+      <Breakpoint file="c:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIManagerScriptEndGame.cs" line="95" />
+      <Breakpoint file="c:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIManagerScriptEndGame.cs" line="67" />
+      <Breakpoint file="c:\Users\user\Documents\Relic scavangers\Assets\Scripts\UIManagerScriptEndGame.cs" line="110" />
+      <Breakpoint file="C:\Users\user\Documents\Relic scavangers\Assets\Scripts\TutorialGuiManager.cs" line="16" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>

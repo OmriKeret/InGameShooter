@@ -72,19 +72,19 @@ public class UIManagerScriptEndGame : MonoBehaviour {
 						break;
 				case (CharacterType.Archer ):
 						Application.LoadLevel ("Winner_Is_2");
-			loaded_scene = true;
+						loaded_scene = true;
 						break;
 				case(CharacterType.Mage):
 						Application.LoadLevel ("Winner_Is_3");
-			loaded_scene = true;
+						loaded_scene = true;
 						break;
 				case(CharacterType.Rough):
 						Application.LoadLevel ("Winner_Is_4");
-			loaded_scene = true;
+						loaded_scene = true;
 						break;
 				default:
 						Application.LoadLevel ("Winner_Is_4");
-			loaded_scene = true;
+						loaded_scene = true;
 						break;
 				}
 
