@@ -7,15 +7,18 @@ public class EndGame : MonoBehaviour {
 	PickPlayerData playersData;
 	ScoreManager scoreManager;
 
+	public Texture2D button_reset;
+	public Texture2D button_MainMenu;
+
 	public static int winner = 1;
 
-	void Awake() 
-	{
-		playersData = GameObject.Find ("PickPlayerData").GetComponent<PickPlayerData> ();
-		scoreManager = GameObject.Find ("ScoreManager").GetComponent<ScoreManager> ();
-		DontDestroyOnLoad (gameObject);
+	//void Awake() 
+	//{
+	//	playersData = GameObject.Find ("PickPlayerData").GetComponent<PickPlayerData> ();
+	//	scoreManager = GameObject.Find ("ScoreManager").GetComponent<ScoreManager> ();
+	//	DontDestroyOnLoad (gameObject);
 
-	}
+	//}
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +27,7 @@ public class EndGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+		/*levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
 		int numPlayers = playersData.HowManyPlayers ();
 		//get all the scores and update in the players data
 		for(int i = 1 ; i <= numPlayers ; i++ ) {
@@ -61,7 +64,7 @@ public class EndGame : MonoBehaviour {
 			if(!audio.isPlaying) {
 				audio.Play();
 			}
-				}
+				}*/
 	}
 	IEnumerator wait() {
 		yield return new WaitForSeconds (2);
@@ -81,25 +84,26 @@ public class EndGame : MonoBehaviour {
 	void OnTriggerExit(){ }
 	
 	void OnGUI(){
-		//GUI.Label(new Rect(400, 50, 200, 100), 
+		/*//GUI.Label(new Rect(400, 50, 200, 100), 
 		       //  (text + " and the winner is: " + winner.ToString()));
 		if (Application.loadedLevelName == "Winner_Is_1" || Application.loadedLevelName == "Winner_Is_2" ||
 			Application.loadedLevelName == "Winner_Is_3" || Application.loadedLevelName == "Winner_Is_4") {
-			GUI.Box(new Rect(300,50,300,100), "THE WINNER IS PLAYER " + 
-			        winner.ToString () + " \nWITH " + scoreManager.getScoreForPlayer(winner) +
-			        " POINTS!!!");
-			if (GUI.Button (new Rect (400, 150, 100, 50), "Restart")) {
-				stop ();
-				Application.LoadLevel (0);
+			//GUI.Box(new Rect(300,50,300,100), "THE WINNER IS PLAYER " + 
+			  //      winner.ToString () + " \nWITH " + scoreManager.getScoreForPlayer(winner) +
+			    //    " POINTS!!!");
+
+			if (GUI.Button (new Rect (440, 620, 100, 50), button_MainMenu)) {
+				//stop ();
+				Application.LoadLevel (1);
 				DestroyObject (gameObject);
 			}
-			if(GUI.Button (new Rect(400,200,100,50), "Rematch!")) {
+			if(GUI.Button (new Rect(840,620,100,50), button_reset)) {
 				Application.LoadLevel("Dash scene");
 				GameObject.Find ("UIManager").GetComponent <UIInGameManager>().restart();
 				GameObject.Find ("Timer").GetComponent<Timer>().Reset ();
 				DestroyObject (gameObject);
 
 			}
-		}
+		}*/
 }
 }
